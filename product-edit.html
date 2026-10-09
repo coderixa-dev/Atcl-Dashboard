@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Edit Product · ATCL Admin</title>
+<link rel="icon" href="assets/images/ui/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/admin.css">
+<script src="assets/js/admin.js" defer>
+</script>
+</head>
+<body>
+<aside class="sidebar" aria-label="Main navigation">
+<div class="brand">
+<b>ATCL</b>
+<span>Admin</span>
+<button class="icon-btn" data-sidebar aria-label="Collapse sidebar">«</button>
+</div>
+<nav>
+<div class="nav-group">
+<div class="nav-label">OVERVIEW</div>
+<a class="nav-link " href="index.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="m3 10 9-7 9 7v11h-6v-7H9v7H3z"/>
+</svg>
+<span>Dashboard</span>
+</a>
+</div>
+<div class="nav-group">
+<div class="nav-label">CATALOG</div>
+<a class="nav-link active" href="products.html" aria-current="page">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="m12 2 9 5v10l-9 5-9-5V7zM3 7l9 5 9-5M12 12v10"/>
+</svg>
+<span>Products</span>
+</a>
+<a class="nav-link " href="categories.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<rect x="3" y="3" width="6" height="6" rx="1"/>
+<rect x="15" y="3" width="6" height="6" rx="1"/>
+<rect x="3" y="15" width="6" height="6" rx="1"/>
+<rect x="15" y="15" width="6" height="6" rx="1"/>
+</svg>
+<span>Categories</span>
+</a>
+<a class="nav-link " href="subcategories.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="m3 7 9-5 9 5-9 5zM3 12l9 5 9-5M3 17l9 5 9-5"/>
+</svg>
+<span>Subcategories</span>
+</a>
+<a class="nav-link " href="child-categories.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<circle cx="12" cy="4" r="2"/>
+<circle cx="4" cy="20" r="2"/>
+<circle cx="20" cy="20" r="2"/>
+<path d="M12 6v5M4 18v-5h16v5"/>
+</svg>
+<span>Child Categories</span>
+</a>
+<a class="nav-link " href="brands.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M3 3h9l9 9-9 9-9-9z"/>
+<circle cx="8" cy="8" r="1"/>
+</svg>
+<span>Brands</span>
+</a>
+</div>
+<div class="nav-group">
+<div class="nav-label">CUSTOMER ENGAGEMENT</div>
+<a class="nav-link " href="inquiries.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<rect x="3" y="5" width="18" height="14" rx="2"/>
+<path d="m3 6 9 7 9-7"/>
+</svg>
+<span>Inquiries / RFQ</span>
+</a>
+<a class="nav-link " href="contact-messages.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M21 11a8 8 0 0 1-8 8H7l-5 3 2-7a8 8 0 1 1 17-4z"/>
+</svg>
+<span>Contact Messages</span>
+</a>
+</div>
+<div class="nav-group">
+<div class="nav-label">CONTENT</div>
+<a class="nav-link " href="news-events.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M5 2h10l4 4v16H5zM14 2v6h5M8 12h8M8 16h8M8 8h2"/>
+</svg>
+<span>News & Events</span>
+</a>
+<a class="nav-link " href="career-posts.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<rect x="3" y="7" width="18" height="14" rx="2"/>
+<path d="M8 7V3h8v4M3 12l9 3 9-3M10 14h4"/>
+</svg>
+<span>Career Posts</span>
+</a>
+</div>
+<div class="nav-group">
+<div class="nav-label">SYSTEM</div>
+<a class="nav-link " href="website-settings.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="m9 3 1-2h4l1 2 3 2 3 1v4l-2 2 1 4-3 3-4-1-3 2-4-2v-4l-3-2V8l3-1z"/>
+<circle cx="12" cy="11" r="3"/>
+</svg>
+<span>Website Settings</span>
+</a>
+</div>
+</nav>
+</aside>
+<button class="mobile-backdrop" data-sidebar aria-label="Close navigation">
+</button>
+<div class="main-shell">
+<header class="topbar">
+<button class="icon-btn" data-sidebar aria-label="Toggle navigation" aria-expanded="false">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M5 6h14M5 12h14M5 18h14"/>
+</svg>
+</button>
+<span class="context">Edit Product</span>
+<div class="global-search" aria-label="Global search preview">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<circle cx="10" cy="10" r="6"/>
+<path d="m15 15 6 6"/>
+</svg>
+<span>Search products, inquiries, customers…</span>
+</div>
+<button class="icon-btn notification" aria-label="Notifications" aria-expanded="false" data-notifications>
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M5 17V9a7 7 0 0 1 14 0v8l2 2H3zM9 22h6"/>
+</svg>
+</button>
+<div class="profile">
+<img class="avatar" src="assets/images/avatars/admin.svg" alt="Admin initials">
+<div>Admin User<small>Administrator</small>
+</div>
+</div>
+</header>
+<aside class="notification-panel card-panel" hidden>
+<h3>Notifications</h3>
+<p>4 unread contact messages</p>
+<p>18 new inquiries this week</p>
+<p>
+<a href="inquiries.html">Open inquiry inbox →</a>
+</p>
+</aside>
+<main>
+<noscript>
+<p class="noscript-note">Static preview: all records are visible. Enable JavaScript to use filters and preview interactions.</p>
+</noscript>
+<div class="page-heading">
+<div>
+<div class="title-line">
+<h1>Edit Product</h1>
+</div>
+<p class="subtitle">Create a clear, complete product record for your catalog.</p>
+</div>
+</div>
+<form data-preview-form>
+<div class="form-layout">
+<div>
+<section class="card-panel form-section">
+<h2>Basic Information</h2>
+<div class="fields">
+<label class="field full" for="product-name">Product Name *
+<input class="form-control" id="product-name" name="product-name" type="text" value="Stainless Steel Ball Valve"  required>
+</label>
+<label class="field" for="product-code-/-model">Product Code / Model *
+<input class="form-control" id="product-code-/-model" name="product-code-/-model" type="text" value="ATCL-SSV-100"  required>
+</label>
+<label class="field" for="brand">Brand *
+<select class="form-select" id="brand" name="brand"  required>
+<option value="">Select brand</option>
+<option value="Kitz" selected>Kitz</option>
+<option value="Grundfos">Grundfos</option>
+<option value="Siemens">Siemens</option>
+<option value="Schneider Electric">Schneider Electric</option>
+<option value="ABB">ABB</option>
+<option value="Honeywell">Honeywell</option>
+<option value="Danfoss">Danfoss</option>
+<option value="Wilo">Wilo</option>
+<option value="Emerson">Emerson</option>
+<option value="Endress+Hauser">Endress+Hauser</option>
+<option value="Yokogawa">Yokogawa</option>
+<option value="Festo">Festo</option>
+<option value="SMC">SMC</option>
+<option value="Eaton">Eaton</option>
+<option value="Rockwell Automation">Rockwell Automation</option>
+<option value="Mitsubishi Electric">Mitsubishi Electric</option>
+<option value="Omron">Omron</option>
+<option value="Phoenix Contact">Phoenix Contact</option>
+<option value="Fluke">Fluke</option>
+<option value="Bosch Rexroth">Bosch Rexroth</option>
+<option value="Pentair">Pentair</option>
+<option value="Victaulic">Victaulic</option>
+<option value="Spirax Sarco">Spirax Sarco</option>
+<option value="Belimo">Belimo</option>
+</select>
+</label>
+<label class="field" for="category">Category *
+<select class="form-select" id="category" name="category"  required>
+<option value="">Select category</option>
+<option value="Industrial Valves" selected>Industrial Valves</option>
+<option value="Pumps">Pumps</option>
+<option value="Control Systems">Control Systems</option>
+<option value="Electrical Solutions">Electrical Solutions</option>
+<option value="Automation Equipment">Automation Equipment</option>
+<option value="HVAC">HVAC</option>
+<option value="Fire Safety Equipment">Fire Safety Equipment</option>
+<option value="Industrial Instruments">Industrial Instruments</option>
+<option value="Water Management">Water Management</option>
+<option value="Mechanical Equipment">Mechanical Equipment</option>
+<option value="Pneumatic Systems">Pneumatic Systems</option>
+<option value="Hydraulic Systems">Hydraulic Systems</option>
+<option value="Power Distribution">Power Distribution</option>
+<option value="Process Heating">Process Heating</option>
+<option value="Compressed Air">Compressed Air</option>
+<option value="Building Management">Building Management</option>
+<option value="Environmental Solutions">Environmental Solutions</option>
+<option value="Safety Equipment">Safety Equipment</option>
+<option value="Industrial Networking">Industrial Networking</option>
+<option value="Maintenance Tools">Maintenance Tools</option>
+</select>
+</label>
+<label class="field" for="subcategory">Subcategory<select class="form-select" id="subcategory" name="subcategory" data-dependent="category">
+<option value="">Select subcategory</option>
+<option value="Ball Valves" selected data-parent="Industrial Valves">Ball Valves</option>
+<option value="Butterfly Valves" data-parent="Industrial Valves">Butterfly Valves</option>
+<option value="Centrifugal Pumps" data-parent="Pumps">Centrifugal Pumps</option>
+<option value="Booster Pumps" data-parent="Pumps">Booster Pumps</option>
+<option value="Control Panels" data-parent="Control Systems">Control Panels</option>
+<option value="PLC Cabinets" data-parent="Control Systems">PLC Cabinets</option>
+<option value="Motor Controls" data-parent="Electrical Solutions">Motor Controls</option>
+<option value="Circuit Protection" data-parent="Electrical Solutions">Circuit Protection</option>
+<option value="Sensors &amp; Switches" data-parent="Automation Equipment">Sensors &amp; Switches</option>
+<option value="Variable Frequency Drives" data-parent="Automation Equipment">Variable Frequency Drives</option>
+<option value="Air Handling" data-parent="HVAC">Air Handling</option>
+<option value="Climate Controls" data-parent="HVAC">Climate Controls</option>
+<option value="Fire Pumps" data-parent="Fire Safety Equipment">Fire Pumps</option>
+<option value="Fire Detection" data-parent="Fire Safety Equipment">Fire Detection</option>
+<option value="Pressure Instruments" data-parent="Industrial Instruments">Pressure Instruments</option>
+<option value="Flow Instruments" data-parent="Industrial Instruments">Flow Instruments</option>
+<option value="Water Treatment" data-parent="Water Management">Water Treatment</option>
+<option value="Filtration Systems" data-parent="Water Management">Filtration Systems</option>
+<option value="Power Transmission" data-parent="Mechanical Equipment">Power Transmission</option>
+<option value="Industrial Compressors" data-parent="Mechanical Equipment">Industrial Compressors</option>
+<option value="Air Preparation" data-parent="Pneumatic Systems">Air Preparation</option>
+<option value="Pneumatic Actuators" data-parent="Pneumatic Systems">Pneumatic Actuators</option>
+<option value="Hydraulic Pumps" data-parent="Hydraulic Systems">Hydraulic Pumps</option>
+<option value="Hydraulic Cylinders" data-parent="Hydraulic Systems">Hydraulic Cylinders</option>
+<option value="Distribution Boards" data-parent="Power Distribution">Distribution Boards</option>
+<option value="Transformers" data-parent="Power Distribution">Transformers</option>
+<option value="Heat Exchangers" data-parent="Process Heating">Heat Exchangers</option>
+<option value="Steam Systems" data-parent="Process Heating">Steam Systems</option>
+<option value="Air Compressors" data-parent="Compressed Air">Air Compressors</option>
+<option value="Air Dryers" data-parent="Compressed Air">Air Dryers</option>
+<option value="Building Controllers" data-parent="Building Management">Building Controllers</option>
+<option value="Energy Monitoring" data-parent="Building Management">Energy Monitoring</option>
+<option value="Wastewater Treatment" data-parent="Environmental Solutions">Wastewater Treatment</option>
+<option value="Emission Monitoring" data-parent="Environmental Solutions">Emission Monitoring</option>
+<option value="Gas Detection" data-parent="Safety Equipment">Gas Detection</option>
+<option value="Emergency Systems" data-parent="Safety Equipment">Emergency Systems</option>
+<option value="Ethernet Switches" data-parent="Industrial Networking">Ethernet Switches</option>
+<option value="Communication Gateways" data-parent="Industrial Networking">Communication Gateways</option>
+<option value="Calibration Tools" data-parent="Maintenance Tools">Calibration Tools</option>
+<option value="Diagnostic Instruments" data-parent="Maintenance Tools">Diagnostic Instruments</option>
+</select>
+</label>
+<label class="field" for="child-category">Child Category<select class="form-select" id="child-category" name="child-category" data-dependent="subcategory">
+<option value="">Select child category</option>
+<option value="Standard Ball Valves" selected data-parent="Ball Valves">Standard Ball Valves</option>
+<option value="Standard Butterfly Valves" data-parent="Butterfly Valves">Standard Butterfly Valves</option>
+<option value="Standard Centrifugal Pumps" data-parent="Centrifugal Pumps">Standard Centrifugal Pumps</option>
+<option value="Standard Booster Pumps" data-parent="Booster Pumps">Standard Booster Pumps</option>
+<option value="Standard Control Panels" data-parent="Control Panels">Standard Control Panels</option>
+<option value="Standard PLC Cabinets" data-parent="PLC Cabinets">Standard PLC Cabinets</option>
+<option value="Standard Motor Controls" data-parent="Motor Controls">Standard Motor Controls</option>
+<option value="Standard Circuit Protection" data-parent="Circuit Protection">Standard Circuit Protection</option>
+<option value="Standard Sensors &amp; Switches" data-parent="Sensors &amp; Switches">Standard Sensors &amp; Switches</option>
+<option value="Standard Variable Frequency Drives" data-parent="Variable Frequency Drives">Standard Variable Frequency Drives</option>
+<option value="Standard Air Handling" data-parent="Air Handling">Standard Air Handling</option>
+<option value="Standard Climate Controls" data-parent="Climate Controls">Standard Climate Controls</option>
+<option value="Standard Fire Pumps" data-parent="Fire Pumps">Standard Fire Pumps</option>
+<option value="Standard Fire Detection" data-parent="Fire Detection">Standard Fire Detection</option>
+<option value="Standard Pressure Instruments" data-parent="Pressure Instruments">Standard Pressure Instruments</option>
+<option value="Standard Flow Instruments" data-parent="Flow Instruments">Standard Flow Instruments</option>
+<option value="Standard Water Treatment" data-parent="Water Treatment">Standard Water Treatment</option>
+<option value="Standard Filtration Systems" data-parent="Filtration Systems">Standard Filtration Systems</option>
+<option value="Standard Power Transmission" data-parent="Power Transmission">Standard Power Transmission</option>
+<option value="Standard Industrial Compressors" data-parent="Industrial Compressors">Standard Industrial Compressors</option>
+<option value="Standard Air Preparation" data-parent="Air Preparation">Standard Air Preparation</option>
+<option value="Standard Pneumatic Actuators" data-parent="Pneumatic Actuators">Standard Pneumatic Actuators</option>
+<option value="Standard Hydraulic Pumps" data-parent="Hydraulic Pumps">Standard Hydraulic Pumps</option>
+<option value="Standard Hydraulic Cylinders" data-parent="Hydraulic Cylinders">Standard Hydraulic Cylinders</option>
+<option value="Standard Distribution Boards" data-parent="Distribution Boards">Standard Distribution Boards</option>
+<option value="Standard Transformers" data-parent="Transformers">Standard Transformers</option>
+<option value="Standard Heat Exchangers" data-parent="Heat Exchangers">Standard Heat Exchangers</option>
+<option value="Standard Steam Systems" data-parent="Steam Systems">Standard Steam Systems</option>
+<option value="Standard Air Compressors" data-parent="Air Compressors">Standard Air Compressors</option>
+<option value="Standard Air Dryers" data-parent="Air Dryers">Standard Air Dryers</option>
+<option value="Standard Building Controllers" data-parent="Building Controllers">Standard Building Controllers</option>
+<option value="Standard Energy Monitoring" data-parent="Energy Monitoring">Standard Energy Monitoring</option>
+<option value="Standard Wastewater Treatment" data-parent="Wastewater Treatment">Standard Wastewater Treatment</option>
+<option value="Standard Emission Monitoring" data-parent="Emission Monitoring">Standard Emission Monitoring</option>
+<option value="Standard Gas Detection" data-parent="Gas Detection">Standard Gas Detection</option>
+<option value="Standard Emergency Systems" data-parent="Emergency Systems">Standard Emergency Systems</option>
+<option value="Standard Ethernet Switches" data-parent="Ethernet Switches">Standard Ethernet Switches</option>
+<option value="Standard Communication Gateways" data-parent="Communication Gateways">Standard Communication Gateways</option>
+<option value="Standard Calibration Tools" data-parent="Calibration Tools">Standard Calibration Tools</option>
+<option value="Standard Diagnostic Instruments" data-parent="Diagnostic Instruments">Standard Diagnostic Instruments</option>
+<option value="High Pressure Ball Valves" data-parent="Ball Valves">High Pressure Ball Valves</option>
+<option value="High Pressure Butterfly Valves" data-parent="Butterfly Valves">High Pressure Butterfly Valves</option>
+<option value="High Pressure Centrifugal Pumps" data-parent="Centrifugal Pumps">High Pressure Centrifugal Pumps</option>
+<option value="High Pressure Booster Pumps" data-parent="Booster Pumps">High Pressure Booster Pumps</option>
+<option value="High Pressure Control Panels" data-parent="Control Panels">High Pressure Control Panels</option>
+<option value="High Pressure PLC Cabinets" data-parent="PLC Cabinets">High Pressure PLC Cabinets</option>
+<option value="High Pressure Motor Controls" data-parent="Motor Controls">High Pressure Motor Controls</option>
+<option value="High Pressure Circuit Protection" data-parent="Circuit Protection">High Pressure Circuit Protection</option>
+<option value="High Pressure Sensors &amp; Switches" data-parent="Sensors &amp; Switches">High Pressure Sensors &amp; Switches</option>
+<option value="High Pressure Variable Frequency Drives" data-parent="Variable Frequency Drives">High Pressure Variable Frequency Drives</option>
+</select>
+</label>
+<label class="field" for="status">Status<select class="form-select" id="status" name="status" >
+<option value="">Select status</option>
+<option value="Active" selected>Active</option>
+<option value="Draft">Draft</option>
+<option value="Inactive">Inactive</option>
+</select>
+</label>
+</div>
+</section>
+<section class="card-panel form-section">
+<h2>Content</h2>
+<div class="fields">
+<label class="field full" for="short-description">Short Description<textarea class="form-control" id="short-description" name="short-description" >Precision engineered stainless steel ball valve for dependable isolation in industrial fluid systems.</textarea>
+</label>
+<label class="field full" for="detailed-description">Detailed Description<textarea class="form-control" id="detailed-description" name="detailed-description" >The ATCL stainless steel ball valve provides reliable flow isolation for water, process fluid and utility applications. Its corrosion-resistant body and PTFE seats support smooth operation with low maintenance. Confirm media compatibility, operating pressure and temperature with our engineering team before selection.</textarea>
+</label>
+<label class="field full" for="features">Features<textarea class="form-control" id="features" name="features" >Stainless steel body and stem
+Full bore design for low pressure drop
+Lockable lever handle
+PTFE seats and serviceable seals</textarea>
+</label>
+</div>
+</section>
+<section class="card-panel form-section">
+<h2>Documents & Links</h2>
+<div class="fields">
+<label class="field full" for="brochure-/-pdf">Brochure / PDF<input class="form-control" id="brochure-/-pdf" name="brochure-/-pdf" type="file" value="" accept=".pdf">
+</label>
+<label class="field full" for="external-product-website">External Product Website<input class="form-control" id="external-product-website" name="external-product-website" type="url" value="https://www.kitz.com" >
+</label>
+</div>
+</section>
+</div>
+<div>
+<section class="card-panel form-section">
+<h2>Product Images</h2>
+<img class="image-preview" data-image-preview src="assets/images/products/stainless-ball-valves.jpg" alt="Current image preview">
+<div class="upload-zone">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<rect x="3" y="3" width="18" height="18" rx="2"/>
+<path d="m4 17 5-6 4 4 3-3 5 6"/>
+<circle cx="16" cy="7" r="1"/>
+</svg>
+<p class="mt-2 mb-1">Choose an image for this record</p>
+<small>PNG, JPG, WebP or SVG · Local preview only</small>
+<input type="file" accept="image/*" data-image-input aria-label="Upload product images">
+</div>
+</section>
+<section class="card-panel form-section">
+<h2>SEO</h2>
+<div class="fields">
+<label class="field full" for="meta-title">Meta Title<input class="form-control" id="meta-title" name="meta-title" type="text" value="Stainless Steel Ball Valve | ATCL" >
+</label>
+<label class="field full" for="meta-description">Meta Description<textarea class="form-control" id="meta-description" name="meta-description" >Explore reliable industrial stainless steel ball valves. Contact ATCL for application guidance and a project quotation.</textarea>
+</label>
+</div>
+</section>
+<section class="card-panel">
+<h3>Publishing checklist</h3>
+<p class="muted">Use a descriptive name, select the correct hierarchy, and add clear imagery and technical documentation.</p>
+</section>
+</div>
+</div>
+<div class="form-actions">
+<button class="btn btn-primary" type="submit">Save Product</button>
+<button class="btn btn-light" data-save-draft type="button">Save Draft</button>
+<a class="btn btn-light" href="products.html">Cancel</a>
+</div>
+<p class="static-note">This is a static form preview. Changes are not persisted.</p>
+</form>
+</main>
+</div>
+<div class="toast-message" role="status" hidden>
+</div>
+</body>
+</html>

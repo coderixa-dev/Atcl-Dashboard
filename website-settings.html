@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Website Settings · ATCL Admin</title>
+<link rel="icon" href="assets/images/ui/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/admin.css">
+<script src="assets/js/admin.js" defer>
+</script>
+</head>
+<body>
+<aside class="sidebar" aria-label="Main navigation">
+<div class="brand">
+<b>ATCL</b>
+<span>Admin</span>
+<button class="icon-btn" data-sidebar aria-label="Collapse sidebar">«</button>
+</div>
+<nav>
+<div class="nav-group">
+<div class="nav-label">OVERVIEW</div>
+<a class="nav-link " href="index.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="m3 10 9-7 9 7v11h-6v-7H9v7H3z"/>
+</svg>
+<span>Dashboard</span>
+</a>
+</div>
+<div class="nav-group">
+<div class="nav-label">CATALOG</div>
+<a class="nav-link " href="products.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="m12 2 9 5v10l-9 5-9-5V7zM3 7l9 5 9-5M12 12v10"/>
+</svg>
+<span>Products</span>
+</a>
+<a class="nav-link " href="categories.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<rect x="3" y="3" width="6" height="6" rx="1"/>
+<rect x="15" y="3" width="6" height="6" rx="1"/>
+<rect x="3" y="15" width="6" height="6" rx="1"/>
+<rect x="15" y="15" width="6" height="6" rx="1"/>
+</svg>
+<span>Categories</span>
+</a>
+<a class="nav-link " href="subcategories.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="m3 7 9-5 9 5-9 5zM3 12l9 5 9-5M3 17l9 5 9-5"/>
+</svg>
+<span>Subcategories</span>
+</a>
+<a class="nav-link " href="child-categories.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<circle cx="12" cy="4" r="2"/>
+<circle cx="4" cy="20" r="2"/>
+<circle cx="20" cy="20" r="2"/>
+<path d="M12 6v5M4 18v-5h16v5"/>
+</svg>
+<span>Child Categories</span>
+</a>
+<a class="nav-link " href="brands.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M3 3h9l9 9-9 9-9-9z"/>
+<circle cx="8" cy="8" r="1"/>
+</svg>
+<span>Brands</span>
+</a>
+</div>
+<div class="nav-group">
+<div class="nav-label">CUSTOMER ENGAGEMENT</div>
+<a class="nav-link " href="inquiries.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<rect x="3" y="5" width="18" height="14" rx="2"/>
+<path d="m3 6 9 7 9-7"/>
+</svg>
+<span>Inquiries / RFQ</span>
+</a>
+<a class="nav-link " href="contact-messages.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M21 11a8 8 0 0 1-8 8H7l-5 3 2-7a8 8 0 1 1 17-4z"/>
+</svg>
+<span>Contact Messages</span>
+</a>
+</div>
+<div class="nav-group">
+<div class="nav-label">CONTENT</div>
+<a class="nav-link " href="news-events.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M5 2h10l4 4v16H5zM14 2v6h5M8 12h8M8 16h8M8 8h2"/>
+</svg>
+<span>News & Events</span>
+</a>
+<a class="nav-link " href="career-posts.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<rect x="3" y="7" width="18" height="14" rx="2"/>
+<path d="M8 7V3h8v4M3 12l9 3 9-3M10 14h4"/>
+</svg>
+<span>Career Posts</span>
+</a>
+</div>
+<div class="nav-group">
+<div class="nav-label">SYSTEM</div>
+<a class="nav-link active" href="website-settings.html" aria-current="page">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="m9 3 1-2h4l1 2 3 2 3 1v4l-2 2 1 4-3 3-4-1-3 2-4-2v-4l-3-2V8l3-1z"/>
+<circle cx="12" cy="11" r="3"/>
+</svg>
+<span>Website Settings</span>
+</a>
+</div>
+</nav>
+</aside>
+<button class="mobile-backdrop" data-sidebar aria-label="Close navigation">
+</button>
+<div class="main-shell">
+<header class="topbar">
+<button class="icon-btn" data-sidebar aria-label="Toggle navigation" aria-expanded="false">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M5 6h14M5 12h14M5 18h14"/>
+</svg>
+</button>
+<span class="context">Website Settings</span>
+<div class="global-search" aria-label="Global search preview">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<circle cx="10" cy="10" r="6"/>
+<path d="m15 15 6 6"/>
+</svg>
+<span>Search products, inquiries, customers…</span>
+</div>
+<button class="icon-btn notification" aria-label="Notifications" aria-expanded="false" data-notifications>
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M5 17V9a7 7 0 0 1 14 0v8l2 2H3zM9 22h6"/>
+</svg>
+</button>
+<div class="profile">
+<img class="avatar" src="assets/images/avatars/admin.svg" alt="Admin initials">
+<div>Admin User<small>Administrator</small>
+</div>
+</div>
+</header>
+<aside class="notification-panel card-panel" hidden>
+<h3>Notifications</h3>
+<p>4 unread contact messages</p>
+<p>18 new inquiries this week</p>
+<p>
+<a href="inquiries.html">Open inquiry inbox →</a>
+</p>
+</aside>
+<main>
+<noscript>
+<p class="noscript-note">Static preview: all records are visible. Enable JavaScript to use filters and preview interactions.</p>
+</noscript>
+<div class="page-heading">
+<div>
+<div class="title-line">
+<h1>Website Settings</h1>
+</div>
+<p class="subtitle">Manage your company identity, contact information and website defaults.</p>
+</div>
+</div>
+<div class="settings-layout">
+<nav class="card-panel settings-nav" aria-label="Settings sections">
+<a href="#general">General</a>
+<a href="#branding">Branding</a>
+<a href="#contact">Contact</a>
+<a href="#social">Social</a>
+<a href="#seo">SEO Defaults</a>
+<a href="#other">Other</a>
+</nav>
+<form data-preview-form>
+<section class="card-panel form-section" id="general">
+<h2>General</h2>
+<div class="fields">
+<label class="field" for="website-name">Website Name<input class="form-control" id="website-name" name="website-name" type="text" value="ATCL Corporate" >
+</label>
+<label class="field" for="company-name">Company Name<input class="form-control" id="company-name" name="company-name" type="text" value="ATCL Engineering Solutions Ltd." >
+</label>
+<label class="field" for="primary-email">Primary Email<input class="form-control" id="primary-email" name="primary-email" type="email" value="info@atcl.example" >
+</label>
+<label class="field" for="phone">Phone<input class="form-control" id="phone" name="phone" type="tel" value="+880 2 5500 1234" >
+</label>
+</div>
+</section>
+<section class="card-panel form-section" id="branding">
+<h2>Branding</h2>
+<div class="fields">
+<label class="field" for="logo">Logo<input class="form-control" id="logo" name="logo" type="file" value="" accept="image/*">
+</label>
+<label class="field" for="favicon">Favicon<input class="form-control" id="favicon" name="favicon" type="file" value="" accept="image/*">
+</label>
+<label class="field full" for="admin-branding">Admin Branding<input class="form-control" id="admin-branding" name="admin-branding" type="text" value="ATCL Admin" >
+</label>
+</div>
+</section>
+<section class="card-panel form-section" id="contact">
+<h2>Contact</h2>
+<div class="fields">
+<label class="field full" for="address">Address<textarea class="form-control" id="address" name="address" >House 24, Road 11, Banani, Dhaka 1213, Bangladesh</textarea>
+</label>
+<label class="field" for="contact-phone">Contact Phone<input class="form-control" id="contact-phone" name="contact-phone" type="tel" value="+880 1711 000000" >
+</label>
+<label class="field" for="contact-email">Contact Email<input class="form-control" id="contact-email" name="contact-email" type="email" value="sales@atcl.example" >
+</label>
+</div>
+</section>
+<section class="card-panel form-section" id="social">
+<h2>Social</h2>
+<div class="fields">
+<label class="field" for="facebook">Facebook<input class="form-control" id="facebook" name="facebook" type="url" value="https://www.facebook.com" >
+</label>
+<label class="field" for="linkedin">LinkedIn<input class="form-control" id="linkedin" name="linkedin" type="url" value="https://www.linkedin.com" >
+</label>
+<label class="field" for="youtube">YouTube<input class="form-control" id="youtube" name="youtube" type="url" value="https://www.youtube.com" >
+</label>
+<label class="field" for="other-social-url">Other Social URL<input class="form-control" id="other-social-url" name="other-social-url" type="url" value="" >
+</label>
+</div>
+</section>
+<section class="card-panel form-section" id="seo">
+<h2>SEO Defaults</h2>
+<div class="fields">
+<label class="field full" for="default-meta-title">Default Meta Title<input class="form-control" id="default-meta-title" name="default-meta-title" type="text" value="ATCL | Industrial Engineering &amp; B2B Solutions" >
+</label>
+<label class="field full" for="default-meta-description">Default Meta Description<textarea class="form-control" id="default-meta-description" name="default-meta-description" >Explore industrial valves, pumps, electrical and automation solutions. Connect with ATCL for dependable engineering support.</textarea>
+</label>
+</div>
+</section>
+<section class="card-panel form-section" id="other">
+<h2>Other</h2>
+<div class="fields">
+<label class="field full" for="footer-copyright">Footer Copyright<input class="form-control" id="footer-copyright" name="footer-copyright" type="text" value="© 2026 ATCL Engineering Solutions. All rights reserved." >
+</label>
+<label class="field full" for="business-hours">Business Hours<input class="form-control" id="business-hours" name="business-hours" type="text" value="Sunday–Thursday, 9:00 AM–6:00 PM" >
+</label>
+</div>
+</section>
+<div class="form-actions">
+<button class="btn btn-primary" type="submit">Save Settings</button>
+<button class="btn btn-light" data-save-draft type="button">Save Draft</button>
+<a class="btn btn-light" href="index.html">Cancel</a>
+</div>
+<p class="static-note">This is a static form preview. Changes are not persisted.</p>
+</form>
+</div>
+</main>
+</div>
+<div class="toast-message" role="status" hidden>
+</div>
+</body>
+</html>

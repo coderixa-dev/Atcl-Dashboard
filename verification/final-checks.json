@@ -1,0 +1,32 @@
+[
+  {
+    "page": "product-create.html",
+    "overflow": false
+  },
+  {
+    "page": "product-edit.html",
+    "overflow": false
+  },
+  {
+    "page": "inquiries.html",
+    "overflow": false
+  },
+  {
+    "page": "inquiry-details.html",
+    "overflow": false
+  },
+  {
+    "saveFeedback": "Validation passed. Static preview only — your changes have not been saved."
+  },
+  {
+    "value": "12,486",
+    "contained": true
+  },
+  {
+    "value": "128,450",
+    "contained": true
+  },
+  {
+    "searchAfterFormatting": "Showing 1–4 of 4"
+  }
+]

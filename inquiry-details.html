@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Inquiry Details · ATCL Admin</title>
+<link rel="icon" href="assets/images/ui/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/admin.css">
+<script src="assets/js/admin.js" defer>
+</script>
+</head>
+<body>
+<aside class="sidebar" aria-label="Main navigation">
+<div class="brand">
+<b>ATCL</b>
+<span>Admin</span>
+<button class="icon-btn" data-sidebar aria-label="Collapse sidebar">«</button>
+</div>
+<nav>
+<div class="nav-group">
+<div class="nav-label">OVERVIEW</div>
+<a class="nav-link " href="index.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="m3 10 9-7 9 7v11h-6v-7H9v7H3z"/>
+</svg>
+<span>Dashboard</span>
+</a>
+</div>
+<div class="nav-group">
+<div class="nav-label">CATALOG</div>
+<a class="nav-link " href="products.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="m12 2 9 5v10l-9 5-9-5V7zM3 7l9 5 9-5M12 12v10"/>
+</svg>
+<span>Products</span>
+</a>
+<a class="nav-link " href="categories.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<rect x="3" y="3" width="6" height="6" rx="1"/>
+<rect x="15" y="3" width="6" height="6" rx="1"/>
+<rect x="3" y="15" width="6" height="6" rx="1"/>
+<rect x="15" y="15" width="6" height="6" rx="1"/>
+</svg>
+<span>Categories</span>
+</a>
+<a class="nav-link " href="subcategories.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="m3 7 9-5 9 5-9 5zM3 12l9 5 9-5M3 17l9 5 9-5"/>
+</svg>
+<span>Subcategories</span>
+</a>
+<a class="nav-link " href="child-categories.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<circle cx="12" cy="4" r="2"/>
+<circle cx="4" cy="20" r="2"/>
+<circle cx="20" cy="20" r="2"/>
+<path d="M12 6v5M4 18v-5h16v5"/>
+</svg>
+<span>Child Categories</span>
+</a>
+<a class="nav-link " href="brands.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M3 3h9l9 9-9 9-9-9z"/>
+<circle cx="8" cy="8" r="1"/>
+</svg>
+<span>Brands</span>
+</a>
+</div>
+<div class="nav-group">
+<div class="nav-label">CUSTOMER ENGAGEMENT</div>
+<a class="nav-link active" href="inquiries.html" aria-current="page">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<rect x="3" y="5" width="18" height="14" rx="2"/>
+<path d="m3 6 9 7 9-7"/>
+</svg>
+<span>Inquiries / RFQ</span>
+</a>
+<a class="nav-link " href="contact-messages.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M21 11a8 8 0 0 1-8 8H7l-5 3 2-7a8 8 0 1 1 17-4z"/>
+</svg>
+<span>Contact Messages</span>
+</a>
+</div>
+<div class="nav-group">
+<div class="nav-label">CONTENT</div>
+<a class="nav-link " href="news-events.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M5 2h10l4 4v16H5zM14 2v6h5M8 12h8M8 16h8M8 8h2"/>
+</svg>
+<span>News & Events</span>
+</a>
+<a class="nav-link " href="career-posts.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<rect x="3" y="7" width="18" height="14" rx="2"/>
+<path d="M8 7V3h8v4M3 12l9 3 9-3M10 14h4"/>
+</svg>
+<span>Career Posts</span>
+</a>
+</div>
+<div class="nav-group">
+<div class="nav-label">SYSTEM</div>
+<a class="nav-link " href="website-settings.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="m9 3 1-2h4l1 2 3 2 3 1v4l-2 2 1 4-3 3-4-1-3 2-4-2v-4l-3-2V8l3-1z"/>
+<circle cx="12" cy="11" r="3"/>
+</svg>
+<span>Website Settings</span>
+</a>
+</div>
+</nav>
+</aside>
+<button class="mobile-backdrop" data-sidebar aria-label="Close navigation">
+</button>
+<div class="main-shell">
+<header class="topbar">
+<button class="icon-btn" data-sidebar aria-label="Toggle navigation" aria-expanded="false">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M5 6h14M5 12h14M5 18h14"/>
+</svg>
+</button>
+<span class="context">Inquiry Details</span>
+<div class="global-search" aria-label="Global search preview">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<circle cx="10" cy="10" r="6"/>
+<path d="m15 15 6 6"/>
+</svg>
+<span>Search products, inquiries, customers…</span>
+</div>
+<button class="icon-btn notification" aria-label="Notifications" aria-expanded="false" data-notifications>
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M5 17V9a7 7 0 0 1 14 0v8l2 2H3zM9 22h6"/>
+</svg>
+</button>
+<div class="profile">
+<img class="avatar" src="assets/images/avatars/admin.svg" alt="Admin initials">
+<div>Admin User<small>Administrator</small>
+</div>
+</div>
+</header>
+<aside class="notification-panel card-panel" hidden>
+<h3>Notifications</h3>
+<p>4 unread contact messages</p>
+<p>18 new inquiries this week</p>
+<p>
+<a href="inquiries.html">Open inquiry inbox →</a>
+</p>
+</aside>
+<main>
+<noscript>
+<p class="noscript-note">Static preview: all records are visible. Enable JavaScript to use filters and preview interactions.</p>
+</noscript>
+<div class="page-heading">
+<div>
+<div class="title-line">
+<h1>Inquiry #INQ-1048</h1>
+</div>
+<p class="subtitle">Received October 9, 2026 · Website RFQ</p>
+</div>
+<a class="btn btn-light" href="inquiries.html">← All Inquiries</a>
+</div>
+<div class="detail-grid">
+<div class="column">
+<section class="card-panel">
+<div class="panel-heading">
+<h2>
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<circle cx="9" cy="7" r="4"/>
+<path d="M2 21v-4a7 7 0 0 1 14 0v4zM17 3a4 4 0 0 1 0 8M18 14a5 5 0 0 1 4 5v2"/>
+</svg>Customer Information</h2>
+</div>
+<dl class="detail-dl">
+<dt>Customer</dt>
+<dd>Rahim Ahmed</dd>
+<dt>Company</dt>
+<dd>ABC Enterprise</dd>
+<dt>Email</dt>
+<dd>
+<a href="mailto:rahim@abcenterprise.example">rahim@abcenterprise.example</a>
+</dd>
+<dt>Phone</dt>
+<dd>+880 1711 204800</dd>
+<dt>Location</dt>
+<dd>Tejgaon Industrial Area, Dhaka, Bangladesh</dd>
+</dl>
+</section>
+<section class="card-panel">
+<div class="panel-heading">
+<h2>
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="m12 2 9 5v10l-9 5-9-5V7zM3 7l9 5 9-5M12 12v10"/>
+</svg>Requested Products</h2>
+</div>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>Product</th>
+<th>Model</th>
+<th>Quantity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/stainless-ball-valves.jpg" alt="Stainless Steel Ball Valve" loading="lazy">
+<a href="product-view.html">Stainless Steel Ball Valve</a>
+</div>
+</td>
+<td>ATCL-SSV-100</td>
+<td>24 units</td>
+</tr>
+<tr>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-02.svg" alt="Industrial Butterfly Valve" loading="lazy">
+<a href="product-view.html">Industrial Butterfly Valve</a>
+</div>
+</td>
+<td>ATCL-IBV-110</td>
+<td>12 units</td>
+</tr>
+<tr>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-04.svg" alt="Centrifugal Water Pump" loading="lazy">
+<a href="product-view.html">Centrifugal Water Pump</a>
+</div>
+</td>
+<td>ATCL-CWP-120</td>
+<td>4 units</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="card-panel">
+<div class="panel-heading">
+<h2>
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M21 11a8 8 0 0 1-8 8H7l-5 3 2-7a8 8 0 1 1 17-4z"/>
+</svg>Requirement / Message</h2>
+</div>
+<p>We are upgrading the utility line at our new manufacturing facility in Gazipur. Please provide a technical proposal for the listed valves and pumps, including compatible connections, material details and estimated delivery lead times.</p>
+<p>Our preferred installation window is November 2026. Please contact our engineering team if you need the process drawings or site conditions.</p>
+</section>
+<section class="card-panel">
+<div class="panel-heading">
+<h2>
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<circle cx="12" cy="12" r="9"/>
+<path d="M12 6v6l4 3"/>
+</svg>Inquiry Timeline</h2>
+</div>
+<ol class="timeline">
+<li>
+<strong>Inquiry received</strong>
+<small>October 9, 2026 · 09:15 AM</small>
+<p>Customer submitted 3 product requirements through the website.</p>
+</li>
+<li>
+<strong>Assigned to technical sales</strong>
+<small>October 9, 2026 · 09:20 AM</small>
+<p>Admin assigned the enquiry for specification review.</p>
+</li>
+<li>
+<strong>Moved to Reviewing</strong>
+<small>October 9, 2026 · 09:25 AM</small>
+<p>Technical compatibility and project lead times are being checked.</p>
+</li>
+</ol>
+</section>
+</div>
+<div class="column">
+<section class="card-panel">
+<div class="panel-heading">
+<h2>
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M2 12h4l3-9 5 18 3-9h5"/>
+</svg>Current Status</h2>
+</div>
+<p>
+<span class="badge-status status-reviewing" data-current-status>Reviewing</span>
+</p>
+<div class="status-actions">
+<button type="button" class="btn btn-light" data-set-status="Reviewing">Mark Reviewing</button>
+<button type="button" class="btn btn-light" data-set-status="Contacted">Mark Contacted</button>
+<button type="button" class="btn btn-light" data-set-status="Quotation Sent">Quotation Sent</button>
+<button type="button" class="btn btn-light" data-set-status="Completed">Complete</button>
+<button type="button" class="btn btn-light" data-set-status="Closed">Close</button>
+</div>
+<p class="static-note">Status changes are preview-only.</p>
+</section>
+<section class="card-panel">
+<div class="panel-heading">
+<h2>
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<circle cx="12" cy="12" r="9"/>
+<path d="M12 11v6M12 7h.01"/>
+</svg>Metadata</h2>
+</div>
+<dl class="detail-dl">
+<dt>Created</dt>
+<dd>Oct 9, 2026 · 09:15</dd>
+<dt>Updated</dt>
+<dd>Oct 9, 2026 · 09:25</dd>
+<dt>Source</dt>
+<dd>Website RFQ</dd>
+<dt>Assigned to</dt>
+<dd>Technical Sales</dd>
+<dt>Reference</dt>
+<dd>INQ-1048</dd>
+</dl>
+</section>
+<section class="card-panel">
+<div class="panel-heading">
+<h2>
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M5 2h10l4 4v16H5zM14 2v6h5M8 12h8M8 16h8M8 8h2"/>
+</svg>Internal Notes</h2>
+</div>
+<p>
+<strong>Admin · 09:25 AM</strong>
+<br>Confirm flange standards and required operating pressure before preparing the quotation.</p>
+<form data-preview-form>
+<label class="field full" for="add-internal-note">Add Internal Note *
+<textarea class="form-control" id="add-internal-note" name="add-internal-note"  required>
+</textarea>
+</label>
+<button class="btn btn-primary mt-3" type="submit">Add Note</button>
+</form>
+</section>
+</div>
+</div>
+</main>
+</div>
+<div class="toast-message" role="status" hidden>
+</div>
+</body>
+</html>

@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Career Posts · ATCL Admin</title>
+<link rel="icon" href="assets/images/ui/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/admin.css">
+<script src="assets/js/admin.js" defer>
+</script>
+</head>
+<body>
+<aside class="sidebar" aria-label="Main navigation">
+<div class="brand">
+<b>ATCL</b>
+<span>Admin</span>
+<button class="icon-btn" data-sidebar aria-label="Collapse sidebar">«</button>
+</div>
+<nav>
+<div class="nav-group">
+<div class="nav-label">OVERVIEW</div>
+<a class="nav-link " href="index.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="m3 10 9-7 9 7v11h-6v-7H9v7H3z"/>
+</svg>
+<span>Dashboard</span>
+</a>
+</div>
+<div class="nav-group">
+<div class="nav-label">CATALOG</div>
+<a class="nav-link " href="products.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="m12 2 9 5v10l-9 5-9-5V7zM3 7l9 5 9-5M12 12v10"/>
+</svg>
+<span>Products</span>
+</a>
+<a class="nav-link " href="categories.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<rect x="3" y="3" width="6" height="6" rx="1"/>
+<rect x="15" y="3" width="6" height="6" rx="1"/>
+<rect x="3" y="15" width="6" height="6" rx="1"/>
+<rect x="15" y="15" width="6" height="6" rx="1"/>
+</svg>
+<span>Categories</span>
+</a>
+<a class="nav-link " href="subcategories.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="m3 7 9-5 9 5-9 5zM3 12l9 5 9-5M3 17l9 5 9-5"/>
+</svg>
+<span>Subcategories</span>
+</a>
+<a class="nav-link " href="child-categories.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<circle cx="12" cy="4" r="2"/>
+<circle cx="4" cy="20" r="2"/>
+<circle cx="20" cy="20" r="2"/>
+<path d="M12 6v5M4 18v-5h16v5"/>
+</svg>
+<span>Child Categories</span>
+</a>
+<a class="nav-link " href="brands.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M3 3h9l9 9-9 9-9-9z"/>
+<circle cx="8" cy="8" r="1"/>
+</svg>
+<span>Brands</span>
+</a>
+</div>
+<div class="nav-group">
+<div class="nav-label">CUSTOMER ENGAGEMENT</div>
+<a class="nav-link " href="inquiries.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<rect x="3" y="5" width="18" height="14" rx="2"/>
+<path d="m3 6 9 7 9-7"/>
+</svg>
+<span>Inquiries / RFQ</span>
+</a>
+<a class="nav-link " href="contact-messages.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M21 11a8 8 0 0 1-8 8H7l-5 3 2-7a8 8 0 1 1 17-4z"/>
+</svg>
+<span>Contact Messages</span>
+</a>
+</div>
+<div class="nav-group">
+<div class="nav-label">CONTENT</div>
+<a class="nav-link " href="news-events.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M5 2h10l4 4v16H5zM14 2v6h5M8 12h8M8 16h8M8 8h2"/>
+</svg>
+<span>News & Events</span>
+</a>
+<a class="nav-link active" href="career-posts.html" aria-current="page">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<rect x="3" y="7" width="18" height="14" rx="2"/>
+<path d="M8 7V3h8v4M3 12l9 3 9-3M10 14h4"/>
+</svg>
+<span>Career Posts</span>
+</a>
+</div>
+<div class="nav-group">
+<div class="nav-label">SYSTEM</div>
+<a class="nav-link " href="website-settings.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="m9 3 1-2h4l1 2 3 2 3 1v4l-2 2 1 4-3 3-4-1-3 2-4-2v-4l-3-2V8l3-1z"/>
+<circle cx="12" cy="11" r="3"/>
+</svg>
+<span>Website Settings</span>
+</a>
+</div>
+</nav>
+</aside>
+<button class="mobile-backdrop" data-sidebar aria-label="Close navigation">
+</button>
+<div class="main-shell">
+<header class="topbar">
+<button class="icon-btn" data-sidebar aria-label="Toggle navigation" aria-expanded="false">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M5 6h14M5 12h14M5 18h14"/>
+</svg>
+</button>
+<span class="context">Career Posts</span>
+<div class="global-search" aria-label="Global search preview">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<circle cx="10" cy="10" r="6"/>
+<path d="m15 15 6 6"/>
+</svg>
+<span>Search products, inquiries, customers…</span>
+</div>
+<button class="icon-btn notification" aria-label="Notifications" aria-expanded="false" data-notifications>
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M5 17V9a7 7 0 0 1 14 0v8l2 2H3zM9 22h6"/>
+</svg>
+</button>
+<div class="profile">
+<img class="avatar" src="assets/images/avatars/admin.svg" alt="Admin initials">
+<div>Admin User<small>Administrator</small>
+</div>
+</div>
+</header>
+<aside class="notification-panel card-panel" hidden>
+<h3>Notifications</h3>
+<p>4 unread contact messages</p>
+<p>18 new inquiries this week</p>
+<p>
+<a href="inquiries.html">Open inquiry inbox →</a>
+</p>
+</aside>
+<main>
+<noscript>
+<p class="noscript-note">Static preview: all records are visible. Enable JavaScript to use filters and preview interactions.</p>
+</noscript>
+<div class="page-heading">
+<div>
+<div class="title-line">
+<h1>Career Posts</h1>
+</div>
+<p class="subtitle">Find the people who will build our next chapter.</p>
+</div>
+<a class="btn btn-primary" href="career-create.html">+ Add Career Post</a>
+</div>
+<div class="module-stats">
+<div class="mini-stat">Total Positions<strong>18</strong>
+</div>
+<div class="mini-stat">Open Positions<strong>15</strong>
+</div>
+<div class="mini-stat">Applications<strong>675</strong>
+</div>
+</div>
+<section class="card-panel" data-table-module data-noun="career posts">
+<div class="toolbar">
+<label class="search-field">Search<input class="form-control" type="search" data-search placeholder="Search job title or department" aria-label="Search job title or department">
+</label>
+<label>Department<select class="form-select" data-filter="department" aria-label="Filter by department">
+<option value="">All department</option>
+<option value="Engineering">Engineering</option>
+<option value="Product Management">Product Management</option>
+<option value="Sales">Sales</option>
+<option value="Service">Service</option>
+</select>
+</label>
+<label>Location<select class="form-select" data-filter="location" aria-label="Filter by location">
+<option value="">All location</option>
+<option value="Dhaka">Dhaka</option>
+<option value="Chattogram">Chattogram</option>
+</select>
+</label>
+<label>Status<select class="form-select" data-filter="status" aria-label="Filter by status">
+<option value="">All status</option>
+<option value="Open">Open</option>
+<option value="Closed">Closed</option>
+</select>
+</label>
+<button class="btn btn-light" type="button" data-reset>Reset Filters</button>
+</div>
+<div class="filter-chips" aria-label="Active filters">
+</div>
+<div class="bulk-bar">
+<span data-selected>0 selected</span>
+<select data-bulk aria-label="Bulk action">
+<option value="">Bulk action</option>
+<option>Mark active / read</option>
+<option>Archive selection</option>
+</select>
+<button type="button" class="btn btn-light" data-apply-bulk>Apply</button>
+<span class="muted">Preview only</span>
+</div>
+<div class="table-wrap">
+<table class="data-table">
+<thead>
+<tr>
+<th>
+<input type="checkbox" data-select-all aria-label="Select all visible records">
+</th>
+<th scope="col" aria-sort="none">
+<button type="button" data-sort="1">Job Title</button>
+</th>
+<th scope="col" aria-sort="none">
+<button type="button" data-sort="2">Department</button>
+</th>
+<th scope="col" aria-sort="none">
+<button type="button" data-sort="3">Location</button>
+</th>
+<th scope="col" aria-sort="none">
+<button type="button" data-sort="4">Job Type</button>
+</th>
+<th scope="col" aria-sort="none">
+<button type="button" data-sort="5">Applications</button>
+</th>
+<th scope="col" aria-sort="none">
+<button type="button" data-sort="6">Status</button>
+</th>
+<th scope="col" aria-sort="none">
+<button type="button" data-sort="7">Published</button>
+</th>
+<th scope="col">Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr data-name="Technical Sales Engineer" data-department="Sales" data-location="Dhaka" data-status="Open">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Technical Sales Engineer">
+</td>
+<td>
+<a class="cell-title" href="career-edit.html">Technical Sales Engineer</a>
+</td>
+<td>Sales</td>
+<td>Dhaka</td>
+<td>Full-time</td>
+<td>12</td>
+<td>
+<span class="badge-status status-open">Open</span>
+</td>
+<td>2026-10-01</td>
+<td>
+<div class="action-group">
+<a href="career-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Application Engineer — Pumps" data-department="Engineering" data-location="Chattogram" data-status="Open">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Application Engineer — Pumps">
+</td>
+<td>
+<a class="cell-title" href="career-edit.html">Application Engineer — Pumps</a>
+</td>
+<td>Engineering</td>
+<td>Chattogram</td>
+<td>Full-time</td>
+<td>15</td>
+<td>
+<span class="badge-status status-open">Open</span>
+</td>
+<td>2026-10-01</td>
+<td>
+<div class="action-group">
+<a href="career-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Automation Engineer" data-department="Engineering" data-location="Dhaka" data-status="Open">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Automation Engineer">
+</td>
+<td>
+<a class="cell-title" href="career-edit.html">Automation Engineer</a>
+</td>
+<td>Engineering</td>
+<td>Dhaka</td>
+<td>Full-time</td>
+<td>18</td>
+<td>
+<span class="badge-status status-open">Open</span>
+</td>
+<td>2026-10-01</td>
+<td>
+<div class="action-group">
+<a href="career-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Product Specialist — Valves" data-department="Product Management" data-location="Dhaka" data-status="Open">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Product Specialist — Valves">
+</td>
+<td>
+<a class="cell-title" href="career-edit.html">Product Specialist — Valves</a>
+</td>
+<td>Product Management</td>
+<td>Dhaka</td>
+<td>Full-time</td>
+<td>21</td>
+<td>
+<span class="badge-status status-open">Open</span>
+</td>
+<td>2026-10-01</td>
+<td>
+<div class="action-group">
+<a href="career-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Service Engineer" data-department="Service" data-location="Chattogram" data-status="Closed">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Service Engineer">
+</td>
+<td>
+<a class="cell-title" href="career-edit.html">Service Engineer</a>
+</td>
+<td>Service</td>
+<td>Chattogram</td>
+<td>Full-time</td>
+<td>24</td>
+<td>
+<span class="badge-status status-closed">Closed</span>
+</td>
+<td>2026-10-01</td>
+<td>
+<div class="action-group">
+<a href="career-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Electrical Design Engineer" data-department="Engineering" data-location="Dhaka" data-status="Open">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Electrical Design Engineer">
+</td>
+<td>
+<a class="cell-title" href="career-edit.html">Electrical Design Engineer</a>
+</td>
+<td>Engineering</td>
+<td>Dhaka</td>
+<td>Full-time</td>
+<td>27</td>
+<td>
+<span class="badge-status status-open">Open</span>
+</td>
+<td>2026-10-01</td>
+<td>
+<div class="action-group">
+<a href="career-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Business Development Executive" data-department="Sales" data-location="Dhaka" data-status="Open">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Business Development Executive">
+</td>
+<td>
+<a class="cell-title" href="career-edit.html">Business Development Executive</a>
+</td>
+<td>Sales</td>
+<td>Dhaka</td>
+<td>Full-time</td>
+<td>30</td>
+<td>
+<span class="badge-status status-open">Open</span>
+</td>
+<td>2026-10-01</td>
+<td>
+<div class="action-group">
+<a href="career-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Project Coordinator" data-department="Engineering" data-location="Chattogram" data-status="Open">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Project Coordinator">
+</td>
+<td>
+<a class="cell-title" href="career-edit.html">Project Coordinator</a>
+</td>
+<td>Engineering</td>
+<td>Chattogram</td>
+<td>Full-time</td>
+<td>33</td>
+<td>
+<span class="badge-status status-open">Open</span>
+</td>
+<td>2026-10-01</td>
+<td>
+<div class="action-group">
+<a href="career-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="HVAC Solutions Engineer" data-department="Engineering" data-location="Dhaka" data-status="Open">
+<td>
+<input type="checkbox" data-select-row aria-label="Select HVAC Solutions Engineer">
+</td>
+<td>
+<a class="cell-title" href="career-edit.html">HVAC Solutions Engineer</a>
+</td>
+<td>Engineering</td>
+<td>Dhaka</td>
+<td>Full-time</td>
+<td>36</td>
+<td>
+<span class="badge-status status-open">Open</span>
+</td>
+<td>2026-10-01</td>
+<td>
+<div class="action-group">
+<a href="career-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Instrumentation Engineer" data-department="Product Management" data-location="Dhaka" data-status="Closed">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Instrumentation Engineer">
+</td>
+<td>
+<a class="cell-title" href="career-edit.html">Instrumentation Engineer</a>
+</td>
+<td>Product Management</td>
+<td>Dhaka</td>
+<td>Full-time</td>
+<td>39</td>
+<td>
+<span class="badge-status status-closed">Closed</span>
+</td>
+<td>2026-10-01</td>
+<td>
+<div class="action-group">
+<a href="career-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Procurement Executive" data-department="Service" data-location="Chattogram" data-status="Open">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Procurement Executive">
+</td>
+<td>
+<a class="cell-title" href="career-edit.html">Procurement Executive</a>
+</td>
+<td>Service</td>
+<td>Chattogram</td>
+<td>Full-time</td>
+<td>42</td>
+<td>
+<span class="badge-status status-open">Open</span>
+</td>
+<td>2026-10-01</td>
+<td>
+<div class="action-group">
+<a href="career-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Digital Content Specialist" data-department="Engineering" data-location="Dhaka" data-status="Open">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Digital Content Specialist">
+</td>
+<td>
+<a class="cell-title" href="career-edit.html">Digital Content Specialist</a>
+</td>
+<td>Engineering</td>
+<td>Dhaka</td>
+<td>Full-time</td>
+<td>45</td>
+<td>
+<span class="badge-status status-open">Open</span>
+</td>
+<td>2026-10-01</td>
+<td>
+<div class="action-group">
+<a href="career-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Customer Support Executive" data-department="Sales" data-location="Dhaka" data-status="Open">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Customer Support Executive">
+</td>
+<td>
+<a class="cell-title" href="career-edit.html">Customer Support Executive</a>
+</td>
+<td>Sales</td>
+<td>Dhaka</td>
+<td>Full-time</td>
+<td>48</td>
+<td>
+<span class="badge-status status-open">Open</span>
+</td>
+<td>2026-10-01</td>
+<td>
+<div class="action-group">
+<a href="career-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Technical Trainer" data-department="Engineering" data-location="Chattogram" data-status="Open">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Technical Trainer">
+</td>
+<td>
+<a class="cell-title" href="career-edit.html">Technical Trainer</a>
+</td>
+<td>Engineering</td>
+<td>Chattogram</td>
+<td>Full-time</td>
+<td>51</td>
+<td>
+<span class="badge-status status-open">Open</span>
+</td>
+<td>2026-10-01</td>
+<td>
+<div class="action-group">
+<a href="career-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Mechanical Design Engineer" data-department="Engineering" data-location="Dhaka" data-status="Closed">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Mechanical Design Engineer">
+</td>
+<td>
+<a class="cell-title" href="career-edit.html">Mechanical Design Engineer</a>
+</td>
+<td>Engineering</td>
+<td>Dhaka</td>
+<td>Full-time</td>
+<td>54</td>
+<td>
+<span class="badge-status status-closed">Closed</span>
+</td>
+<td>2026-10-01</td>
+<td>
+<div class="action-group">
+<a href="career-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Quality Assurance Engineer" data-department="Product Management" data-location="Dhaka" data-status="Open">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Quality Assurance Engineer">
+</td>
+<td>
+<a class="cell-title" href="career-edit.html">Quality Assurance Engineer</a>
+</td>
+<td>Product Management</td>
+<td>Dhaka</td>
+<td>Full-time</td>
+<td>57</td>
+<td>
+<span class="badge-status status-open">Open</span>
+</td>
+<td>2026-10-01</td>
+<td>
+<div class="action-group">
+<a href="career-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Field Service Technician" data-department="Service" data-location="Chattogram" data-status="Open">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Field Service Technician">
+</td>
+<td>
+<a class="cell-title" href="career-edit.html">Field Service Technician</a>
+</td>
+<td>Service</td>
+<td>Chattogram</td>
+<td>Full-time</td>
+<td>60</td>
+<td>
+<span class="badge-status status-open">Open</span>
+</td>
+<td>2026-10-01</td>
+<td>
+<div class="action-group">
+<a href="career-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Accounts Executive" data-department="Engineering" data-location="Dhaka" data-status="Open">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Accounts Executive">
+</td>
+<td>
+<a class="cell-title" href="career-edit.html">Accounts Executive</a>
+</td>
+<td>Engineering</td>
+<td>Dhaka</td>
+<td>Full-time</td>
+<td>63</td>
+<td>
+<span class="badge-status status-open">Open</span>
+</td>
+<td>2026-10-01</td>
+<td>
+<div class="action-group">
+<a href="career-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="empty-state" hidden>
+<strong>No career posts found.</strong>Try changing your search or filters.</div>
+<div class="table-footer">
+<span data-result-count>18 static records</span>
+<label>Rows per page <select data-page-size aria-label="Rows per page">
+<option>10</option>
+<option>25</option>
+<option>50</option>
+</select>
+</label>
+<nav class="page-controls" aria-label="Table pagination">
+<button type="button" data-prev>Previous</button>
+<span data-pages>
+</span>
+<button type="button" data-next>Next</button>
+</nav>
+</div>
+</section>
+<p class="static-note">Static prototype · Filters and selections apply to this preview only. No data is sent or saved.</p>
+</main>
+</div>
+<div class="toast-message" role="status" hidden>
+</div>
+</body>
+</html>

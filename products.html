@@ -1,0 +1,2032 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Products · ATCL Admin</title>
+<link rel="icon" href="assets/images/ui/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/admin.css">
+<script src="assets/js/admin.js" defer>
+</script>
+</head>
+<body>
+<aside class="sidebar" aria-label="Main navigation">
+<div class="brand">
+<b>ATCL</b>
+<span>Admin</span>
+<button class="icon-btn" data-sidebar aria-label="Collapse sidebar">«</button>
+</div>
+<nav>
+<div class="nav-group">
+<div class="nav-label">OVERVIEW</div>
+<a class="nav-link " href="index.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="m3 10 9-7 9 7v11h-6v-7H9v7H3z"/>
+</svg>
+<span>Dashboard</span>
+</a>
+</div>
+<div class="nav-group">
+<div class="nav-label">CATALOG</div>
+<a class="nav-link active" href="products.html" aria-current="page">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="m12 2 9 5v10l-9 5-9-5V7zM3 7l9 5 9-5M12 12v10"/>
+</svg>
+<span>Products</span>
+</a>
+<a class="nav-link " href="categories.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<rect x="3" y="3" width="6" height="6" rx="1"/>
+<rect x="15" y="3" width="6" height="6" rx="1"/>
+<rect x="3" y="15" width="6" height="6" rx="1"/>
+<rect x="15" y="15" width="6" height="6" rx="1"/>
+</svg>
+<span>Categories</span>
+</a>
+<a class="nav-link " href="subcategories.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="m3 7 9-5 9 5-9 5zM3 12l9 5 9-5M3 17l9 5 9-5"/>
+</svg>
+<span>Subcategories</span>
+</a>
+<a class="nav-link " href="child-categories.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<circle cx="12" cy="4" r="2"/>
+<circle cx="4" cy="20" r="2"/>
+<circle cx="20" cy="20" r="2"/>
+<path d="M12 6v5M4 18v-5h16v5"/>
+</svg>
+<span>Child Categories</span>
+</a>
+<a class="nav-link " href="brands.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M3 3h9l9 9-9 9-9-9z"/>
+<circle cx="8" cy="8" r="1"/>
+</svg>
+<span>Brands</span>
+</a>
+</div>
+<div class="nav-group">
+<div class="nav-label">CUSTOMER ENGAGEMENT</div>
+<a class="nav-link " href="inquiries.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<rect x="3" y="5" width="18" height="14" rx="2"/>
+<path d="m3 6 9 7 9-7"/>
+</svg>
+<span>Inquiries / RFQ</span>
+</a>
+<a class="nav-link " href="contact-messages.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M21 11a8 8 0 0 1-8 8H7l-5 3 2-7a8 8 0 1 1 17-4z"/>
+</svg>
+<span>Contact Messages</span>
+</a>
+</div>
+<div class="nav-group">
+<div class="nav-label">CONTENT</div>
+<a class="nav-link " href="news-events.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M5 2h10l4 4v16H5zM14 2v6h5M8 12h8M8 16h8M8 8h2"/>
+</svg>
+<span>News & Events</span>
+</a>
+<a class="nav-link " href="career-posts.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<rect x="3" y="7" width="18" height="14" rx="2"/>
+<path d="M8 7V3h8v4M3 12l9 3 9-3M10 14h4"/>
+</svg>
+<span>Career Posts</span>
+</a>
+</div>
+<div class="nav-group">
+<div class="nav-label">SYSTEM</div>
+<a class="nav-link " href="website-settings.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="m9 3 1-2h4l1 2 3 2 3 1v4l-2 2 1 4-3 3-4-1-3 2-4-2v-4l-3-2V8l3-1z"/>
+<circle cx="12" cy="11" r="3"/>
+</svg>
+<span>Website Settings</span>
+</a>
+</div>
+</nav>
+</aside>
+<button class="mobile-backdrop" data-sidebar aria-label="Close navigation">
+</button>
+<div class="main-shell">
+<header class="topbar">
+<button class="icon-btn" data-sidebar aria-label="Toggle navigation" aria-expanded="false">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M5 6h14M5 12h14M5 18h14"/>
+</svg>
+</button>
+<span class="context">Products</span>
+<div class="global-search" aria-label="Global search preview">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<circle cx="10" cy="10" r="6"/>
+<path d="m15 15 6 6"/>
+</svg>
+<span>Search products, inquiries, customers…</span>
+</div>
+<button class="icon-btn notification" aria-label="Notifications" aria-expanded="false" data-notifications>
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M5 17V9a7 7 0 0 1 14 0v8l2 2H3zM9 22h6"/>
+</svg>
+</button>
+<div class="profile">
+<img class="avatar" src="assets/images/avatars/admin.svg" alt="Admin initials">
+<div>Admin User<small>Administrator</small>
+</div>
+</div>
+</header>
+<aside class="notification-panel card-panel" hidden>
+<h3>Notifications</h3>
+<p>4 unread contact messages</p>
+<p>18 new inquiries this week</p>
+<p>
+<a href="inquiries.html">Open inquiry inbox →</a>
+</p>
+</aside>
+<main>
+<noscript>
+<p class="noscript-note">Static preview: all records are visible. Enable JavaScript to use filters and preview interactions.</p>
+</noscript>
+<div class="page-heading">
+<div>
+<div class="title-line">
+<h1>Products</h1>
+</div>
+<p class="subtitle">Manage your product catalog.</p>
+</div>
+<a class="btn btn-primary" href="product-create.html">+ Add Product</a>
+</div>
+<div class="module-stats">
+<div class="mini-stat">Total Products<strong>60</strong>
+</div>
+<div class="mini-stat">Active Products<strong>53</strong>
+</div>
+<div class="mini-stat">Categories<strong>20</strong>
+</div>
+<div class="mini-stat">Brands<strong>24</strong>
+</div>
+<div class="mini-stat">Missing Information<strong>7</strong>
+</div>
+</div>
+<section class="card-panel" data-table-module data-noun="products">
+<div class="toolbar">
+<label class="search-field">Search<input class="form-control" type="search" data-search placeholder="Search by product name or model" aria-label="Search by product name or model">
+</label>
+<label>Category<select class="form-select" data-filter="category" aria-label="Filter by category">
+<option value="">All category</option>
+<option value="Industrial Valves">Industrial Valves</option>
+<option value="Pumps">Pumps</option>
+<option value="Control Systems">Control Systems</option>
+<option value="Electrical Solutions">Electrical Solutions</option>
+<option value="Automation Equipment">Automation Equipment</option>
+<option value="HVAC">HVAC</option>
+<option value="Fire Safety Equipment">Fire Safety Equipment</option>
+<option value="Industrial Instruments">Industrial Instruments</option>
+<option value="Water Management">Water Management</option>
+<option value="Mechanical Equipment">Mechanical Equipment</option>
+<option value="Pneumatic Systems">Pneumatic Systems</option>
+<option value="Hydraulic Systems">Hydraulic Systems</option>
+<option value="Power Distribution">Power Distribution</option>
+<option value="Process Heating">Process Heating</option>
+<option value="Compressed Air">Compressed Air</option>
+<option value="Building Management">Building Management</option>
+<option value="Environmental Solutions">Environmental Solutions</option>
+<option value="Safety Equipment">Safety Equipment</option>
+<option value="Industrial Networking">Industrial Networking</option>
+<option value="Maintenance Tools">Maintenance Tools</option>
+</select>
+</label>
+<label>Subcategory<select class="form-select" data-filter="subcategory" aria-label="Filter by subcategory">
+<option value="">All subcategory</option>
+<option value="Ball Valves">Ball Valves</option>
+<option value="Butterfly Valves">Butterfly Valves</option>
+<option value="Centrifugal Pumps">Centrifugal Pumps</option>
+<option value="Booster Pumps">Booster Pumps</option>
+<option value="Control Panels">Control Panels</option>
+<option value="PLC Cabinets">PLC Cabinets</option>
+<option value="Motor Controls">Motor Controls</option>
+<option value="Circuit Protection">Circuit Protection</option>
+<option value="Sensors &amp; Switches">Sensors &amp; Switches</option>
+<option value="Variable Frequency Drives">Variable Frequency Drives</option>
+<option value="Air Handling">Air Handling</option>
+<option value="Climate Controls">Climate Controls</option>
+<option value="Fire Pumps">Fire Pumps</option>
+<option value="Fire Detection">Fire Detection</option>
+<option value="Pressure Instruments">Pressure Instruments</option>
+<option value="Flow Instruments">Flow Instruments</option>
+<option value="Water Treatment">Water Treatment</option>
+<option value="Filtration Systems">Filtration Systems</option>
+<option value="Power Transmission">Power Transmission</option>
+<option value="Industrial Compressors">Industrial Compressors</option>
+<option value="Air Preparation">Air Preparation</option>
+<option value="Pneumatic Actuators">Pneumatic Actuators</option>
+<option value="Hydraulic Pumps">Hydraulic Pumps</option>
+<option value="Hydraulic Cylinders">Hydraulic Cylinders</option>
+<option value="Distribution Boards">Distribution Boards</option>
+<option value="Transformers">Transformers</option>
+<option value="Heat Exchangers">Heat Exchangers</option>
+<option value="Steam Systems">Steam Systems</option>
+<option value="Air Compressors">Air Compressors</option>
+<option value="Air Dryers">Air Dryers</option>
+<option value="Building Controllers">Building Controllers</option>
+<option value="Energy Monitoring">Energy Monitoring</option>
+<option value="Wastewater Treatment">Wastewater Treatment</option>
+<option value="Emission Monitoring">Emission Monitoring</option>
+<option value="Gas Detection">Gas Detection</option>
+<option value="Emergency Systems">Emergency Systems</option>
+<option value="Ethernet Switches">Ethernet Switches</option>
+<option value="Communication Gateways">Communication Gateways</option>
+<option value="Calibration Tools">Calibration Tools</option>
+<option value="Diagnostic Instruments">Diagnostic Instruments</option>
+</select>
+</label>
+<label>Brand<select class="form-select" data-filter="brand" aria-label="Filter by brand">
+<option value="">All brand</option>
+<option value="Kitz">Kitz</option>
+<option value="Grundfos">Grundfos</option>
+<option value="Siemens">Siemens</option>
+<option value="Schneider Electric">Schneider Electric</option>
+<option value="ABB">ABB</option>
+<option value="Honeywell">Honeywell</option>
+<option value="Danfoss">Danfoss</option>
+<option value="Wilo">Wilo</option>
+<option value="Emerson">Emerson</option>
+<option value="Endress+Hauser">Endress+Hauser</option>
+<option value="Yokogawa">Yokogawa</option>
+<option value="Festo">Festo</option>
+<option value="SMC">SMC</option>
+<option value="Eaton">Eaton</option>
+<option value="Rockwell Automation">Rockwell Automation</option>
+<option value="Mitsubishi Electric">Mitsubishi Electric</option>
+<option value="Omron">Omron</option>
+<option value="Phoenix Contact">Phoenix Contact</option>
+<option value="Fluke">Fluke</option>
+<option value="Bosch Rexroth">Bosch Rexroth</option>
+<option value="Pentair">Pentair</option>
+<option value="Victaulic">Victaulic</option>
+<option value="Spirax Sarco">Spirax Sarco</option>
+<option value="Belimo">Belimo</option>
+</select>
+</label>
+<label>Status<select class="form-select" data-filter="status" aria-label="Filter by status">
+<option value="">All status</option>
+<option value="Active">Active</option>
+<option value="Draft">Draft</option>
+<option value="Inactive">Inactive</option>
+</select>
+</label>
+<button class="btn btn-light" type="button" data-reset>Reset Filters</button>
+</div>
+<div class="filter-chips" aria-label="Active filters">
+</div>
+<div class="bulk-bar">
+<span data-selected>0 selected</span>
+<select data-bulk aria-label="Bulk action">
+<option value="">Bulk action</option>
+<option>Mark active / read</option>
+<option>Archive selection</option>
+</select>
+<button type="button" class="btn btn-light" data-apply-bulk>Apply</button>
+<span class="muted">Preview only</span>
+</div>
+<div class="table-wrap">
+<table class="data-table">
+<thead>
+<tr>
+<th>
+<input type="checkbox" data-select-all aria-label="Select all visible records">
+</th>
+<th scope="col" aria-sort="none">
+<button type="button" data-sort="1">Product</button>
+</th>
+<th scope="col" aria-sort="none">
+<button type="button" data-sort="2">Category</button>
+</th>
+<th scope="col" aria-sort="none">
+<button type="button" data-sort="3">Subcategory</button>
+</th>
+<th scope="col" aria-sort="none">
+<button type="button" data-sort="4">Brand</button>
+</th>
+<th scope="col" aria-sort="none">
+<button type="button" data-sort="5">Status</button>
+</th>
+<th scope="col" aria-sort="none">
+<button type="button" data-sort="6">Updated</button>
+</th>
+<th scope="col">Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr data-name="Stainless Steel Ball Valve" data-code="ATCL-SSV-100" data-category="Industrial Valves" data-subcategory="Ball Valves" data-brand="Kitz" data-status="Active" data-image="products/stainless-ball-valves.jpg" data-updated="2026-10-08">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Stainless Steel Ball Valve">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/stainless-ball-valves.jpg" alt="Stainless Steel Ball Valve" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Stainless Steel Ball Valve</a>
+<span class="cell-sub">ATCL-SSV-100</span>
+</div>
+</div>
+</td>
+<td>Industrial Valves</td>
+<td>Ball Valves</td>
+<td>Kitz</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-08</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Industrial Butterfly Valve" data-code="ATCL-IBV-110" data-category="Industrial Valves" data-subcategory="Butterfly Valves" data-brand="Kitz" data-status="Active" data-image="products/equipment-02.svg" data-updated="2026-10-07">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Industrial Butterfly Valve">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-02.svg" alt="Industrial Butterfly Valve" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Industrial Butterfly Valve</a>
+<span class="cell-sub">ATCL-IBV-110</span>
+</div>
+</div>
+</td>
+<td>Industrial Valves</td>
+<td>Butterfly Valves</td>
+<td>Kitz</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Centrifugal Water Pump" data-code="ATCL-CWP-120" data-category="Pumps" data-subcategory="Centrifugal Pumps" data-brand="Grundfos" data-status="Active" data-image="products/equipment-04.svg" data-updated="2026-10-06">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Centrifugal Water Pump">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-04.svg" alt="Centrifugal Water Pump" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Centrifugal Water Pump</a>
+<span class="cell-sub">ATCL-CWP-120</span>
+</div>
+</div>
+</td>
+<td>Pumps</td>
+<td>Centrifugal Pumps</td>
+<td>Grundfos</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-06</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Pressure Booster Pump" data-code="ATCL-PBP-130" data-category="Pumps" data-subcategory="Booster Pumps" data-brand="Wilo" data-status="Active" data-image="products/equipment-04.svg" data-updated="2026-10-05">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Pressure Booster Pump">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-04.svg" alt="Pressure Booster Pump" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Pressure Booster Pump</a>
+<span class="cell-sub">ATCL-PBP-130</span>
+</div>
+</div>
+</td>
+<td>Pumps</td>
+<td>Booster Pumps</td>
+<td>Wilo</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-05</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Industrial Control Panel" data-code="ATCL-ICP-140" data-category="Control Systems" data-subcategory="Control Panels" data-brand="Schneider Electric" data-status="Active" data-image="products/equipment-05.svg" data-updated="2026-10-04">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Industrial Control Panel">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-05.svg" alt="Industrial Control Panel" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Industrial Control Panel</a>
+<span class="cell-sub">ATCL-ICP-140</span>
+</div>
+</div>
+</td>
+<td>Control Systems</td>
+<td>Control Panels</td>
+<td>Schneider Electric</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-04</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="PLC Control Cabinet" data-code="ATCL-PCC-150" data-category="Control Systems" data-subcategory="PLC Cabinets" data-brand="Siemens" data-status="Active" data-image="products/equipment-05.svg" data-updated="2026-10-03">
+<td>
+<input type="checkbox" data-select-row aria-label="Select PLC Control Cabinet">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-05.svg" alt="PLC Control Cabinet" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">PLC Control Cabinet</a>
+<span class="cell-sub">ATCL-PCC-150</span>
+</div>
+</div>
+</td>
+<td>Control Systems</td>
+<td>PLC Cabinets</td>
+<td>Siemens</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-03</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Motor Starter Panel" data-code="ATCL-MSP-160" data-category="Electrical Solutions" data-subcategory="Motor Controls" data-brand="ABB" data-status="Active" data-image="products/equipment-05.svg" data-updated="2026-10-02">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Motor Starter Panel">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-05.svg" alt="Motor Starter Panel" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Motor Starter Panel</a>
+<span class="cell-sub">ATCL-MSP-160</span>
+</div>
+</div>
+</td>
+<td>Electrical Solutions</td>
+<td>Motor Controls</td>
+<td>ABB</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-02</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Molded Case Circuit Breaker" data-code="ATCL-MCC-170" data-category="Electrical Solutions" data-subcategory="Circuit Protection" data-brand="Schneider Electric" data-status="Active" data-image="products/equipment-05.svg" data-updated="2026-10-01">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Molded Case Circuit Breaker">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-05.svg" alt="Molded Case Circuit Breaker" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Molded Case Circuit Breaker</a>
+<span class="cell-sub">ATCL-MCC-170</span>
+</div>
+</div>
+</td>
+<td>Electrical Solutions</td>
+<td>Circuit Protection</td>
+<td>Schneider Electric</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-01</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Inductive Proximity Sensor" data-code="ATCL-IPS-180" data-category="Automation Equipment" data-subcategory="Sensors &amp; Switches" data-brand="Omron" data-status="Active" data-image="products/equipment-06.svg" data-updated="2026-10-08">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Inductive Proximity Sensor">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-06.svg" alt="Inductive Proximity Sensor" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Inductive Proximity Sensor</a>
+<span class="cell-sub">ATCL-IPS-180</span>
+</div>
+</div>
+</td>
+<td>Automation Equipment</td>
+<td>Sensors & Switches</td>
+<td>Omron</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-08</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Variable Frequency Drive" data-code="ATCL-VFD-190" data-category="Automation Equipment" data-subcategory="Variable Frequency Drives" data-brand="Danfoss" data-status="Active" data-image="products/equipment-12.svg" data-updated="2026-10-07">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Variable Frequency Drive">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-12.svg" alt="Variable Frequency Drive" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Variable Frequency Drive</a>
+<span class="cell-sub">ATCL-VFD-190</span>
+</div>
+</div>
+</td>
+<td>Automation Equipment</td>
+<td>Variable Frequency Drives</td>
+<td>Danfoss</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Industrial Air Handling Unit" data-code="ATCL-IAH-200" data-category="HVAC" data-subcategory="Air Handling" data-brand="Honeywell" data-status="Active" data-image="products/equipment-10.svg" data-updated="2026-10-06">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Industrial Air Handling Unit">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-10.svg" alt="Industrial Air Handling Unit" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Industrial Air Handling Unit</a>
+<span class="cell-sub">ATCL-IAH-200</span>
+</div>
+</div>
+</td>
+<td>HVAC</td>
+<td>Air Handling</td>
+<td>Honeywell</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-06</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="HVAC Control Unit" data-code="ATCL-HCU-210" data-category="HVAC" data-subcategory="Climate Controls" data-brand="Belimo" data-status="Active" data-image="products/equipment-10.svg" data-updated="2026-10-05">
+<td>
+<input type="checkbox" data-select-row aria-label="Select HVAC Control Unit">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-10.svg" alt="HVAC Control Unit" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">HVAC Control Unit</a>
+<span class="cell-sub">ATCL-HCU-210</span>
+</div>
+</div>
+</td>
+<td>HVAC</td>
+<td>Climate Controls</td>
+<td>Belimo</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-05</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Fire Pump Controller" data-code="ATCL-FPC-220" data-category="Fire Safety Equipment" data-subcategory="Fire Pumps" data-brand="Pentair" data-status="Draft" data-image="products/equipment-08.svg" data-updated="2026-10-04">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Fire Pump Controller">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-08.svg" alt="Fire Pump Controller" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Fire Pump Controller</a>
+<span class="cell-sub">ATCL-FPC-220</span>
+</div>
+</div>
+</td>
+<td>Fire Safety Equipment</td>
+<td>Fire Pumps</td>
+<td>Pentair</td>
+<td>
+<span class="badge-status status-draft">Draft</span>
+</td>
+<td>2026-10-04</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Addressable Smoke Detector" data-code="ATCL-ASD-230" data-category="Fire Safety Equipment" data-subcategory="Fire Detection" data-brand="Honeywell" data-status="Active" data-image="products/equipment-06.svg" data-updated="2026-10-03">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Addressable Smoke Detector">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-06.svg" alt="Addressable Smoke Detector" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Addressable Smoke Detector</a>
+<span class="cell-sub">ATCL-ASD-230</span>
+</div>
+</div>
+</td>
+<td>Fire Safety Equipment</td>
+<td>Fire Detection</td>
+<td>Honeywell</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-03</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Pressure Transmitter" data-code="ATCL-PT-240" data-category="Industrial Instruments" data-subcategory="Pressure Instruments" data-brand="Emerson" data-status="Active" data-image="products/equipment-06.svg" data-updated="2026-10-02">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Pressure Transmitter">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-06.svg" alt="Pressure Transmitter" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Pressure Transmitter</a>
+<span class="cell-sub">ATCL-PT-240</span>
+</div>
+</div>
+</td>
+<td>Industrial Instruments</td>
+<td>Pressure Instruments</td>
+<td>Emerson</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-02</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Ultrasonic Flow Meter" data-code="ATCL-UFM-250" data-category="Industrial Instruments" data-subcategory="Flow Instruments" data-brand="Endress+Hauser" data-status="Active" data-image="products/equipment-07.svg" data-updated="2026-10-01">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Ultrasonic Flow Meter">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-07.svg" alt="Ultrasonic Flow Meter" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Ultrasonic Flow Meter</a>
+<span class="cell-sub">ATCL-UFM-250</span>
+</div>
+</div>
+</td>
+<td>Industrial Instruments</td>
+<td>Flow Instruments</td>
+<td>Endress+Hauser</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-01</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Reverse Osmosis System" data-code="ATCL-ROS-260" data-category="Water Management" data-subcategory="Water Treatment" data-brand="Pentair" data-status="Inactive" data-image="products/equipment-13.svg" data-updated="2026-10-08">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Reverse Osmosis System">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-13.svg" alt="Reverse Osmosis System" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Reverse Osmosis System</a>
+<span class="cell-sub">ATCL-ROS-260</span>
+</div>
+</div>
+</td>
+<td>Water Management</td>
+<td>Water Treatment</td>
+<td>Pentair</td>
+<td>
+<span class="badge-status status-inactive">Inactive</span>
+</td>
+<td>2026-10-08</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Cartridge Filter Housing" data-code="ATCL-CFH-270" data-category="Water Management" data-subcategory="Filtration Systems" data-brand="Pentair" data-status="Active" data-image="products/equipment-13.svg" data-updated="2026-10-07">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Cartridge Filter Housing">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-13.svg" alt="Cartridge Filter Housing" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Cartridge Filter Housing</a>
+<span class="cell-sub">ATCL-CFH-270</span>
+</div>
+</div>
+</td>
+<td>Water Management</td>
+<td>Filtration Systems</td>
+<td>Pentair</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Helical Gear Motor" data-code="ATCL-HGM-280" data-category="Mechanical Equipment" data-subcategory="Power Transmission" data-brand="Bosch Rexroth" data-status="Active" data-image="products/equipment-09.svg" data-updated="2026-10-06">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Helical Gear Motor">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-09.svg" alt="Helical Gear Motor" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Helical Gear Motor</a>
+<span class="cell-sub">ATCL-HGM-280</span>
+</div>
+</div>
+</td>
+<td>Mechanical Equipment</td>
+<td>Power Transmission</td>
+<td>Bosch Rexroth</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-06</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Industrial Air Compressor" data-code="ATCL-IAC-290" data-category="Mechanical Equipment" data-subcategory="Industrial Compressors" data-brand="Bosch Rexroth" data-status="Active" data-image="products/equipment-09.svg" data-updated="2026-10-05">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Industrial Air Compressor">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-09.svg" alt="Industrial Air Compressor" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Industrial Air Compressor</a>
+<span class="cell-sub">ATCL-IAC-290</span>
+</div>
+</div>
+</td>
+<td>Mechanical Equipment</td>
+<td>Industrial Compressors</td>
+<td>Bosch Rexroth</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-05</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Compressed Air Filter" data-code="ATCL-CAF-300" data-category="Pneumatic Systems" data-subcategory="Air Preparation" data-brand="SMC" data-status="Active" data-image="products/equipment-13.svg" data-updated="2026-10-04">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Compressed Air Filter">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-13.svg" alt="Compressed Air Filter" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Compressed Air Filter</a>
+<span class="cell-sub">ATCL-CAF-300</span>
+</div>
+</div>
+</td>
+<td>Pneumatic Systems</td>
+<td>Air Preparation</td>
+<td>SMC</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-04</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Pneumatic Rotary Actuator" data-code="ATCL-PRA-310" data-category="Pneumatic Systems" data-subcategory="Pneumatic Actuators" data-brand="Festo" data-status="Active" data-image="products/equipment-15.svg" data-updated="2026-10-03">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Pneumatic Rotary Actuator">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-15.svg" alt="Pneumatic Rotary Actuator" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Pneumatic Rotary Actuator</a>
+<span class="cell-sub">ATCL-PRA-310</span>
+</div>
+</div>
+</td>
+<td>Pneumatic Systems</td>
+<td>Pneumatic Actuators</td>
+<td>Festo</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-03</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Hydraulic Power Unit" data-code="ATCL-HPU-320" data-category="Hydraulic Systems" data-subcategory="Hydraulic Pumps" data-brand="Bosch Rexroth" data-status="Active" data-image="products/equipment-04.svg" data-updated="2026-10-02">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Hydraulic Power Unit">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-04.svg" alt="Hydraulic Power Unit" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Hydraulic Power Unit</a>
+<span class="cell-sub">ATCL-HPU-320</span>
+</div>
+</div>
+</td>
+<td>Hydraulic Systems</td>
+<td>Hydraulic Pumps</td>
+<td>Bosch Rexroth</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-02</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Double Acting Hydraulic Cylinder" data-code="ATCL-DAH-330" data-category="Hydraulic Systems" data-subcategory="Hydraulic Cylinders" data-brand="Bosch Rexroth" data-status="Active" data-image="products/equipment-11.svg" data-updated="2026-10-01">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Double Acting Hydraulic Cylinder">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-11.svg" alt="Double Acting Hydraulic Cylinder" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Double Acting Hydraulic Cylinder</a>
+<span class="cell-sub">ATCL-DAH-330</span>
+</div>
+</div>
+</td>
+<td>Hydraulic Systems</td>
+<td>Hydraulic Cylinders</td>
+<td>Bosch Rexroth</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-01</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Low Voltage Distribution Board" data-code="ATCL-LVD-340" data-category="Power Distribution" data-subcategory="Distribution Boards" data-brand="Eaton" data-status="Active" data-image="products/equipment-05.svg" data-updated="2026-10-08">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Low Voltage Distribution Board">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-05.svg" alt="Low Voltage Distribution Board" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Low Voltage Distribution Board</a>
+<span class="cell-sub">ATCL-LVD-340</span>
+</div>
+</div>
+</td>
+<td>Power Distribution</td>
+<td>Distribution Boards</td>
+<td>Eaton</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-08</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Dry Type Transformer" data-code="ATCL-DTT-350" data-category="Power Distribution" data-subcategory="Transformers" data-brand="ABB" data-status="Draft" data-image="products/equipment-05.svg" data-updated="2026-10-07">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Dry Type Transformer">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-05.svg" alt="Dry Type Transformer" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Dry Type Transformer</a>
+<span class="cell-sub">ATCL-DTT-350</span>
+</div>
+</div>
+</td>
+<td>Power Distribution</td>
+<td>Transformers</td>
+<td>ABB</td>
+<td>
+<span class="badge-status status-draft">Draft</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Plate Heat Exchanger" data-code="ATCL-PHE-360" data-category="Process Heating" data-subcategory="Heat Exchangers" data-brand="Danfoss" data-status="Active" data-image="products/equipment-10.svg" data-updated="2026-10-06">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Plate Heat Exchanger">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-10.svg" alt="Plate Heat Exchanger" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Plate Heat Exchanger</a>
+<span class="cell-sub">ATCL-PHE-360</span>
+</div>
+</div>
+</td>
+<td>Process Heating</td>
+<td>Heat Exchangers</td>
+<td>Danfoss</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-06</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Steam Pressure Reducing Station" data-code="ATCL-SPR-370" data-category="Process Heating" data-subcategory="Steam Systems" data-brand="Spirax Sarco" data-status="Active" data-image="products/equipment-03.svg" data-updated="2026-10-05">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Steam Pressure Reducing Station">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-03.svg" alt="Steam Pressure Reducing Station" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Steam Pressure Reducing Station</a>
+<span class="cell-sub">ATCL-SPR-370</span>
+</div>
+</div>
+</td>
+<td>Process Heating</td>
+<td>Steam Systems</td>
+<td>Spirax Sarco</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-05</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Rotary Screw Compressor" data-code="ATCL-RSC-380" data-category="Compressed Air" data-subcategory="Air Compressors" data-brand="Bosch Rexroth" data-status="Active" data-image="products/equipment-09.svg" data-updated="2026-10-04">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Rotary Screw Compressor">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-09.svg" alt="Rotary Screw Compressor" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Rotary Screw Compressor</a>
+<span class="cell-sub">ATCL-RSC-380</span>
+</div>
+</div>
+</td>
+<td>Compressed Air</td>
+<td>Air Compressors</td>
+<td>Bosch Rexroth</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-04</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Refrigerated Air Dryer" data-code="ATCL-RAD-390" data-category="Compressed Air" data-subcategory="Air Dryers" data-brand="Bosch Rexroth" data-status="Active" data-image="products/equipment-09.svg" data-updated="2026-10-03">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Refrigerated Air Dryer">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-09.svg" alt="Refrigerated Air Dryer" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Refrigerated Air Dryer</a>
+<span class="cell-sub">ATCL-RAD-390</span>
+</div>
+</div>
+</td>
+<td>Compressed Air</td>
+<td>Air Dryers</td>
+<td>Bosch Rexroth</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-03</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Building Automation Controller" data-code="ATCL-BAC-400" data-category="Building Management" data-subcategory="Building Controllers" data-brand="Honeywell" data-status="Active" data-image="products/equipment-05.svg" data-updated="2026-10-02">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Building Automation Controller">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-05.svg" alt="Building Automation Controller" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Building Automation Controller</a>
+<span class="cell-sub">ATCL-BAC-400</span>
+</div>
+</div>
+</td>
+<td>Building Management</td>
+<td>Building Controllers</td>
+<td>Honeywell</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-02</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Three Phase Energy Meter" data-code="ATCL-TPE-410" data-category="Building Management" data-subcategory="Energy Monitoring" data-brand="Schneider Electric" data-status="Active" data-image="products/equipment-06.svg" data-updated="2026-10-01">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Three Phase Energy Meter">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-06.svg" alt="Three Phase Energy Meter" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Three Phase Energy Meter</a>
+<span class="cell-sub">ATCL-TPE-410</span>
+</div>
+</div>
+</td>
+<td>Building Management</td>
+<td>Energy Monitoring</td>
+<td>Schneider Electric</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-01</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Submersible Wastewater Pump" data-code="ATCL-SWP-420" data-category="Environmental Solutions" data-subcategory="Wastewater Treatment" data-brand="Wilo" data-status="Active" data-image="products/equipment-04.svg" data-updated="2026-10-08">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Submersible Wastewater Pump">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-04.svg" alt="Submersible Wastewater Pump" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Submersible Wastewater Pump</a>
+<span class="cell-sub">ATCL-SWP-420</span>
+</div>
+</div>
+</td>
+<td>Environmental Solutions</td>
+<td>Wastewater Treatment</td>
+<td>Wilo</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-08</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Stack Emission Analyzer" data-code="ATCL-SEA-430" data-category="Environmental Solutions" data-subcategory="Emission Monitoring" data-brand="Yokogawa" data-status="Inactive" data-image="products/equipment-06.svg" data-updated="2026-10-07">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Stack Emission Analyzer">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-06.svg" alt="Stack Emission Analyzer" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Stack Emission Analyzer</a>
+<span class="cell-sub">ATCL-SEA-430</span>
+</div>
+</div>
+</td>
+<td>Environmental Solutions</td>
+<td>Emission Monitoring</td>
+<td>Yokogawa</td>
+<td>
+<span class="badge-status status-inactive">Inactive</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Fixed Gas Detector" data-code="ATCL-FGD-440" data-category="Safety Equipment" data-subcategory="Gas Detection" data-brand="Emerson" data-status="Active" data-image="products/equipment-06.svg" data-updated="2026-10-06">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Fixed Gas Detector">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-06.svg" alt="Fixed Gas Detector" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Fixed Gas Detector</a>
+<span class="cell-sub">ATCL-FGD-440</span>
+</div>
+</div>
+</td>
+<td>Safety Equipment</td>
+<td>Gas Detection</td>
+<td>Emerson</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-06</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Emergency Shutdown Panel" data-code="ATCL-ESP-450" data-category="Safety Equipment" data-subcategory="Emergency Systems" data-brand="Emerson" data-status="Active" data-image="products/equipment-08.svg" data-updated="2026-10-05">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Emergency Shutdown Panel">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-08.svg" alt="Emergency Shutdown Panel" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Emergency Shutdown Panel</a>
+<span class="cell-sub">ATCL-ESP-450</span>
+</div>
+</div>
+</td>
+<td>Safety Equipment</td>
+<td>Emergency Systems</td>
+<td>Emerson</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-05</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Industrial Ethernet Switch" data-code="ATCL-IES-460" data-category="Industrial Networking" data-subcategory="Ethernet Switches" data-brand="Phoenix Contact" data-status="Active" data-image="products/equipment-05.svg" data-updated="2026-10-04">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Industrial Ethernet Switch">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-05.svg" alt="Industrial Ethernet Switch" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Industrial Ethernet Switch</a>
+<span class="cell-sub">ATCL-IES-460</span>
+</div>
+</div>
+</td>
+<td>Industrial Networking</td>
+<td>Ethernet Switches</td>
+<td>Phoenix Contact</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-04</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Modbus Communication Gateway" data-code="ATCL-MCG-470" data-category="Industrial Networking" data-subcategory="Communication Gateways" data-brand="Omron" data-status="Active" data-image="products/equipment-05.svg" data-updated="2026-10-03">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Modbus Communication Gateway">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-05.svg" alt="Modbus Communication Gateway" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Modbus Communication Gateway</a>
+<span class="cell-sub">ATCL-MCG-470</span>
+</div>
+</div>
+</td>
+<td>Industrial Networking</td>
+<td>Communication Gateways</td>
+<td>Omron</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-03</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Digital Pressure Calibrator" data-code="ATCL-DPC-480" data-category="Maintenance Tools" data-subcategory="Calibration Tools" data-brand="Fluke" data-status="Draft" data-image="products/equipment-14.svg" data-updated="2026-10-02">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Digital Pressure Calibrator">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-14.svg" alt="Digital Pressure Calibrator" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Digital Pressure Calibrator</a>
+<span class="cell-sub">ATCL-DPC-480</span>
+</div>
+</div>
+</td>
+<td>Maintenance Tools</td>
+<td>Calibration Tools</td>
+<td>Fluke</td>
+<td>
+<span class="badge-status status-draft">Draft</span>
+</td>
+<td>2026-10-02</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Thermal Imaging Camera" data-code="ATCL-TIC-490" data-category="Maintenance Tools" data-subcategory="Diagnostic Instruments" data-brand="Fluke" data-status="Active" data-image="products/equipment-06.svg" data-updated="2026-10-01">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Thermal Imaging Camera">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-06.svg" alt="Thermal Imaging Camera" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Thermal Imaging Camera</a>
+<span class="cell-sub">ATCL-TIC-490</span>
+</div>
+</div>
+</td>
+<td>Maintenance Tools</td>
+<td>Diagnostic Instruments</td>
+<td>Fluke</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-01</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Stainless Steel Ball Valve — High Capacity" data-code="ATCL-SSB-500" data-category="Industrial Valves" data-subcategory="Ball Valves" data-brand="Kitz" data-status="Active" data-image="products/stainless-ball-valves.jpg" data-updated="2026-10-08">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Stainless Steel Ball Valve — High Capacity">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/stainless-ball-valves.jpg" alt="Stainless Steel Ball Valve — High Capacity" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Stainless Steel Ball Valve — High Capacity</a>
+<span class="cell-sub">ATCL-SSB-500</span>
+</div>
+</div>
+</td>
+<td>Industrial Valves</td>
+<td>Ball Valves</td>
+<td>Kitz</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-08</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Industrial Butterfly Valve — High Capacity" data-code="ATCL-IBV-510" data-category="Industrial Valves" data-subcategory="Butterfly Valves" data-brand="Kitz" data-status="Active" data-image="products/equipment-02.svg" data-updated="2026-10-07">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Industrial Butterfly Valve — High Capacity">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-02.svg" alt="Industrial Butterfly Valve — High Capacity" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Industrial Butterfly Valve — High Capacity</a>
+<span class="cell-sub">ATCL-IBV-510</span>
+</div>
+</div>
+</td>
+<td>Industrial Valves</td>
+<td>Butterfly Valves</td>
+<td>Kitz</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Centrifugal Water Pump — High Capacity" data-code="ATCL-CWP-520" data-category="Pumps" data-subcategory="Centrifugal Pumps" data-brand="Grundfos" data-status="Active" data-image="products/equipment-04.svg" data-updated="2026-10-06">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Centrifugal Water Pump — High Capacity">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-04.svg" alt="Centrifugal Water Pump — High Capacity" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Centrifugal Water Pump — High Capacity</a>
+<span class="cell-sub">ATCL-CWP-520</span>
+</div>
+</div>
+</td>
+<td>Pumps</td>
+<td>Centrifugal Pumps</td>
+<td>Grundfos</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-06</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Pressure Booster Pump — High Capacity" data-code="ATCL-PBP-530" data-category="Pumps" data-subcategory="Booster Pumps" data-brand="Wilo" data-status="Active" data-image="products/equipment-04.svg" data-updated="2026-10-05">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Pressure Booster Pump — High Capacity">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-04.svg" alt="Pressure Booster Pump — High Capacity" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Pressure Booster Pump — High Capacity</a>
+<span class="cell-sub">ATCL-PBP-530</span>
+</div>
+</div>
+</td>
+<td>Pumps</td>
+<td>Booster Pumps</td>
+<td>Wilo</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-05</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Industrial Control Panel — High Capacity" data-code="ATCL-ICP-540" data-category="Control Systems" data-subcategory="Control Panels" data-brand="Schneider Electric" data-status="Active" data-image="products/equipment-05.svg" data-updated="2026-10-04">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Industrial Control Panel — High Capacity">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-05.svg" alt="Industrial Control Panel — High Capacity" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Industrial Control Panel — High Capacity</a>
+<span class="cell-sub">ATCL-ICP-540</span>
+</div>
+</div>
+</td>
+<td>Control Systems</td>
+<td>Control Panels</td>
+<td>Schneider Electric</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-04</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="PLC Control Cabinet — High Capacity" data-code="ATCL-PCC-550" data-category="Control Systems" data-subcategory="PLC Cabinets" data-brand="Siemens" data-status="Active" data-image="products/equipment-05.svg" data-updated="2026-10-03">
+<td>
+<input type="checkbox" data-select-row aria-label="Select PLC Control Cabinet — High Capacity">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-05.svg" alt="PLC Control Cabinet — High Capacity" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">PLC Control Cabinet — High Capacity</a>
+<span class="cell-sub">ATCL-PCC-550</span>
+</div>
+</div>
+</td>
+<td>Control Systems</td>
+<td>PLC Cabinets</td>
+<td>Siemens</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-03</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Motor Starter Panel — High Capacity" data-code="ATCL-MSP-560" data-category="Electrical Solutions" data-subcategory="Motor Controls" data-brand="ABB" data-status="Active" data-image="products/equipment-05.svg" data-updated="2026-10-02">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Motor Starter Panel — High Capacity">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-05.svg" alt="Motor Starter Panel — High Capacity" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Motor Starter Panel — High Capacity</a>
+<span class="cell-sub">ATCL-MSP-560</span>
+</div>
+</div>
+</td>
+<td>Electrical Solutions</td>
+<td>Motor Controls</td>
+<td>ABB</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-02</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Molded Case Circuit Breaker — High Capacity" data-code="ATCL-MCC-570" data-category="Electrical Solutions" data-subcategory="Circuit Protection" data-brand="Schneider Electric" data-status="Active" data-image="products/equipment-05.svg" data-updated="2026-10-01">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Molded Case Circuit Breaker — High Capacity">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-05.svg" alt="Molded Case Circuit Breaker — High Capacity" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Molded Case Circuit Breaker — High Capacity</a>
+<span class="cell-sub">ATCL-MCC-570</span>
+</div>
+</div>
+</td>
+<td>Electrical Solutions</td>
+<td>Circuit Protection</td>
+<td>Schneider Electric</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-01</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Inductive Proximity Sensor — High Capacity" data-code="ATCL-IPS-580" data-category="Automation Equipment" data-subcategory="Sensors &amp; Switches" data-brand="Omron" data-status="Active" data-image="products/equipment-06.svg" data-updated="2026-10-08">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Inductive Proximity Sensor — High Capacity">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-06.svg" alt="Inductive Proximity Sensor — High Capacity" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Inductive Proximity Sensor — High Capacity</a>
+<span class="cell-sub">ATCL-IPS-580</span>
+</div>
+</div>
+</td>
+<td>Automation Equipment</td>
+<td>Sensors & Switches</td>
+<td>Omron</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-08</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Variable Frequency Drive — High Capacity" data-code="ATCL-VFD-590" data-category="Automation Equipment" data-subcategory="Variable Frequency Drives" data-brand="Danfoss" data-status="Active" data-image="products/equipment-12.svg" data-updated="2026-10-07">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Variable Frequency Drive — High Capacity">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-12.svg" alt="Variable Frequency Drive — High Capacity" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Variable Frequency Drive — High Capacity</a>
+<span class="cell-sub">ATCL-VFD-590</span>
+</div>
+</div>
+</td>
+<td>Automation Equipment</td>
+<td>Variable Frequency Drives</td>
+<td>Danfoss</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Industrial Air Handling Unit — High Capacity" data-code="ATCL-IAH-600" data-category="HVAC" data-subcategory="Air Handling" data-brand="Honeywell" data-status="Inactive" data-image="products/equipment-10.svg" data-updated="2026-10-06">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Industrial Air Handling Unit — High Capacity">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-10.svg" alt="Industrial Air Handling Unit — High Capacity" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Industrial Air Handling Unit — High Capacity</a>
+<span class="cell-sub">ATCL-IAH-600</span>
+</div>
+</div>
+</td>
+<td>HVAC</td>
+<td>Air Handling</td>
+<td>Honeywell</td>
+<td>
+<span class="badge-status status-inactive">Inactive</span>
+</td>
+<td>2026-10-06</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="HVAC Control Unit — High Capacity" data-code="ATCL-HCU-610" data-category="HVAC" data-subcategory="Climate Controls" data-brand="Belimo" data-status="Draft" data-image="products/equipment-10.svg" data-updated="2026-10-05">
+<td>
+<input type="checkbox" data-select-row aria-label="Select HVAC Control Unit — High Capacity">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-10.svg" alt="HVAC Control Unit — High Capacity" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">HVAC Control Unit — High Capacity</a>
+<span class="cell-sub">ATCL-HCU-610</span>
+</div>
+</div>
+</td>
+<td>HVAC</td>
+<td>Climate Controls</td>
+<td>Belimo</td>
+<td>
+<span class="badge-status status-draft">Draft</span>
+</td>
+<td>2026-10-05</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Fire Pump Controller — High Capacity" data-code="ATCL-FPC-620" data-category="Fire Safety Equipment" data-subcategory="Fire Pumps" data-brand="Pentair" data-status="Active" data-image="products/equipment-08.svg" data-updated="2026-10-04">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Fire Pump Controller — High Capacity">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-08.svg" alt="Fire Pump Controller — High Capacity" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Fire Pump Controller — High Capacity</a>
+<span class="cell-sub">ATCL-FPC-620</span>
+</div>
+</div>
+</td>
+<td>Fire Safety Equipment</td>
+<td>Fire Pumps</td>
+<td>Pentair</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-04</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Addressable Smoke Detector — High Capacity" data-code="ATCL-ASD-630" data-category="Fire Safety Equipment" data-subcategory="Fire Detection" data-brand="Honeywell" data-status="Active" data-image="products/equipment-06.svg" data-updated="2026-10-03">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Addressable Smoke Detector — High Capacity">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-06.svg" alt="Addressable Smoke Detector — High Capacity" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Addressable Smoke Detector — High Capacity</a>
+<span class="cell-sub">ATCL-ASD-630</span>
+</div>
+</div>
+</td>
+<td>Fire Safety Equipment</td>
+<td>Fire Detection</td>
+<td>Honeywell</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-03</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Pressure Transmitter — High Capacity" data-code="ATCL-PT-640" data-category="Industrial Instruments" data-subcategory="Pressure Instruments" data-brand="Emerson" data-status="Active" data-image="products/equipment-06.svg" data-updated="2026-10-02">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Pressure Transmitter — High Capacity">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-06.svg" alt="Pressure Transmitter — High Capacity" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Pressure Transmitter — High Capacity</a>
+<span class="cell-sub">ATCL-PT-640</span>
+</div>
+</div>
+</td>
+<td>Industrial Instruments</td>
+<td>Pressure Instruments</td>
+<td>Emerson</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-02</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Ultrasonic Flow Meter — High Capacity" data-code="ATCL-UFM-650" data-category="Industrial Instruments" data-subcategory="Flow Instruments" data-brand="Endress+Hauser" data-status="Active" data-image="products/equipment-07.svg" data-updated="2026-10-01">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Ultrasonic Flow Meter — High Capacity">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-07.svg" alt="Ultrasonic Flow Meter — High Capacity" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Ultrasonic Flow Meter — High Capacity</a>
+<span class="cell-sub">ATCL-UFM-650</span>
+</div>
+</div>
+</td>
+<td>Industrial Instruments</td>
+<td>Flow Instruments</td>
+<td>Endress+Hauser</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-01</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Reverse Osmosis System — High Capacity" data-code="ATCL-ROS-660" data-category="Water Management" data-subcategory="Water Treatment" data-brand="Pentair" data-status="Active" data-image="products/equipment-13.svg" data-updated="2026-10-08">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Reverse Osmosis System — High Capacity">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-13.svg" alt="Reverse Osmosis System — High Capacity" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Reverse Osmosis System — High Capacity</a>
+<span class="cell-sub">ATCL-ROS-660</span>
+</div>
+</div>
+</td>
+<td>Water Management</td>
+<td>Water Treatment</td>
+<td>Pentair</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-08</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Cartridge Filter Housing — High Capacity" data-code="ATCL-CFH-670" data-category="Water Management" data-subcategory="Filtration Systems" data-brand="Pentair" data-status="Active" data-image="products/equipment-13.svg" data-updated="2026-10-07">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Cartridge Filter Housing — High Capacity">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-13.svg" alt="Cartridge Filter Housing — High Capacity" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Cartridge Filter Housing — High Capacity</a>
+<span class="cell-sub">ATCL-CFH-670</span>
+</div>
+</div>
+</td>
+<td>Water Management</td>
+<td>Filtration Systems</td>
+<td>Pentair</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Helical Gear Motor — High Capacity" data-code="ATCL-HGM-680" data-category="Mechanical Equipment" data-subcategory="Power Transmission" data-brand="Bosch Rexroth" data-status="Active" data-image="products/equipment-09.svg" data-updated="2026-10-06">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Helical Gear Motor — High Capacity">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-09.svg" alt="Helical Gear Motor — High Capacity" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Helical Gear Motor — High Capacity</a>
+<span class="cell-sub">ATCL-HGM-680</span>
+</div>
+</div>
+</td>
+<td>Mechanical Equipment</td>
+<td>Power Transmission</td>
+<td>Bosch Rexroth</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-06</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Industrial Air Compressor — High Capacity" data-code="ATCL-IAC-690" data-category="Mechanical Equipment" data-subcategory="Industrial Compressors" data-brand="Bosch Rexroth" data-status="Active" data-image="products/equipment-09.svg" data-updated="2026-10-05">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Industrial Air Compressor — High Capacity">
+</td>
+<td>
+<div class="product-cell">
+<img class="thumb" src="assets/images/products/equipment-09.svg" alt="Industrial Air Compressor — High Capacity" loading="lazy">
+<div>
+<a class="cell-title" href="product-view.html">Industrial Air Compressor — High Capacity</a>
+<span class="cell-sub">ATCL-IAC-690</span>
+</div>
+</div>
+</td>
+<td>Mechanical Equipment</td>
+<td>Industrial Compressors</td>
+<td>Bosch Rexroth</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-05</td>
+<td>
+<div class="action-group">
+<a class="btn-view" href="product-view.html">View</a>
+<a href="product-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="empty-state" hidden>
+<strong>No products found.</strong>Try changing your search or filters.</div>
+<div class="table-footer">
+<span data-result-count>60 static records</span>
+<label>Rows per page <select data-page-size aria-label="Rows per page">
+<option>10</option>
+<option>25</option>
+<option>50</option>
+</select>
+</label>
+<nav class="page-controls" aria-label="Table pagination">
+<button type="button" data-prev>Previous</button>
+<span data-pages>
+</span>
+<button type="button" data-next>Next</button>
+</nav>
+</div>
+</section>
+<p class="static-note">Static prototype · Filters and selections apply to this preview only. No data is sent or saved.</p>
+</main>
+</div>
+<div class="toast-message" role="status" hidden>
+</div>
+</body>
+</html>

@@ -1,0 +1,1115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Subcategories · ATCL Admin</title>
+<link rel="icon" href="assets/images/ui/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/admin.css">
+<script src="assets/js/admin.js" defer>
+</script>
+</head>
+<body>
+<aside class="sidebar" aria-label="Main navigation">
+<div class="brand">
+<b>ATCL</b>
+<span>Admin</span>
+<button class="icon-btn" data-sidebar aria-label="Collapse sidebar">«</button>
+</div>
+<nav>
+<div class="nav-group">
+<div class="nav-label">OVERVIEW</div>
+<a class="nav-link " href="index.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="m3 10 9-7 9 7v11h-6v-7H9v7H3z"/>
+</svg>
+<span>Dashboard</span>
+</a>
+</div>
+<div class="nav-group">
+<div class="nav-label">CATALOG</div>
+<a class="nav-link " href="products.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="m12 2 9 5v10l-9 5-9-5V7zM3 7l9 5 9-5M12 12v10"/>
+</svg>
+<span>Products</span>
+</a>
+<a class="nav-link " href="categories.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<rect x="3" y="3" width="6" height="6" rx="1"/>
+<rect x="15" y="3" width="6" height="6" rx="1"/>
+<rect x="3" y="15" width="6" height="6" rx="1"/>
+<rect x="15" y="15" width="6" height="6" rx="1"/>
+</svg>
+<span>Categories</span>
+</a>
+<a class="nav-link active" href="subcategories.html" aria-current="page">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="m3 7 9-5 9 5-9 5zM3 12l9 5 9-5M3 17l9 5 9-5"/>
+</svg>
+<span>Subcategories</span>
+</a>
+<a class="nav-link " href="child-categories.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<circle cx="12" cy="4" r="2"/>
+<circle cx="4" cy="20" r="2"/>
+<circle cx="20" cy="20" r="2"/>
+<path d="M12 6v5M4 18v-5h16v5"/>
+</svg>
+<span>Child Categories</span>
+</a>
+<a class="nav-link " href="brands.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M3 3h9l9 9-9 9-9-9z"/>
+<circle cx="8" cy="8" r="1"/>
+</svg>
+<span>Brands</span>
+</a>
+</div>
+<div class="nav-group">
+<div class="nav-label">CUSTOMER ENGAGEMENT</div>
+<a class="nav-link " href="inquiries.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<rect x="3" y="5" width="18" height="14" rx="2"/>
+<path d="m3 6 9 7 9-7"/>
+</svg>
+<span>Inquiries / RFQ</span>
+</a>
+<a class="nav-link " href="contact-messages.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M21 11a8 8 0 0 1-8 8H7l-5 3 2-7a8 8 0 1 1 17-4z"/>
+</svg>
+<span>Contact Messages</span>
+</a>
+</div>
+<div class="nav-group">
+<div class="nav-label">CONTENT</div>
+<a class="nav-link " href="news-events.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M5 2h10l4 4v16H5zM14 2v6h5M8 12h8M8 16h8M8 8h2"/>
+</svg>
+<span>News & Events</span>
+</a>
+<a class="nav-link " href="career-posts.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<rect x="3" y="7" width="18" height="14" rx="2"/>
+<path d="M8 7V3h8v4M3 12l9 3 9-3M10 14h4"/>
+</svg>
+<span>Career Posts</span>
+</a>
+</div>
+<div class="nav-group">
+<div class="nav-label">SYSTEM</div>
+<a class="nav-link " href="website-settings.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="m9 3 1-2h4l1 2 3 2 3 1v4l-2 2 1 4-3 3-4-1-3 2-4-2v-4l-3-2V8l3-1z"/>
+<circle cx="12" cy="11" r="3"/>
+</svg>
+<span>Website Settings</span>
+</a>
+</div>
+</nav>
+</aside>
+<button class="mobile-backdrop" data-sidebar aria-label="Close navigation">
+</button>
+<div class="main-shell">
+<header class="topbar">
+<button class="icon-btn" data-sidebar aria-label="Toggle navigation" aria-expanded="false">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M5 6h14M5 12h14M5 18h14"/>
+</svg>
+</button>
+<span class="context">Subcategories</span>
+<div class="global-search" aria-label="Global search preview">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<circle cx="10" cy="10" r="6"/>
+<path d="m15 15 6 6"/>
+</svg>
+<span>Search products, inquiries, customers…</span>
+</div>
+<button class="icon-btn notification" aria-label="Notifications" aria-expanded="false" data-notifications>
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M5 17V9a7 7 0 0 1 14 0v8l2 2H3zM9 22h6"/>
+</svg>
+</button>
+<div class="profile">
+<img class="avatar" src="assets/images/avatars/admin.svg" alt="Admin initials">
+<div>Admin User<small>Administrator</small>
+</div>
+</div>
+</header>
+<aside class="notification-panel card-panel" hidden>
+<h3>Notifications</h3>
+<p>4 unread contact messages</p>
+<p>18 new inquiries this week</p>
+<p>
+<a href="inquiries.html">Open inquiry inbox →</a>
+</p>
+</aside>
+<main>
+<noscript>
+<p class="noscript-note">Static preview: all records are visible. Enable JavaScript to use filters and preview interactions.</p>
+</noscript>
+<div class="page-heading">
+<div>
+<div class="title-line">
+<h1>Subcategories</h1>
+</div>
+<p class="subtitle">Organize your catalog with a clear, consistent structure.</p>
+</div>
+<a class="btn btn-primary" href="subcategory-create.html">+ Add Subcategory</a>
+</div>
+<div class="module-stats">
+<div class="mini-stat">Total Subcategories<strong>40</strong>
+</div>
+<div class="mini-stat">Active<strong>40</strong>
+</div>
+<div class="mini-stat">Catalog Products<strong>60</strong>
+</div>
+</div>
+<section class="card-panel" data-table-module data-noun="subcategories">
+<div class="toolbar">
+<label class="search-field">Search<input class="form-control" type="search" data-search placeholder="Search subcategories" aria-label="Search subcategories">
+</label>
+<label>Category<select class="form-select" data-filter="category" aria-label="Filter by category">
+<option value="">All category</option>
+<option value="Industrial Valves">Industrial Valves</option>
+<option value="Pumps">Pumps</option>
+<option value="Control Systems">Control Systems</option>
+<option value="Electrical Solutions">Electrical Solutions</option>
+<option value="Automation Equipment">Automation Equipment</option>
+<option value="HVAC">HVAC</option>
+<option value="Fire Safety Equipment">Fire Safety Equipment</option>
+<option value="Industrial Instruments">Industrial Instruments</option>
+<option value="Water Management">Water Management</option>
+<option value="Mechanical Equipment">Mechanical Equipment</option>
+<option value="Pneumatic Systems">Pneumatic Systems</option>
+<option value="Hydraulic Systems">Hydraulic Systems</option>
+<option value="Power Distribution">Power Distribution</option>
+<option value="Process Heating">Process Heating</option>
+<option value="Compressed Air">Compressed Air</option>
+<option value="Building Management">Building Management</option>
+<option value="Environmental Solutions">Environmental Solutions</option>
+<option value="Safety Equipment">Safety Equipment</option>
+<option value="Industrial Networking">Industrial Networking</option>
+<option value="Maintenance Tools">Maintenance Tools</option>
+</select>
+</label>
+<label>Status<select class="form-select" data-filter="status" aria-label="Filter by status">
+<option value="">All status</option>
+<option value="Active">Active</option>
+<option value="Inactive">Inactive</option>
+</select>
+</label>
+<button class="btn btn-light" type="button" data-reset>Reset Filters</button>
+</div>
+<div class="filter-chips" aria-label="Active filters">
+</div>
+<div class="bulk-bar">
+<span data-selected>0 selected</span>
+<select data-bulk aria-label="Bulk action">
+<option value="">Bulk action</option>
+<option>Mark active / read</option>
+<option>Archive selection</option>
+</select>
+<button type="button" class="btn btn-light" data-apply-bulk>Apply</button>
+<span class="muted">Preview only</span>
+</div>
+<div class="table-wrap">
+<table class="data-table">
+<thead>
+<tr>
+<th>
+<input type="checkbox" data-select-all aria-label="Select all visible records">
+</th>
+<th scope="col" aria-sort="none">
+<button type="button" data-sort="1">Subcategory</button>
+</th>
+<th scope="col" aria-sort="none">
+<button type="button" data-sort="2">Parent Category</button>
+</th>
+<th scope="col" aria-sort="none">
+<button type="button" data-sort="3">Products</button>
+</th>
+<th scope="col" aria-sort="none">
+<button type="button" data-sort="4">Child Categories</button>
+</th>
+<th scope="col" aria-sort="none">
+<button type="button" data-sort="5">Status</button>
+</th>
+<th scope="col" aria-sort="none">
+<button type="button" data-sort="6">Updated</button>
+</th>
+<th scope="col">Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr data-name="Ball Valves" data-category="Industrial Valves" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Ball Valves">
+</td>
+<td>
+<span class="cell-title">Ball Valves</span>
+</td>
+<td>Industrial Valves</td>
+<td>2</td>
+<td>2</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Butterfly Valves" data-category="Industrial Valves" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Butterfly Valves">
+</td>
+<td>
+<span class="cell-title">Butterfly Valves</span>
+</td>
+<td>Industrial Valves</td>
+<td>2</td>
+<td>2</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Centrifugal Pumps" data-category="Pumps" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Centrifugal Pumps">
+</td>
+<td>
+<span class="cell-title">Centrifugal Pumps</span>
+</td>
+<td>Pumps</td>
+<td>2</td>
+<td>2</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Booster Pumps" data-category="Pumps" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Booster Pumps">
+</td>
+<td>
+<span class="cell-title">Booster Pumps</span>
+</td>
+<td>Pumps</td>
+<td>2</td>
+<td>2</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Control Panels" data-category="Control Systems" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Control Panels">
+</td>
+<td>
+<span class="cell-title">Control Panels</span>
+</td>
+<td>Control Systems</td>
+<td>2</td>
+<td>2</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="PLC Cabinets" data-category="Control Systems" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select PLC Cabinets">
+</td>
+<td>
+<span class="cell-title">PLC Cabinets</span>
+</td>
+<td>Control Systems</td>
+<td>2</td>
+<td>2</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Motor Controls" data-category="Electrical Solutions" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Motor Controls">
+</td>
+<td>
+<span class="cell-title">Motor Controls</span>
+</td>
+<td>Electrical Solutions</td>
+<td>2</td>
+<td>2</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Circuit Protection" data-category="Electrical Solutions" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Circuit Protection">
+</td>
+<td>
+<span class="cell-title">Circuit Protection</span>
+</td>
+<td>Electrical Solutions</td>
+<td>2</td>
+<td>2</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Sensors &amp; Switches" data-category="Automation Equipment" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Sensors &amp; Switches">
+</td>
+<td>
+<span class="cell-title">Sensors & Switches</span>
+</td>
+<td>Automation Equipment</td>
+<td>2</td>
+<td>2</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Variable Frequency Drives" data-category="Automation Equipment" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Variable Frequency Drives">
+</td>
+<td>
+<span class="cell-title">Variable Frequency Drives</span>
+</td>
+<td>Automation Equipment</td>
+<td>2</td>
+<td>2</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Air Handling" data-category="HVAC" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Air Handling">
+</td>
+<td>
+<span class="cell-title">Air Handling</span>
+</td>
+<td>HVAC</td>
+<td>2</td>
+<td>1</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Climate Controls" data-category="HVAC" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Climate Controls">
+</td>
+<td>
+<span class="cell-title">Climate Controls</span>
+</td>
+<td>HVAC</td>
+<td>2</td>
+<td>1</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Fire Pumps" data-category="Fire Safety Equipment" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Fire Pumps">
+</td>
+<td>
+<span class="cell-title">Fire Pumps</span>
+</td>
+<td>Fire Safety Equipment</td>
+<td>2</td>
+<td>1</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Fire Detection" data-category="Fire Safety Equipment" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Fire Detection">
+</td>
+<td>
+<span class="cell-title">Fire Detection</span>
+</td>
+<td>Fire Safety Equipment</td>
+<td>2</td>
+<td>1</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Pressure Instruments" data-category="Industrial Instruments" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Pressure Instruments">
+</td>
+<td>
+<span class="cell-title">Pressure Instruments</span>
+</td>
+<td>Industrial Instruments</td>
+<td>2</td>
+<td>1</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Flow Instruments" data-category="Industrial Instruments" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Flow Instruments">
+</td>
+<td>
+<span class="cell-title">Flow Instruments</span>
+</td>
+<td>Industrial Instruments</td>
+<td>2</td>
+<td>1</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Water Treatment" data-category="Water Management" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Water Treatment">
+</td>
+<td>
+<span class="cell-title">Water Treatment</span>
+</td>
+<td>Water Management</td>
+<td>2</td>
+<td>1</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Filtration Systems" data-category="Water Management" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Filtration Systems">
+</td>
+<td>
+<span class="cell-title">Filtration Systems</span>
+</td>
+<td>Water Management</td>
+<td>2</td>
+<td>1</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Power Transmission" data-category="Mechanical Equipment" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Power Transmission">
+</td>
+<td>
+<span class="cell-title">Power Transmission</span>
+</td>
+<td>Mechanical Equipment</td>
+<td>2</td>
+<td>1</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Industrial Compressors" data-category="Mechanical Equipment" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Industrial Compressors">
+</td>
+<td>
+<span class="cell-title">Industrial Compressors</span>
+</td>
+<td>Mechanical Equipment</td>
+<td>2</td>
+<td>1</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Air Preparation" data-category="Pneumatic Systems" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Air Preparation">
+</td>
+<td>
+<span class="cell-title">Air Preparation</span>
+</td>
+<td>Pneumatic Systems</td>
+<td>1</td>
+<td>1</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Pneumatic Actuators" data-category="Pneumatic Systems" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Pneumatic Actuators">
+</td>
+<td>
+<span class="cell-title">Pneumatic Actuators</span>
+</td>
+<td>Pneumatic Systems</td>
+<td>1</td>
+<td>1</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Hydraulic Pumps" data-category="Hydraulic Systems" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Hydraulic Pumps">
+</td>
+<td>
+<span class="cell-title">Hydraulic Pumps</span>
+</td>
+<td>Hydraulic Systems</td>
+<td>1</td>
+<td>1</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Hydraulic Cylinders" data-category="Hydraulic Systems" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Hydraulic Cylinders">
+</td>
+<td>
+<span class="cell-title">Hydraulic Cylinders</span>
+</td>
+<td>Hydraulic Systems</td>
+<td>1</td>
+<td>1</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Distribution Boards" data-category="Power Distribution" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Distribution Boards">
+</td>
+<td>
+<span class="cell-title">Distribution Boards</span>
+</td>
+<td>Power Distribution</td>
+<td>1</td>
+<td>1</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Transformers" data-category="Power Distribution" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Transformers">
+</td>
+<td>
+<span class="cell-title">Transformers</span>
+</td>
+<td>Power Distribution</td>
+<td>1</td>
+<td>1</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Heat Exchangers" data-category="Process Heating" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Heat Exchangers">
+</td>
+<td>
+<span class="cell-title">Heat Exchangers</span>
+</td>
+<td>Process Heating</td>
+<td>1</td>
+<td>1</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Steam Systems" data-category="Process Heating" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Steam Systems">
+</td>
+<td>
+<span class="cell-title">Steam Systems</span>
+</td>
+<td>Process Heating</td>
+<td>1</td>
+<td>1</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Air Compressors" data-category="Compressed Air" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Air Compressors">
+</td>
+<td>
+<span class="cell-title">Air Compressors</span>
+</td>
+<td>Compressed Air</td>
+<td>1</td>
+<td>1</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Air Dryers" data-category="Compressed Air" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Air Dryers">
+</td>
+<td>
+<span class="cell-title">Air Dryers</span>
+</td>
+<td>Compressed Air</td>
+<td>1</td>
+<td>1</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Building Controllers" data-category="Building Management" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Building Controllers">
+</td>
+<td>
+<span class="cell-title">Building Controllers</span>
+</td>
+<td>Building Management</td>
+<td>1</td>
+<td>1</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Energy Monitoring" data-category="Building Management" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Energy Monitoring">
+</td>
+<td>
+<span class="cell-title">Energy Monitoring</span>
+</td>
+<td>Building Management</td>
+<td>1</td>
+<td>1</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Wastewater Treatment" data-category="Environmental Solutions" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Wastewater Treatment">
+</td>
+<td>
+<span class="cell-title">Wastewater Treatment</span>
+</td>
+<td>Environmental Solutions</td>
+<td>1</td>
+<td>1</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Emission Monitoring" data-category="Environmental Solutions" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Emission Monitoring">
+</td>
+<td>
+<span class="cell-title">Emission Monitoring</span>
+</td>
+<td>Environmental Solutions</td>
+<td>1</td>
+<td>1</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Gas Detection" data-category="Safety Equipment" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Gas Detection">
+</td>
+<td>
+<span class="cell-title">Gas Detection</span>
+</td>
+<td>Safety Equipment</td>
+<td>1</td>
+<td>1</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Emergency Systems" data-category="Safety Equipment" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Emergency Systems">
+</td>
+<td>
+<span class="cell-title">Emergency Systems</span>
+</td>
+<td>Safety Equipment</td>
+<td>1</td>
+<td>1</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Ethernet Switches" data-category="Industrial Networking" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Ethernet Switches">
+</td>
+<td>
+<span class="cell-title">Ethernet Switches</span>
+</td>
+<td>Industrial Networking</td>
+<td>1</td>
+<td>1</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Communication Gateways" data-category="Industrial Networking" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Communication Gateways">
+</td>
+<td>
+<span class="cell-title">Communication Gateways</span>
+</td>
+<td>Industrial Networking</td>
+<td>1</td>
+<td>1</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Calibration Tools" data-category="Maintenance Tools" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Calibration Tools">
+</td>
+<td>
+<span class="cell-title">Calibration Tools</span>
+</td>
+<td>Maintenance Tools</td>
+<td>1</td>
+<td>1</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+<tr data-name="Diagnostic Instruments" data-category="Maintenance Tools" data-status="Active">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Diagnostic Instruments">
+</td>
+<td>
+<span class="cell-title">Diagnostic Instruments</span>
+</td>
+<td>Maintenance Tools</td>
+<td>1</td>
+<td>1</td>
+<td>
+<span class="badge-status status-active">Active</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<div class="action-group">
+<a href="subcategory-edit.html">Edit</a>
+<button class="icon-btn" data-delete aria-label="Delete record">×</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="empty-state" hidden>
+<strong>No subcategories found.</strong>Try changing your search or filters.</div>
+<div class="table-footer">
+<span data-result-count>40 static records</span>
+<label>Rows per page <select data-page-size aria-label="Rows per page">
+<option>10</option>
+<option>25</option>
+<option>50</option>
+</select>
+</label>
+<nav class="page-controls" aria-label="Table pagination">
+<button type="button" data-prev>Previous</button>
+<span data-pages>
+</span>
+<button type="button" data-next>Next</button>
+</nav>
+</div>
+</section>
+<p class="static-note">Static prototype · Filters and selections apply to this preview only. No data is sent or saved.</p>
+</main>
+</div>
+<div class="toast-message" role="status" hidden>
+</div>
+</body>
+</html>

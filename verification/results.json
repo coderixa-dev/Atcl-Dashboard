@@ -1,0 +1,1698 @@
+{
+  "date": "2026-10-09",
+  "browser": "Chrome headless",
+  "zoom": "100%; deviceScaleFactor=1",
+  "checks": 169,
+  "passed": 169,
+  "results": [
+    {
+      "label": "Dashboard 1672×941",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "heights": [
+          111,
+          111,
+          111,
+          111,
+          111,
+          111
+        ],
+        "tops": [
+          151,
+          151,
+          151,
+          151,
+          151,
+          151
+        ],
+        "clip": false,
+        "scale": 1
+      }
+    },
+    {
+      "label": "Six equal KPI cards 1672",
+      "pass": true
+    },
+    {
+      "label": "Dashboard 1536×864",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "heights": [
+          124,
+          124,
+          124,
+          124,
+          124,
+          124
+        ],
+        "tops": [
+          151,
+          151,
+          151,
+          151,
+          151,
+          151
+        ],
+        "clip": false,
+        "scale": 1
+      }
+    },
+    {
+      "label": "Six equal KPI cards 1536",
+      "pass": true
+    },
+    {
+      "label": "Dashboard 1440×900",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "heights": [
+          99,
+          99,
+          99,
+          99,
+          99,
+          99
+        ],
+        "tops": [
+          151,
+          151,
+          151,
+          151,
+          151,
+          151
+        ],
+        "clip": false,
+        "scale": 1
+      }
+    },
+    {
+      "label": "Six equal KPI cards 1440",
+      "pass": true
+    },
+    {
+      "label": "Dashboard 1366×768",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "heights": [
+          99,
+          99,
+          99,
+          99,
+          99,
+          99
+        ],
+        "tops": [
+          151,
+          151,
+          151,
+          151,
+          151,
+          151
+        ],
+        "clip": false,
+        "scale": 1
+      }
+    },
+    {
+      "label": "Six equal KPI cards 1366",
+      "pass": true
+    },
+    {
+      "label": "Dashboard 1280×800",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "heights": [
+          115,
+          115,
+          115,
+          115,
+          115,
+          115
+        ],
+        "tops": [
+          151,
+          151,
+          151,
+          151,
+          151,
+          151
+        ],
+        "clip": false,
+        "scale": 1
+      }
+    },
+    {
+      "label": "Six equal KPI cards 1280",
+      "pass": true
+    },
+    {
+      "label": "Dashboard 1024×768",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "heights": [
+          106,
+          106,
+          106,
+          106,
+          106,
+          106
+        ],
+        "tops": [
+          160,
+          160,
+          160,
+          278,
+          278,
+          278
+        ],
+        "clip": false,
+        "scale": 1
+      }
+    },
+    {
+      "label": "Dashboard 768×1024",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "heights": [
+          106,
+          106,
+          106,
+          106,
+          106,
+          106
+        ],
+        "tops": [
+          160,
+          160,
+          160,
+          278,
+          278,
+          278
+        ],
+        "clip": false,
+        "scale": 1
+      }
+    },
+    {
+      "label": "Dashboard 390×844",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "heights": [
+          98,
+          98,
+          98,
+          98,
+          98,
+          98
+        ],
+        "tops": [
+          204,
+          204,
+          311,
+          311,
+          417,
+          417
+        ],
+        "clip": false,
+        "scale": 1
+      }
+    },
+    {
+      "label": "brand-create.html 1366px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "brand-create.html 1024px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "brand-create.html 768px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "brand-create.html 390px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "brand-edit.html 1366px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "brand-edit.html 1024px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "brand-edit.html 768px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "brand-edit.html 390px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "brands.html 1366px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 24
+      }
+    },
+    {
+      "label": "brands.html 1024px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 24
+      }
+    },
+    {
+      "label": "brands.html 768px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 24
+      }
+    },
+    {
+      "label": "brands.html 390px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 24
+      }
+    },
+    {
+      "label": "career-create.html 1366px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "career-create.html 1024px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "career-create.html 768px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "career-create.html 390px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "career-edit.html 1366px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "career-edit.html 1024px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "career-edit.html 768px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "career-edit.html 390px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "career-posts.html 1366px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 18
+      }
+    },
+    {
+      "label": "career-posts.html 1024px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 18
+      }
+    },
+    {
+      "label": "career-posts.html 768px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 18
+      }
+    },
+    {
+      "label": "career-posts.html 390px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 18
+      }
+    },
+    {
+      "label": "categories.html 1366px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 20
+      }
+    },
+    {
+      "label": "categories.html 1024px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 20
+      }
+    },
+    {
+      "label": "categories.html 768px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 20
+      }
+    },
+    {
+      "label": "categories.html 390px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 20
+      }
+    },
+    {
+      "label": "category-create.html 1366px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "category-create.html 1024px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "category-create.html 768px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "category-create.html 390px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "category-edit.html 1366px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "category-edit.html 1024px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "category-edit.html 768px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "category-edit.html 390px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "child-categories.html 1366px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 50
+      }
+    },
+    {
+      "label": "child-categories.html 1024px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 50
+      }
+    },
+    {
+      "label": "child-categories.html 768px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 50
+      }
+    },
+    {
+      "label": "child-categories.html 390px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 50
+      }
+    },
+    {
+      "label": "child-category-create.html 1366px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "child-category-create.html 1024px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "child-category-create.html 768px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "child-category-create.html 390px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "child-category-edit.html 1366px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "child-category-edit.html 1024px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "child-category-edit.html 768px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "child-category-edit.html 390px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "contact-details.html 1366px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "contact-details.html 1024px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "contact-details.html 768px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "contact-details.html 390px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "contact-messages.html 1366px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 36
+      }
+    },
+    {
+      "label": "contact-messages.html 1024px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 36
+      }
+    },
+    {
+      "label": "contact-messages.html 768px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 36
+      }
+    },
+    {
+      "label": "contact-messages.html 390px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 36
+      }
+    },
+    {
+      "label": "index.html 1366px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "index.html 1024px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "index.html 768px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "index.html 390px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "inquiries.html 1366px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 48
+      }
+    },
+    {
+      "label": "inquiries.html 1024px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 48
+      }
+    },
+    {
+      "label": "inquiries.html 768px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 48
+      }
+    },
+    {
+      "label": "inquiries.html 390px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 48
+      }
+    },
+    {
+      "label": "inquiry-details.html 1366px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "inquiry-details.html 1024px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "inquiry-details.html 768px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "inquiry-details.html 390px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "news-create.html 1366px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "news-create.html 1024px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "news-create.html 768px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "news-create.html 390px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "news-edit.html 1366px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "news-edit.html 1024px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "news-edit.html 768px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "news-edit.html 390px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "news-events.html 1366px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 24
+      }
+    },
+    {
+      "label": "news-events.html 1024px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 24
+      }
+    },
+    {
+      "label": "news-events.html 768px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 24
+      }
+    },
+    {
+      "label": "news-events.html 390px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 24
+      }
+    },
+    {
+      "label": "product-create.html 1366px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "product-create.html 1024px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "product-create.html 768px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "product-create.html 390px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "product-edit.html 1366px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "product-edit.html 1024px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "product-edit.html 768px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "product-edit.html 390px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "product-view.html 1366px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "product-view.html 1024px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "product-view.html 768px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "product-view.html 390px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "products.html 1366px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 60
+      }
+    },
+    {
+      "label": "products.html 1024px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 60
+      }
+    },
+    {
+      "label": "products.html 768px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 60
+      }
+    },
+    {
+      "label": "products.html 390px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 60
+      }
+    },
+    {
+      "label": "subcategories.html 1366px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 40
+      }
+    },
+    {
+      "label": "subcategories.html 1024px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 40
+      }
+    },
+    {
+      "label": "subcategories.html 768px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 40
+      }
+    },
+    {
+      "label": "subcategories.html 390px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 40
+      }
+    },
+    {
+      "label": "subcategory-create.html 1366px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "subcategory-create.html 1024px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "subcategory-create.html 768px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "subcategory-create.html 390px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "subcategory-edit.html 1366px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "subcategory-edit.html 1024px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "subcategory-edit.html 768px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "subcategory-edit.html 390px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "website-settings.html 1366px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "website-settings.html 1024px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "website-settings.html 768px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "website-settings.html 390px",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "broken": [],
+        "active": 1,
+        "rows": 0
+      }
+    },
+    {
+      "label": "Default 10 rows",
+      "pass": true
+    },
+    {
+      "label": "Combined product filters",
+      "pass": true,
+      "detail": 4
+    },
+    {
+      "label": "Filter chips and Clear All",
+      "pass": true
+    },
+    {
+      "label": "No-result state",
+      "pass": true
+    },
+    {
+      "label": "Reset filters",
+      "pass": true
+    },
+    {
+      "label": "Pagination next",
+      "pass": true
+    },
+    {
+      "label": "25 rows per page",
+      "pass": true
+    },
+    {
+      "label": "50 rows per page",
+      "pass": true
+    },
+    {
+      "label": "Ascending sorting",
+      "pass": true
+    },
+    {
+      "label": "Bulk selection",
+      "pass": true
+    },
+    {
+      "label": "Bulk deselection",
+      "pass": true
+    },
+    {
+      "label": "Inquiry status filter",
+      "pass": true
+    },
+    {
+      "label": "Inquiry pagination",
+      "pass": true
+    },
+    {
+      "label": "Dependent taxonomy selects",
+      "pass": true,
+      "detail": [
+        "Centrifugal Pumps",
+        "Booster Pumps"
+      ]
+    },
+    {
+      "label": "Mobile sidebar opens",
+      "pass": true
+    },
+    {
+      "label": "Future KPI values contained",
+      "pass": true
+    },
+    {
+      "label": "No JavaScript: brand-create.html",
+      "pass": true,
+      "detail": {
+        "body": 492,
+        "rows": 0,
+        "visible": 0,
+        "forms": 1
+      }
+    },
+    {
+      "label": "No JavaScript: brand-edit.html",
+      "pass": true,
+      "detail": {
+        "body": 493,
+        "rows": 0,
+        "visible": 0,
+        "forms": 1
+      }
+    },
+    {
+      "label": "No JavaScript: brands.html",
+      "pass": true,
+      "detail": {
+        "body": 1583,
+        "rows": 24,
+        "visible": 24,
+        "forms": 0
+      }
+    },
+    {
+      "label": "No JavaScript: career-create.html",
+      "pass": true,
+      "detail": {
+        "body": 626,
+        "rows": 0,
+        "visible": 0,
+        "forms": 1
+      }
+    },
+    {
+      "label": "No JavaScript: career-edit.html",
+      "pass": true,
+      "detail": {
+        "body": 627,
+        "rows": 0,
+        "visible": 0,
+        "forms": 1
+      }
+    },
+    {
+      "label": "No JavaScript: career-posts.html",
+      "pass": true,
+      "detail": {
+        "body": 2233,
+        "rows": 18,
+        "visible": 18,
+        "forms": 0
+      }
+    },
+    {
+      "label": "No JavaScript: categories.html",
+      "pass": true,
+      "detail": {
+        "body": 1977,
+        "rows": 20,
+        "visible": 20,
+        "forms": 0
+      }
+    },
+    {
+      "label": "No JavaScript: category-create.html",
+      "pass": true,
+      "detail": {
+        "body": 493,
+        "rows": 0,
+        "visible": 0,
+        "forms": 1
+      }
+    },
+    {
+      "label": "No JavaScript: category-edit.html",
+      "pass": true,
+      "detail": {
+        "body": 494,
+        "rows": 0,
+        "visible": 0,
+        "forms": 1
+      }
+    },
+    {
+      "label": "No JavaScript: child-categories.html",
+      "pass": true,
+      "detail": {
+        "body": 6422,
+        "rows": 50,
+        "visible": 50,
+        "forms": 0
+      }
+    },
+    {
+      "label": "No JavaScript: child-category-create.html",
+      "pass": true,
+      "detail": {
+        "body": 1651,
+        "rows": 0,
+        "visible": 0,
+        "forms": 1
+      }
+    },
+    {
+      "label": "No JavaScript: child-category-edit.html",
+      "pass": true,
+      "detail": {
+        "body": 1652,
+        "rows": 0,
+        "visible": 0,
+        "forms": 1
+      }
+    },
+    {
+      "label": "No JavaScript: contact-details.html",
+      "pass": true,
+      "detail": {
+        "body": 965,
+        "rows": 0,
+        "visible": 0,
+        "forms": 1
+      }
+    },
+    {
+      "label": "No JavaScript: contact-messages.html",
+      "pass": true,
+      "detail": {
+        "body": 7254,
+        "rows": 36,
+        "visible": 36,
+        "forms": 0
+      }
+    },
+    {
+      "label": "No JavaScript: index.html",
+      "pass": true,
+      "detail": {
+        "body": 1880,
+        "rows": 0,
+        "visible": 0,
+        "forms": 0
+      }
+    },
+    {
+      "label": "No JavaScript: inquiries.html",
+      "pass": true,
+      "detail": {
+        "body": 10511,
+        "rows": 48,
+        "visible": 48,
+        "forms": 0
+      }
+    },
+    {
+      "label": "No JavaScript: inquiry-details.html",
+      "pass": true,
+      "detail": {
+        "body": 1695,
+        "rows": 0,
+        "visible": 0,
+        "forms": 1
+      }
+    },
+    {
+      "label": "No JavaScript: news-create.html",
+      "pass": true,
+      "detail": {
+        "body": 542,
+        "rows": 0,
+        "visible": 0,
+        "forms": 1
+      }
+    },
+    {
+      "label": "No JavaScript: news-edit.html",
+      "pass": true,
+      "detail": {
+        "body": 543,
+        "rows": 0,
+        "visible": 0,
+        "forms": 1
+      }
+    },
+    {
+      "label": "No JavaScript: news-events.html",
+      "pass": true,
+      "detail": {
+        "body": 2773,
+        "rows": 24,
+        "visible": 24,
+        "forms": 0
+      }
+    },
+    {
+      "label": "No JavaScript: product-create.html",
+      "pass": true,
+      "detail": {
+        "body": 3494,
+        "rows": 0,
+        "visible": 0,
+        "forms": 1
+      }
+    },
+    {
+      "label": "No JavaScript: product-edit.html",
+      "pass": true,
+      "detail": {
+        "body": 3495,
+        "rows": 0,
+        "visible": 0,
+        "forms": 1
+      }
+    },
+    {
+      "label": "No JavaScript: product-view.html",
+      "pass": true,
+      "detail": {
+        "body": 1444,
+        "rows": 0,
+        "visible": 0,
+        "forms": 0
+      }
+    },
+    {
+      "label": "No JavaScript: products.html",
+      "pass": true,
+      "detail": {
+        "body": 9263,
+        "rows": 60,
+        "visible": 60,
+        "forms": 0
+      }
+    },
+    {
+      "label": "No JavaScript: subcategories.html",
+      "pass": true,
+      "detail": {
+        "body": 3757,
+        "rows": 40,
+        "visible": 40,
+        "forms": 0
+      }
+    },
+    {
+      "label": "No JavaScript: subcategory-create.html",
+      "pass": true,
+      "detail": {
+        "body": 900,
+        "rows": 0,
+        "visible": 0,
+        "forms": 1
+      }
+    },
+    {
+      "label": "No JavaScript: subcategory-edit.html",
+      "pass": true,
+      "detail": {
+        "body": 901,
+        "rows": 0,
+        "visible": 0,
+        "forms": 1
+      }
+    },
+    {
+      "label": "No JavaScript: website-settings.html",
+      "pass": true,
+      "detail": {
+        "body": 613,
+        "rows": 0,
+        "visible": 0,
+        "forms": 1
+      }
+    }
+  ]
+}

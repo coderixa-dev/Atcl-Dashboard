@@ -1,0 +1,1452 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Inquiries / RFQ · ATCL Admin</title>
+<link rel="icon" href="assets/images/ui/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/admin.css">
+<script src="assets/js/admin.js" defer>
+</script>
+</head>
+<body>
+<aside class="sidebar" aria-label="Main navigation">
+<div class="brand">
+<b>ATCL</b>
+<span>Admin</span>
+<button class="icon-btn" data-sidebar aria-label="Collapse sidebar">«</button>
+</div>
+<nav>
+<div class="nav-group">
+<div class="nav-label">OVERVIEW</div>
+<a class="nav-link " href="index.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="m3 10 9-7 9 7v11h-6v-7H9v7H3z"/>
+</svg>
+<span>Dashboard</span>
+</a>
+</div>
+<div class="nav-group">
+<div class="nav-label">CATALOG</div>
+<a class="nav-link " href="products.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="m12 2 9 5v10l-9 5-9-5V7zM3 7l9 5 9-5M12 12v10"/>
+</svg>
+<span>Products</span>
+</a>
+<a class="nav-link " href="categories.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<rect x="3" y="3" width="6" height="6" rx="1"/>
+<rect x="15" y="3" width="6" height="6" rx="1"/>
+<rect x="3" y="15" width="6" height="6" rx="1"/>
+<rect x="15" y="15" width="6" height="6" rx="1"/>
+</svg>
+<span>Categories</span>
+</a>
+<a class="nav-link " href="subcategories.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="m3 7 9-5 9 5-9 5zM3 12l9 5 9-5M3 17l9 5 9-5"/>
+</svg>
+<span>Subcategories</span>
+</a>
+<a class="nav-link " href="child-categories.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<circle cx="12" cy="4" r="2"/>
+<circle cx="4" cy="20" r="2"/>
+<circle cx="20" cy="20" r="2"/>
+<path d="M12 6v5M4 18v-5h16v5"/>
+</svg>
+<span>Child Categories</span>
+</a>
+<a class="nav-link " href="brands.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M3 3h9l9 9-9 9-9-9z"/>
+<circle cx="8" cy="8" r="1"/>
+</svg>
+<span>Brands</span>
+</a>
+</div>
+<div class="nav-group">
+<div class="nav-label">CUSTOMER ENGAGEMENT</div>
+<a class="nav-link active" href="inquiries.html" aria-current="page">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<rect x="3" y="5" width="18" height="14" rx="2"/>
+<path d="m3 6 9 7 9-7"/>
+</svg>
+<span>Inquiries / RFQ</span>
+</a>
+<a class="nav-link " href="contact-messages.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M21 11a8 8 0 0 1-8 8H7l-5 3 2-7a8 8 0 1 1 17-4z"/>
+</svg>
+<span>Contact Messages</span>
+</a>
+</div>
+<div class="nav-group">
+<div class="nav-label">CONTENT</div>
+<a class="nav-link " href="news-events.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M5 2h10l4 4v16H5zM14 2v6h5M8 12h8M8 16h8M8 8h2"/>
+</svg>
+<span>News & Events</span>
+</a>
+<a class="nav-link " href="career-posts.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<rect x="3" y="7" width="18" height="14" rx="2"/>
+<path d="M8 7V3h8v4M3 12l9 3 9-3M10 14h4"/>
+</svg>
+<span>Career Posts</span>
+</a>
+</div>
+<div class="nav-group">
+<div class="nav-label">SYSTEM</div>
+<a class="nav-link " href="website-settings.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="m9 3 1-2h4l1 2 3 2 3 1v4l-2 2 1 4-3 3-4-1-3 2-4-2v-4l-3-2V8l3-1z"/>
+<circle cx="12" cy="11" r="3"/>
+</svg>
+<span>Website Settings</span>
+</a>
+</div>
+</nav>
+</aside>
+<button class="mobile-backdrop" data-sidebar aria-label="Close navigation">
+</button>
+<div class="main-shell">
+<header class="topbar">
+<button class="icon-btn" data-sidebar aria-label="Toggle navigation" aria-expanded="false">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M5 6h14M5 12h14M5 18h14"/>
+</svg>
+</button>
+<span class="context">Inquiries / RFQ</span>
+<div class="global-search" aria-label="Global search preview">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<circle cx="10" cy="10" r="6"/>
+<path d="m15 15 6 6"/>
+</svg>
+<span>Search products, inquiries, customers…</span>
+</div>
+<button class="icon-btn notification" aria-label="Notifications" aria-expanded="false" data-notifications>
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M5 17V9a7 7 0 0 1 14 0v8l2 2H3zM9 22h6"/>
+</svg>
+</button>
+<div class="profile">
+<img class="avatar" src="assets/images/avatars/admin.svg" alt="Admin initials">
+<div>Admin User<small>Administrator</small>
+</div>
+</div>
+</header>
+<aside class="notification-panel card-panel" hidden>
+<h3>Notifications</h3>
+<p>4 unread contact messages</p>
+<p>18 new inquiries this week</p>
+<p>
+<a href="inquiries.html">Open inquiry inbox →</a>
+</p>
+</aside>
+<main>
+<noscript>
+<p class="noscript-note">Static preview: all records are visible. Enable JavaScript to use filters and preview interactions.</p>
+</noscript>
+<div class="page-heading">
+<div>
+<div class="title-line">
+<h1>Inquiries / RFQ</h1>
+</div>
+<p class="subtitle">Manage customer requirements and quotation requests.</p>
+</div>
+</div>
+<div class="module-stats">
+<div class="mini-stat">New<strong>8</strong>
+</div>
+<div class="mini-stat">Reviewing<strong>8</strong>
+</div>
+<div class="mini-stat">Contacted<strong>8</strong>
+</div>
+<div class="mini-stat">Quotation Sent<strong>8</strong>
+</div>
+<div class="mini-stat">Completed<strong>8</strong>
+</div>
+<div class="mini-stat">Closed<strong>8</strong>
+</div>
+</div>
+<section class="card-panel" data-table-module data-noun="inquiries">
+<div class="toolbar">
+<label class="search-field">Search<input class="form-control" type="search" data-search placeholder="Search inquiry, customer or company" aria-label="Search inquiry, customer or company">
+</label>
+<label>Status<select class="form-select" data-filter="status" aria-label="Filter by status">
+<option value="">All status</option>
+<option value="New">New</option>
+<option value="Reviewing">Reviewing</option>
+<option value="Contacted">Contacted</option>
+<option value="Quotation Sent">Quotation Sent</option>
+<option value="Completed">Completed</option>
+<option value="Closed">Closed</option>
+</select>
+</label>
+<label>Date<select class="form-select" data-filter="date" aria-label="Filter by date">
+<option value="">All date</option>
+<option value="2026-10-09">2026-10-09</option>
+<option value="2026-10-08">2026-10-08</option>
+<option value="2026-10-07">2026-10-07</option>
+<option value="2026-10-06">2026-10-06</option>
+<option value="2026-10-05">2026-10-05</option>
+<option value="2026-10-04">2026-10-04</option>
+<option value="2026-10-03">2026-10-03</option>
+<option value="2026-10-02">2026-10-02</option>
+<option value="2026-10-01">2026-10-01</option>
+</select>
+</label>
+<label>Product<select class="form-select" data-filter="product" aria-label="Filter by product">
+<option value="">All product</option>
+<option value="Stainless Steel Ball Valve">Stainless Steel Ball Valve</option>
+<option value="Industrial Butterfly Valve">Industrial Butterfly Valve</option>
+<option value="Centrifugal Water Pump">Centrifugal Water Pump</option>
+<option value="Pressure Booster Pump">Pressure Booster Pump</option>
+<option value="Industrial Control Panel">Industrial Control Panel</option>
+<option value="PLC Control Cabinet">PLC Control Cabinet</option>
+<option value="Motor Starter Panel">Motor Starter Panel</option>
+<option value="Molded Case Circuit Breaker">Molded Case Circuit Breaker</option>
+<option value="Inductive Proximity Sensor">Inductive Proximity Sensor</option>
+<option value="Variable Frequency Drive">Variable Frequency Drive</option>
+<option value="Industrial Air Handling Unit">Industrial Air Handling Unit</option>
+<option value="HVAC Control Unit">HVAC Control Unit</option>
+<option value="Fire Pump Controller">Fire Pump Controller</option>
+<option value="Addressable Smoke Detector">Addressable Smoke Detector</option>
+<option value="Pressure Transmitter">Pressure Transmitter</option>
+<option value="Ultrasonic Flow Meter">Ultrasonic Flow Meter</option>
+<option value="Reverse Osmosis System">Reverse Osmosis System</option>
+<option value="Cartridge Filter Housing">Cartridge Filter Housing</option>
+<option value="Helical Gear Motor">Helical Gear Motor</option>
+<option value="Industrial Air Compressor">Industrial Air Compressor</option>
+<option value="Compressed Air Filter">Compressed Air Filter</option>
+<option value="Pneumatic Rotary Actuator">Pneumatic Rotary Actuator</option>
+<option value="Hydraulic Power Unit">Hydraulic Power Unit</option>
+<option value="Double Acting Hydraulic Cylinder">Double Acting Hydraulic Cylinder</option>
+<option value="Low Voltage Distribution Board">Low Voltage Distribution Board</option>
+<option value="Dry Type Transformer">Dry Type Transformer</option>
+<option value="Plate Heat Exchanger">Plate Heat Exchanger</option>
+<option value="Steam Pressure Reducing Station">Steam Pressure Reducing Station</option>
+<option value="Rotary Screw Compressor">Rotary Screw Compressor</option>
+<option value="Refrigerated Air Dryer">Refrigerated Air Dryer</option>
+<option value="Building Automation Controller">Building Automation Controller</option>
+<option value="Three Phase Energy Meter">Three Phase Energy Meter</option>
+<option value="Submersible Wastewater Pump">Submersible Wastewater Pump</option>
+<option value="Stack Emission Analyzer">Stack Emission Analyzer</option>
+<option value="Fixed Gas Detector">Fixed Gas Detector</option>
+<option value="Emergency Shutdown Panel">Emergency Shutdown Panel</option>
+<option value="Industrial Ethernet Switch">Industrial Ethernet Switch</option>
+<option value="Modbus Communication Gateway">Modbus Communication Gateway</option>
+<option value="Digital Pressure Calibrator">Digital Pressure Calibrator</option>
+<option value="Thermal Imaging Camera">Thermal Imaging Camera</option>
+<option value="Stainless Steel Ball Valve — High Capacity">Stainless Steel Ball Valve — High Capacity</option>
+<option value="Industrial Butterfly Valve — High Capacity">Industrial Butterfly Valve — High Capacity</option>
+<option value="Centrifugal Water Pump — High Capacity">Centrifugal Water Pump — High Capacity</option>
+<option value="Pressure Booster Pump — High Capacity">Pressure Booster Pump — High Capacity</option>
+<option value="Industrial Control Panel — High Capacity">Industrial Control Panel — High Capacity</option>
+<option value="PLC Control Cabinet — High Capacity">PLC Control Cabinet — High Capacity</option>
+<option value="Motor Starter Panel — High Capacity">Motor Starter Panel — High Capacity</option>
+<option value="Molded Case Circuit Breaker — High Capacity">Molded Case Circuit Breaker — High Capacity</option>
+</select>
+</label>
+<label>Company<select class="form-select" data-filter="company" aria-label="Filter by company">
+<option value="">All company</option>
+<option value="ABC Enterprise">ABC Enterprise</option>
+<option value="Global Tech Solutions">Global Tech Solutions</option>
+<option value="Summit Industries">Summit Industries</option>
+<option value="Oriental Holdings">Oriental Holdings</option>
+<option value="Metro Construction">Metro Construction</option>
+<option value="Bengal Engineering">Bengal Engineering</option>
+<option value="Delta Power Systems">Delta Power Systems</option>
+<option value="Eastern Refinery">Eastern Refinery</option>
+<option value="Meghna Industries">Meghna Industries</option>
+<option value="Apex Textiles">Apex Textiles</option>
+<option value="United Manufacturing">United Manufacturing</option>
+<option value="Prime Automation">Prime Automation</option>
+<option value="Navana Engineering">Navana Engineering</option>
+<option value="Pacific Cement">Pacific Cement</option>
+<option value="Rupali Foods">Rupali Foods</option>
+<option value="Concord Infrastructure">Concord Infrastructure</option>
+</select>
+</label>
+<button class="btn btn-light" type="button" data-reset>Reset Filters</button>
+</div>
+<div class="filter-chips" aria-label="Active filters">
+</div>
+<div class="bulk-bar">
+<span data-selected>0 selected</span>
+<select data-bulk aria-label="Bulk action">
+<option value="">Bulk action</option>
+<option>Mark active / read</option>
+<option>Archive selection</option>
+</select>
+<button type="button" class="btn btn-light" data-apply-bulk>Apply</button>
+<span class="muted">Preview only</span>
+</div>
+<div class="table-wrap">
+<table class="data-table">
+<thead>
+<tr>
+<th>
+<input type="checkbox" data-select-all aria-label="Select all visible records">
+</th>
+<th scope="col" aria-sort="none">
+<button type="button" data-sort="1">Inquiry ID</button>
+</th>
+<th scope="col" aria-sort="none">
+<button type="button" data-sort="2">Customer</button>
+</th>
+<th scope="col" aria-sort="none">
+<button type="button" data-sort="3">Company</button>
+</th>
+<th scope="col" aria-sort="none">
+<button type="button" data-sort="4">Requested Products</button>
+</th>
+<th scope="col" aria-sort="none">
+<button type="button" data-sort="5">Contact</button>
+</th>
+<th scope="col" aria-sort="none">
+<button type="button" data-sort="6">Status</button>
+</th>
+<th scope="col" aria-sort="none">
+<button type="button" data-sort="7">Received</button>
+</th>
+<th scope="col">Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr data-id="INQ-1048" data-name="Rahim Ahmed" data-company="ABC Enterprise" data-status="Reviewing" data-date="2026-10-09" data-product="Stainless Steel Ball Valve">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Rahim Ahmed">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1048</a>
+</td>
+<td>Rahim Ahmed</td>
+<td>ABC Enterprise</td>
+<td>
+<span class="cell-title">Stainless Steel Ball Valve</span>
+<span class="cell-sub">3 requested products</span>
+</td>
+<td>rahim@abcenterprise.example<span class="cell-sub">+880 1711 204800</span>
+</td>
+<td>
+<span class="badge-status status-reviewing">Reviewing</span>
+</td>
+<td>2026-10-09</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1047" data-name="Nadia Islam" data-company="Global Tech Solutions" data-status="New" data-date="2026-10-08" data-product="Industrial Butterfly Valve">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Nadia Islam">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1047</a>
+</td>
+<td>Nadia Islam</td>
+<td>Global Tech Solutions</td>
+<td>
+<span class="cell-title">Industrial Butterfly Valve</span>
+<span class="cell-sub">2 requested products</span>
+</td>
+<td>nadia@globaltechsolutions.example<span class="cell-sub">+880 1711 204801</span>
+</td>
+<td>
+<span class="badge-status status-new">New</span>
+</td>
+<td>2026-10-08</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1046" data-name="Tanvir Hasan" data-company="Summit Industries" data-status="Contacted" data-date="2026-10-07" data-product="Centrifugal Water Pump">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Tanvir Hasan">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1046</a>
+</td>
+<td>Tanvir Hasan</td>
+<td>Summit Industries</td>
+<td>
+<span class="cell-title">Centrifugal Water Pump</span>
+<span class="cell-sub">3 requested products</span>
+</td>
+<td>tanvir@summitindustries.example<span class="cell-sub">+880 1711 204802</span>
+</td>
+<td>
+<span class="badge-status status-contacted">Contacted</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1045" data-name="Farhana Chowdhury" data-company="Oriental Holdings" data-status="Quotation Sent" data-date="2026-10-06" data-product="Pressure Booster Pump">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Farhana Chowdhury">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1045</a>
+</td>
+<td>Farhana Chowdhury</td>
+<td>Oriental Holdings</td>
+<td>
+<span class="cell-title">Pressure Booster Pump</span>
+<span class="cell-sub">4 requested products</span>
+</td>
+<td>farhana@orientalholdings.example<span class="cell-sub">+880 1711 204803</span>
+</td>
+<td>
+<span class="badge-status status-quotation-sent">Quotation Sent</span>
+</td>
+<td>2026-10-06</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1044" data-name="Imran Hossain" data-company="Metro Construction" data-status="Completed" data-date="2026-10-05" data-product="Industrial Control Panel">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Imran Hossain">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1044</a>
+</td>
+<td>Imran Hossain</td>
+<td>Metro Construction</td>
+<td>
+<span class="cell-title">Industrial Control Panel</span>
+<span class="cell-sub">5 requested products</span>
+</td>
+<td>imran@metroconstruction.example<span class="cell-sub">+880 1711 204804</span>
+</td>
+<td>
+<span class="badge-status status-completed">Completed</span>
+</td>
+<td>2026-10-05</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1043" data-name="Sadia Rahman" data-company="Bengal Engineering" data-status="Closed" data-date="2026-10-04" data-product="PLC Control Cabinet">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Sadia Rahman">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1043</a>
+</td>
+<td>Sadia Rahman</td>
+<td>Bengal Engineering</td>
+<td>
+<span class="cell-title">PLC Control Cabinet</span>
+<span class="cell-sub">1 requested products</span>
+</td>
+<td>sadia@bengalengineering.example<span class="cell-sub">+880 1711 204805</span>
+</td>
+<td>
+<span class="badge-status status-closed">Closed</span>
+</td>
+<td>2026-10-04</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1042" data-name="Arif Karim" data-company="Delta Power Systems" data-status="Reviewing" data-date="2026-10-03" data-product="Motor Starter Panel">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Arif Karim">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1042</a>
+</td>
+<td>Arif Karim</td>
+<td>Delta Power Systems</td>
+<td>
+<span class="cell-title">Motor Starter Panel</span>
+<span class="cell-sub">2 requested products</span>
+</td>
+<td>arif@deltapowersystems.example<span class="cell-sub">+880 1711 204806</span>
+</td>
+<td>
+<span class="badge-status status-reviewing">Reviewing</span>
+</td>
+<td>2026-10-03</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1041" data-name="Nusrat Jahan" data-company="Eastern Refinery" data-status="New" data-date="2026-10-02" data-product="Molded Case Circuit Breaker">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Nusrat Jahan">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1041</a>
+</td>
+<td>Nusrat Jahan</td>
+<td>Eastern Refinery</td>
+<td>
+<span class="cell-title">Molded Case Circuit Breaker</span>
+<span class="cell-sub">3 requested products</span>
+</td>
+<td>nusrat@easternrefinery.example<span class="cell-sub">+880 1711 204807</span>
+</td>
+<td>
+<span class="badge-status status-new">New</span>
+</td>
+<td>2026-10-02</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1040" data-name="Mahmud Alam" data-company="Meghna Industries" data-status="Contacted" data-date="2026-10-01" data-product="Inductive Proximity Sensor">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Mahmud Alam">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1040</a>
+</td>
+<td>Mahmud Alam</td>
+<td>Meghna Industries</td>
+<td>
+<span class="cell-title">Inductive Proximity Sensor</span>
+<span class="cell-sub">4 requested products</span>
+</td>
+<td>mahmud@meghnaindustries.example<span class="cell-sub">+880 1711 204808</span>
+</td>
+<td>
+<span class="badge-status status-contacted">Contacted</span>
+</td>
+<td>2026-10-01</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1039" data-name="Tasnim Akter" data-company="Apex Textiles" data-status="Quotation Sent" data-date="2026-10-09" data-product="Variable Frequency Drive">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Tasnim Akter">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1039</a>
+</td>
+<td>Tasnim Akter</td>
+<td>Apex Textiles</td>
+<td>
+<span class="cell-title">Variable Frequency Drive</span>
+<span class="cell-sub">5 requested products</span>
+</td>
+<td>tasnim@apextextiles.example<span class="cell-sub">+880 1711 204809</span>
+</td>
+<td>
+<span class="badge-status status-quotation-sent">Quotation Sent</span>
+</td>
+<td>2026-10-09</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1038" data-name="Shafiq Rahman" data-company="United Manufacturing" data-status="Completed" data-date="2026-10-08" data-product="Industrial Air Handling Unit">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Shafiq Rahman">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1038</a>
+</td>
+<td>Shafiq Rahman</td>
+<td>United Manufacturing</td>
+<td>
+<span class="cell-title">Industrial Air Handling Unit</span>
+<span class="cell-sub">1 requested products</span>
+</td>
+<td>shafiq@unitedmanufacturing.example<span class="cell-sub">+880 1711 204810</span>
+</td>
+<td>
+<span class="badge-status status-completed">Completed</span>
+</td>
+<td>2026-10-08</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1037" data-name="Maliha Khan" data-company="Prime Automation" data-status="Closed" data-date="2026-10-07" data-product="HVAC Control Unit">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Maliha Khan">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1037</a>
+</td>
+<td>Maliha Khan</td>
+<td>Prime Automation</td>
+<td>
+<span class="cell-title">HVAC Control Unit</span>
+<span class="cell-sub">2 requested products</span>
+</td>
+<td>maliha@primeautomation.example<span class="cell-sub">+880 1711 204811</span>
+</td>
+<td>
+<span class="badge-status status-closed">Closed</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1036" data-name="Faisal Kabir" data-company="Navana Engineering" data-status="Reviewing" data-date="2026-10-06" data-product="Fire Pump Controller">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Faisal Kabir">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1036</a>
+</td>
+<td>Faisal Kabir</td>
+<td>Navana Engineering</td>
+<td>
+<span class="cell-title">Fire Pump Controller</span>
+<span class="cell-sub">3 requested products</span>
+</td>
+<td>faisal@navanaengineering.example<span class="cell-sub">+880 1711 204812</span>
+</td>
+<td>
+<span class="badge-status status-reviewing">Reviewing</span>
+</td>
+<td>2026-10-06</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1035" data-name="Rehana Sultana" data-company="Pacific Cement" data-status="New" data-date="2026-10-05" data-product="Addressable Smoke Detector">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Rehana Sultana">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1035</a>
+</td>
+<td>Rehana Sultana</td>
+<td>Pacific Cement</td>
+<td>
+<span class="cell-title">Addressable Smoke Detector</span>
+<span class="cell-sub">4 requested products</span>
+</td>
+<td>rehana@pacificcement.example<span class="cell-sub">+880 1711 204813</span>
+</td>
+<td>
+<span class="badge-status status-new">New</span>
+</td>
+<td>2026-10-05</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1034" data-name="Ashraf Uddin" data-company="Rupali Foods" data-status="Contacted" data-date="2026-10-04" data-product="Pressure Transmitter">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Ashraf Uddin">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1034</a>
+</td>
+<td>Ashraf Uddin</td>
+<td>Rupali Foods</td>
+<td>
+<span class="cell-title">Pressure Transmitter</span>
+<span class="cell-sub">5 requested products</span>
+</td>
+<td>ashraf@rupalifoods.example<span class="cell-sub">+880 1711 204814</span>
+</td>
+<td>
+<span class="badge-status status-contacted">Contacted</span>
+</td>
+<td>2026-10-04</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1033" data-name="Zara Ahmed" data-company="Concord Infrastructure" data-status="Quotation Sent" data-date="2026-10-03" data-product="Ultrasonic Flow Meter">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Zara Ahmed">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1033</a>
+</td>
+<td>Zara Ahmed</td>
+<td>Concord Infrastructure</td>
+<td>
+<span class="cell-title">Ultrasonic Flow Meter</span>
+<span class="cell-sub">1 requested products</span>
+</td>
+<td>zara@concordinfrastructure.example<span class="cell-sub">+880 1711 204815</span>
+</td>
+<td>
+<span class="badge-status status-quotation-sent">Quotation Sent</span>
+</td>
+<td>2026-10-03</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1032" data-name="Rahim Ahmed" data-company="ABC Enterprise" data-status="Completed" data-date="2026-10-02" data-product="Reverse Osmosis System">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Rahim Ahmed">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1032</a>
+</td>
+<td>Rahim Ahmed</td>
+<td>ABC Enterprise</td>
+<td>
+<span class="cell-title">Reverse Osmosis System</span>
+<span class="cell-sub">2 requested products</span>
+</td>
+<td>rahim@abcenterprise.example<span class="cell-sub">+880 1711 204816</span>
+</td>
+<td>
+<span class="badge-status status-completed">Completed</span>
+</td>
+<td>2026-10-02</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1031" data-name="Nadia Islam" data-company="Global Tech Solutions" data-status="Closed" data-date="2026-10-01" data-product="Cartridge Filter Housing">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Nadia Islam">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1031</a>
+</td>
+<td>Nadia Islam</td>
+<td>Global Tech Solutions</td>
+<td>
+<span class="cell-title">Cartridge Filter Housing</span>
+<span class="cell-sub">3 requested products</span>
+</td>
+<td>nadia@globaltechsolutions.example<span class="cell-sub">+880 1711 204817</span>
+</td>
+<td>
+<span class="badge-status status-closed">Closed</span>
+</td>
+<td>2026-10-01</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1030" data-name="Tanvir Hasan" data-company="Summit Industries" data-status="Reviewing" data-date="2026-10-09" data-product="Helical Gear Motor">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Tanvir Hasan">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1030</a>
+</td>
+<td>Tanvir Hasan</td>
+<td>Summit Industries</td>
+<td>
+<span class="cell-title">Helical Gear Motor</span>
+<span class="cell-sub">4 requested products</span>
+</td>
+<td>tanvir@summitindustries.example<span class="cell-sub">+880 1711 204818</span>
+</td>
+<td>
+<span class="badge-status status-reviewing">Reviewing</span>
+</td>
+<td>2026-10-09</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1029" data-name="Farhana Chowdhury" data-company="Oriental Holdings" data-status="New" data-date="2026-10-08" data-product="Industrial Air Compressor">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Farhana Chowdhury">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1029</a>
+</td>
+<td>Farhana Chowdhury</td>
+<td>Oriental Holdings</td>
+<td>
+<span class="cell-title">Industrial Air Compressor</span>
+<span class="cell-sub">5 requested products</span>
+</td>
+<td>farhana@orientalholdings.example<span class="cell-sub">+880 1711 204819</span>
+</td>
+<td>
+<span class="badge-status status-new">New</span>
+</td>
+<td>2026-10-08</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1028" data-name="Imran Hossain" data-company="Metro Construction" data-status="Contacted" data-date="2026-10-07" data-product="Compressed Air Filter">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Imran Hossain">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1028</a>
+</td>
+<td>Imran Hossain</td>
+<td>Metro Construction</td>
+<td>
+<span class="cell-title">Compressed Air Filter</span>
+<span class="cell-sub">1 requested products</span>
+</td>
+<td>imran@metroconstruction.example<span class="cell-sub">+880 1711 204820</span>
+</td>
+<td>
+<span class="badge-status status-contacted">Contacted</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1027" data-name="Sadia Rahman" data-company="Bengal Engineering" data-status="Quotation Sent" data-date="2026-10-06" data-product="Pneumatic Rotary Actuator">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Sadia Rahman">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1027</a>
+</td>
+<td>Sadia Rahman</td>
+<td>Bengal Engineering</td>
+<td>
+<span class="cell-title">Pneumatic Rotary Actuator</span>
+<span class="cell-sub">2 requested products</span>
+</td>
+<td>sadia@bengalengineering.example<span class="cell-sub">+880 1711 204821</span>
+</td>
+<td>
+<span class="badge-status status-quotation-sent">Quotation Sent</span>
+</td>
+<td>2026-10-06</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1026" data-name="Arif Karim" data-company="Delta Power Systems" data-status="Completed" data-date="2026-10-05" data-product="Hydraulic Power Unit">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Arif Karim">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1026</a>
+</td>
+<td>Arif Karim</td>
+<td>Delta Power Systems</td>
+<td>
+<span class="cell-title">Hydraulic Power Unit</span>
+<span class="cell-sub">3 requested products</span>
+</td>
+<td>arif@deltapowersystems.example<span class="cell-sub">+880 1711 204822</span>
+</td>
+<td>
+<span class="badge-status status-completed">Completed</span>
+</td>
+<td>2026-10-05</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1025" data-name="Nusrat Jahan" data-company="Eastern Refinery" data-status="Closed" data-date="2026-10-04" data-product="Double Acting Hydraulic Cylinder">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Nusrat Jahan">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1025</a>
+</td>
+<td>Nusrat Jahan</td>
+<td>Eastern Refinery</td>
+<td>
+<span class="cell-title">Double Acting Hydraulic Cylinder</span>
+<span class="cell-sub">4 requested products</span>
+</td>
+<td>nusrat@easternrefinery.example<span class="cell-sub">+880 1711 204823</span>
+</td>
+<td>
+<span class="badge-status status-closed">Closed</span>
+</td>
+<td>2026-10-04</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1024" data-name="Mahmud Alam" data-company="Meghna Industries" data-status="Reviewing" data-date="2026-10-03" data-product="Low Voltage Distribution Board">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Mahmud Alam">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1024</a>
+</td>
+<td>Mahmud Alam</td>
+<td>Meghna Industries</td>
+<td>
+<span class="cell-title">Low Voltage Distribution Board</span>
+<span class="cell-sub">5 requested products</span>
+</td>
+<td>mahmud@meghnaindustries.example<span class="cell-sub">+880 1711 204824</span>
+</td>
+<td>
+<span class="badge-status status-reviewing">Reviewing</span>
+</td>
+<td>2026-10-03</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1023" data-name="Tasnim Akter" data-company="Apex Textiles" data-status="New" data-date="2026-10-02" data-product="Dry Type Transformer">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Tasnim Akter">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1023</a>
+</td>
+<td>Tasnim Akter</td>
+<td>Apex Textiles</td>
+<td>
+<span class="cell-title">Dry Type Transformer</span>
+<span class="cell-sub">1 requested products</span>
+</td>
+<td>tasnim@apextextiles.example<span class="cell-sub">+880 1711 204825</span>
+</td>
+<td>
+<span class="badge-status status-new">New</span>
+</td>
+<td>2026-10-02</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1022" data-name="Shafiq Rahman" data-company="United Manufacturing" data-status="Contacted" data-date="2026-10-01" data-product="Plate Heat Exchanger">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Shafiq Rahman">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1022</a>
+</td>
+<td>Shafiq Rahman</td>
+<td>United Manufacturing</td>
+<td>
+<span class="cell-title">Plate Heat Exchanger</span>
+<span class="cell-sub">2 requested products</span>
+</td>
+<td>shafiq@unitedmanufacturing.example<span class="cell-sub">+880 1711 204826</span>
+</td>
+<td>
+<span class="badge-status status-contacted">Contacted</span>
+</td>
+<td>2026-10-01</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1021" data-name="Maliha Khan" data-company="Prime Automation" data-status="Quotation Sent" data-date="2026-10-09" data-product="Steam Pressure Reducing Station">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Maliha Khan">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1021</a>
+</td>
+<td>Maliha Khan</td>
+<td>Prime Automation</td>
+<td>
+<span class="cell-title">Steam Pressure Reducing Station</span>
+<span class="cell-sub">3 requested products</span>
+</td>
+<td>maliha@primeautomation.example<span class="cell-sub">+880 1711 204827</span>
+</td>
+<td>
+<span class="badge-status status-quotation-sent">Quotation Sent</span>
+</td>
+<td>2026-10-09</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1020" data-name="Faisal Kabir" data-company="Navana Engineering" data-status="Completed" data-date="2026-10-08" data-product="Rotary Screw Compressor">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Faisal Kabir">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1020</a>
+</td>
+<td>Faisal Kabir</td>
+<td>Navana Engineering</td>
+<td>
+<span class="cell-title">Rotary Screw Compressor</span>
+<span class="cell-sub">4 requested products</span>
+</td>
+<td>faisal@navanaengineering.example<span class="cell-sub">+880 1711 204828</span>
+</td>
+<td>
+<span class="badge-status status-completed">Completed</span>
+</td>
+<td>2026-10-08</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1019" data-name="Rehana Sultana" data-company="Pacific Cement" data-status="Closed" data-date="2026-10-07" data-product="Refrigerated Air Dryer">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Rehana Sultana">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1019</a>
+</td>
+<td>Rehana Sultana</td>
+<td>Pacific Cement</td>
+<td>
+<span class="cell-title">Refrigerated Air Dryer</span>
+<span class="cell-sub">5 requested products</span>
+</td>
+<td>rehana@pacificcement.example<span class="cell-sub">+880 1711 204829</span>
+</td>
+<td>
+<span class="badge-status status-closed">Closed</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1018" data-name="Ashraf Uddin" data-company="Rupali Foods" data-status="Reviewing" data-date="2026-10-06" data-product="Building Automation Controller">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Ashraf Uddin">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1018</a>
+</td>
+<td>Ashraf Uddin</td>
+<td>Rupali Foods</td>
+<td>
+<span class="cell-title">Building Automation Controller</span>
+<span class="cell-sub">1 requested products</span>
+</td>
+<td>ashraf@rupalifoods.example<span class="cell-sub">+880 1711 204830</span>
+</td>
+<td>
+<span class="badge-status status-reviewing">Reviewing</span>
+</td>
+<td>2026-10-06</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1017" data-name="Zara Ahmed" data-company="Concord Infrastructure" data-status="New" data-date="2026-10-05" data-product="Three Phase Energy Meter">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Zara Ahmed">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1017</a>
+</td>
+<td>Zara Ahmed</td>
+<td>Concord Infrastructure</td>
+<td>
+<span class="cell-title">Three Phase Energy Meter</span>
+<span class="cell-sub">2 requested products</span>
+</td>
+<td>zara@concordinfrastructure.example<span class="cell-sub">+880 1711 204831</span>
+</td>
+<td>
+<span class="badge-status status-new">New</span>
+</td>
+<td>2026-10-05</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1016" data-name="Rahim Ahmed" data-company="ABC Enterprise" data-status="Contacted" data-date="2026-10-04" data-product="Submersible Wastewater Pump">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Rahim Ahmed">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1016</a>
+</td>
+<td>Rahim Ahmed</td>
+<td>ABC Enterprise</td>
+<td>
+<span class="cell-title">Submersible Wastewater Pump</span>
+<span class="cell-sub">3 requested products</span>
+</td>
+<td>rahim@abcenterprise.example<span class="cell-sub">+880 1711 204832</span>
+</td>
+<td>
+<span class="badge-status status-contacted">Contacted</span>
+</td>
+<td>2026-10-04</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1015" data-name="Nadia Islam" data-company="Global Tech Solutions" data-status="Quotation Sent" data-date="2026-10-03" data-product="Stack Emission Analyzer">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Nadia Islam">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1015</a>
+</td>
+<td>Nadia Islam</td>
+<td>Global Tech Solutions</td>
+<td>
+<span class="cell-title">Stack Emission Analyzer</span>
+<span class="cell-sub">4 requested products</span>
+</td>
+<td>nadia@globaltechsolutions.example<span class="cell-sub">+880 1711 204833</span>
+</td>
+<td>
+<span class="badge-status status-quotation-sent">Quotation Sent</span>
+</td>
+<td>2026-10-03</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1014" data-name="Tanvir Hasan" data-company="Summit Industries" data-status="Completed" data-date="2026-10-02" data-product="Fixed Gas Detector">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Tanvir Hasan">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1014</a>
+</td>
+<td>Tanvir Hasan</td>
+<td>Summit Industries</td>
+<td>
+<span class="cell-title">Fixed Gas Detector</span>
+<span class="cell-sub">5 requested products</span>
+</td>
+<td>tanvir@summitindustries.example<span class="cell-sub">+880 1711 204834</span>
+</td>
+<td>
+<span class="badge-status status-completed">Completed</span>
+</td>
+<td>2026-10-02</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1013" data-name="Farhana Chowdhury" data-company="Oriental Holdings" data-status="Closed" data-date="2026-10-01" data-product="Emergency Shutdown Panel">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Farhana Chowdhury">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1013</a>
+</td>
+<td>Farhana Chowdhury</td>
+<td>Oriental Holdings</td>
+<td>
+<span class="cell-title">Emergency Shutdown Panel</span>
+<span class="cell-sub">1 requested products</span>
+</td>
+<td>farhana@orientalholdings.example<span class="cell-sub">+880 1711 204835</span>
+</td>
+<td>
+<span class="badge-status status-closed">Closed</span>
+</td>
+<td>2026-10-01</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1012" data-name="Imran Hossain" data-company="Metro Construction" data-status="Reviewing" data-date="2026-10-09" data-product="Industrial Ethernet Switch">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Imran Hossain">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1012</a>
+</td>
+<td>Imran Hossain</td>
+<td>Metro Construction</td>
+<td>
+<span class="cell-title">Industrial Ethernet Switch</span>
+<span class="cell-sub">2 requested products</span>
+</td>
+<td>imran@metroconstruction.example<span class="cell-sub">+880 1711 204836</span>
+</td>
+<td>
+<span class="badge-status status-reviewing">Reviewing</span>
+</td>
+<td>2026-10-09</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1011" data-name="Sadia Rahman" data-company="Bengal Engineering" data-status="New" data-date="2026-10-08" data-product="Modbus Communication Gateway">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Sadia Rahman">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1011</a>
+</td>
+<td>Sadia Rahman</td>
+<td>Bengal Engineering</td>
+<td>
+<span class="cell-title">Modbus Communication Gateway</span>
+<span class="cell-sub">3 requested products</span>
+</td>
+<td>sadia@bengalengineering.example<span class="cell-sub">+880 1711 204837</span>
+</td>
+<td>
+<span class="badge-status status-new">New</span>
+</td>
+<td>2026-10-08</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1010" data-name="Arif Karim" data-company="Delta Power Systems" data-status="Contacted" data-date="2026-10-07" data-product="Digital Pressure Calibrator">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Arif Karim">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1010</a>
+</td>
+<td>Arif Karim</td>
+<td>Delta Power Systems</td>
+<td>
+<span class="cell-title">Digital Pressure Calibrator</span>
+<span class="cell-sub">4 requested products</span>
+</td>
+<td>arif@deltapowersystems.example<span class="cell-sub">+880 1711 204838</span>
+</td>
+<td>
+<span class="badge-status status-contacted">Contacted</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1009" data-name="Nusrat Jahan" data-company="Eastern Refinery" data-status="Quotation Sent" data-date="2026-10-06" data-product="Thermal Imaging Camera">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Nusrat Jahan">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1009</a>
+</td>
+<td>Nusrat Jahan</td>
+<td>Eastern Refinery</td>
+<td>
+<span class="cell-title">Thermal Imaging Camera</span>
+<span class="cell-sub">5 requested products</span>
+</td>
+<td>nusrat@easternrefinery.example<span class="cell-sub">+880 1711 204839</span>
+</td>
+<td>
+<span class="badge-status status-quotation-sent">Quotation Sent</span>
+</td>
+<td>2026-10-06</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1008" data-name="Mahmud Alam" data-company="Meghna Industries" data-status="Completed" data-date="2026-10-05" data-product="Stainless Steel Ball Valve — High Capacity">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Mahmud Alam">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1008</a>
+</td>
+<td>Mahmud Alam</td>
+<td>Meghna Industries</td>
+<td>
+<span class="cell-title">Stainless Steel Ball Valve — High Capacity</span>
+<span class="cell-sub">1 requested products</span>
+</td>
+<td>mahmud@meghnaindustries.example<span class="cell-sub">+880 1711 204840</span>
+</td>
+<td>
+<span class="badge-status status-completed">Completed</span>
+</td>
+<td>2026-10-05</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1007" data-name="Tasnim Akter" data-company="Apex Textiles" data-status="Closed" data-date="2026-10-04" data-product="Industrial Butterfly Valve — High Capacity">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Tasnim Akter">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1007</a>
+</td>
+<td>Tasnim Akter</td>
+<td>Apex Textiles</td>
+<td>
+<span class="cell-title">Industrial Butterfly Valve — High Capacity</span>
+<span class="cell-sub">2 requested products</span>
+</td>
+<td>tasnim@apextextiles.example<span class="cell-sub">+880 1711 204841</span>
+</td>
+<td>
+<span class="badge-status status-closed">Closed</span>
+</td>
+<td>2026-10-04</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1006" data-name="Shafiq Rahman" data-company="United Manufacturing" data-status="Reviewing" data-date="2026-10-03" data-product="Centrifugal Water Pump — High Capacity">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Shafiq Rahman">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1006</a>
+</td>
+<td>Shafiq Rahman</td>
+<td>United Manufacturing</td>
+<td>
+<span class="cell-title">Centrifugal Water Pump — High Capacity</span>
+<span class="cell-sub">3 requested products</span>
+</td>
+<td>shafiq@unitedmanufacturing.example<span class="cell-sub">+880 1711 204842</span>
+</td>
+<td>
+<span class="badge-status status-reviewing">Reviewing</span>
+</td>
+<td>2026-10-03</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1005" data-name="Maliha Khan" data-company="Prime Automation" data-status="New" data-date="2026-10-02" data-product="Pressure Booster Pump — High Capacity">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Maliha Khan">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1005</a>
+</td>
+<td>Maliha Khan</td>
+<td>Prime Automation</td>
+<td>
+<span class="cell-title">Pressure Booster Pump — High Capacity</span>
+<span class="cell-sub">4 requested products</span>
+</td>
+<td>maliha@primeautomation.example<span class="cell-sub">+880 1711 204843</span>
+</td>
+<td>
+<span class="badge-status status-new">New</span>
+</td>
+<td>2026-10-02</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1004" data-name="Faisal Kabir" data-company="Navana Engineering" data-status="Contacted" data-date="2026-10-01" data-product="Industrial Control Panel — High Capacity">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Faisal Kabir">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1004</a>
+</td>
+<td>Faisal Kabir</td>
+<td>Navana Engineering</td>
+<td>
+<span class="cell-title">Industrial Control Panel — High Capacity</span>
+<span class="cell-sub">5 requested products</span>
+</td>
+<td>faisal@navanaengineering.example<span class="cell-sub">+880 1711 204844</span>
+</td>
+<td>
+<span class="badge-status status-contacted">Contacted</span>
+</td>
+<td>2026-10-01</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1003" data-name="Rehana Sultana" data-company="Pacific Cement" data-status="Quotation Sent" data-date="2026-10-09" data-product="PLC Control Cabinet — High Capacity">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Rehana Sultana">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1003</a>
+</td>
+<td>Rehana Sultana</td>
+<td>Pacific Cement</td>
+<td>
+<span class="cell-title">PLC Control Cabinet — High Capacity</span>
+<span class="cell-sub">1 requested products</span>
+</td>
+<td>rehana@pacificcement.example<span class="cell-sub">+880 1711 204845</span>
+</td>
+<td>
+<span class="badge-status status-quotation-sent">Quotation Sent</span>
+</td>
+<td>2026-10-09</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1002" data-name="Ashraf Uddin" data-company="Rupali Foods" data-status="Completed" data-date="2026-10-08" data-product="Motor Starter Panel — High Capacity">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Ashraf Uddin">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1002</a>
+</td>
+<td>Ashraf Uddin</td>
+<td>Rupali Foods</td>
+<td>
+<span class="cell-title">Motor Starter Panel — High Capacity</span>
+<span class="cell-sub">2 requested products</span>
+</td>
+<td>ashraf@rupalifoods.example<span class="cell-sub">+880 1711 204846</span>
+</td>
+<td>
+<span class="badge-status status-completed">Completed</span>
+</td>
+<td>2026-10-08</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+<tr data-id="INQ-1001" data-name="Zara Ahmed" data-company="Concord Infrastructure" data-status="Closed" data-date="2026-10-07" data-product="Molded Case Circuit Breaker — High Capacity">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Zara Ahmed">
+</td>
+<td>
+<a class="cell-title" href="inquiry-details.html">#INQ-1001</a>
+</td>
+<td>Zara Ahmed</td>
+<td>Concord Infrastructure</td>
+<td>
+<span class="cell-title">Molded Case Circuit Breaker — High Capacity</span>
+<span class="cell-sub">3 requested products</span>
+</td>
+<td>zara@concordinfrastructure.example<span class="cell-sub">+880 1711 204847</span>
+</td>
+<td>
+<span class="badge-status status-closed">Closed</span>
+</td>
+<td>2026-10-07</td>
+<td>
+<a class="btn-view" href="inquiry-details.html">View</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="empty-state" hidden>
+<strong>No inquiries found.</strong>Try changing your search or filters.</div>
+<div class="table-footer">
+<span data-result-count>48 static records</span>
+<label>Rows per page <select data-page-size aria-label="Rows per page">
+<option>10</option>
+<option>25</option>
+<option>50</option>
+</select>
+</label>
+<nav class="page-controls" aria-label="Table pagination">
+<button type="button" data-prev>Previous</button>
+<span data-pages>
+</span>
+<button type="button" data-next>Next</button>
+</nav>
+</div>
+</section>
+<p class="static-note">Static prototype · Filters and selections apply to this preview only. No data is sent or saved.</p>
+</main>
+</div>
+<div class="toast-message" role="status" hidden>
+</div>
+</body>
+</html>

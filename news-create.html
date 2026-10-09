@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Add News/Event · ATCL Admin</title>
+<link rel="icon" href="assets/images/ui/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/admin.css">
+<script src="assets/js/admin.js" defer>
+</script>
+</head>
+<body>
+<aside class="sidebar" aria-label="Main navigation">
+<div class="brand">
+<b>ATCL</b>
+<span>Admin</span>
+<button class="icon-btn" data-sidebar aria-label="Collapse sidebar">«</button>
+</div>
+<nav>
+<div class="nav-group">
+<div class="nav-label">OVERVIEW</div>
+<a class="nav-link " href="index.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="m3 10 9-7 9 7v11h-6v-7H9v7H3z"/>
+</svg>
+<span>Dashboard</span>
+</a>
+</div>
+<div class="nav-group">
+<div class="nav-label">CATALOG</div>
+<a class="nav-link " href="products.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="m12 2 9 5v10l-9 5-9-5V7zM3 7l9 5 9-5M12 12v10"/>
+</svg>
+<span>Products</span>
+</a>
+<a class="nav-link " href="categories.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<rect x="3" y="3" width="6" height="6" rx="1"/>
+<rect x="15" y="3" width="6" height="6" rx="1"/>
+<rect x="3" y="15" width="6" height="6" rx="1"/>
+<rect x="15" y="15" width="6" height="6" rx="1"/>
+</svg>
+<span>Categories</span>
+</a>
+<a class="nav-link " href="subcategories.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="m3 7 9-5 9 5-9 5zM3 12l9 5 9-5M3 17l9 5 9-5"/>
+</svg>
+<span>Subcategories</span>
+</a>
+<a class="nav-link " href="child-categories.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<circle cx="12" cy="4" r="2"/>
+<circle cx="4" cy="20" r="2"/>
+<circle cx="20" cy="20" r="2"/>
+<path d="M12 6v5M4 18v-5h16v5"/>
+</svg>
+<span>Child Categories</span>
+</a>
+<a class="nav-link " href="brands.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M3 3h9l9 9-9 9-9-9z"/>
+<circle cx="8" cy="8" r="1"/>
+</svg>
+<span>Brands</span>
+</a>
+</div>
+<div class="nav-group">
+<div class="nav-label">CUSTOMER ENGAGEMENT</div>
+<a class="nav-link " href="inquiries.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<rect x="3" y="5" width="18" height="14" rx="2"/>
+<path d="m3 6 9 7 9-7"/>
+</svg>
+<span>Inquiries / RFQ</span>
+</a>
+<a class="nav-link " href="contact-messages.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M21 11a8 8 0 0 1-8 8H7l-5 3 2-7a8 8 0 1 1 17-4z"/>
+</svg>
+<span>Contact Messages</span>
+</a>
+</div>
+<div class="nav-group">
+<div class="nav-label">CONTENT</div>
+<a class="nav-link active" href="news-events.html" aria-current="page">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M5 2h10l4 4v16H5zM14 2v6h5M8 12h8M8 16h8M8 8h2"/>
+</svg>
+<span>News & Events</span>
+</a>
+<a class="nav-link " href="career-posts.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<rect x="3" y="7" width="18" height="14" rx="2"/>
+<path d="M8 7V3h8v4M3 12l9 3 9-3M10 14h4"/>
+</svg>
+<span>Career Posts</span>
+</a>
+</div>
+<div class="nav-group">
+<div class="nav-label">SYSTEM</div>
+<a class="nav-link " href="website-settings.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="m9 3 1-2h4l1 2 3 2 3 1v4l-2 2 1 4-3 3-4-1-3 2-4-2v-4l-3-2V8l3-1z"/>
+<circle cx="12" cy="11" r="3"/>
+</svg>
+<span>Website Settings</span>
+</a>
+</div>
+</nav>
+</aside>
+<button class="mobile-backdrop" data-sidebar aria-label="Close navigation">
+</button>
+<div class="main-shell">
+<header class="topbar">
+<button class="icon-btn" data-sidebar aria-label="Toggle navigation" aria-expanded="false">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M5 6h14M5 12h14M5 18h14"/>
+</svg>
+</button>
+<span class="context">Add News/Event</span>
+<div class="global-search" aria-label="Global search preview">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<circle cx="10" cy="10" r="6"/>
+<path d="m15 15 6 6"/>
+</svg>
+<span>Search products, inquiries, customers…</span>
+</div>
+<button class="icon-btn notification" aria-label="Notifications" aria-expanded="false" data-notifications>
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M5 17V9a7 7 0 0 1 14 0v8l2 2H3zM9 22h6"/>
+</svg>
+</button>
+<div class="profile">
+<img class="avatar" src="assets/images/avatars/admin.svg" alt="Admin initials">
+<div>Admin User<small>Administrator</small>
+</div>
+</div>
+</header>
+<aside class="notification-panel card-panel" hidden>
+<h3>Notifications</h3>
+<p>4 unread contact messages</p>
+<p>18 new inquiries this week</p>
+<p>
+<a href="inquiries.html">Open inquiry inbox →</a>
+</p>
+</aside>
+<main>
+<noscript>
+<p class="noscript-note">Static preview: all records are visible. Enable JavaScript to use filters and preview interactions.</p>
+</noscript>
+<div class="page-heading">
+<div>
+<div class="title-line">
+<h1>Add News/Event</h1>
+</div>
+<p class="subtitle">Share company updates and events with your audience.</p>
+</div>
+</div>
+<form data-preview-form>
+<div class="form-layout">
+<div>
+<section class="card-panel form-section">
+<h2>Article Information</h2>
+<div class="fields">
+<label class="field full" for="title">Title *
+<input class="form-control" id="title" name="title" type="text" value=""  required>
+</label>
+<label class="field full" for="slug">Slug<input class="form-control" id="slug" name="slug" type="text" value="" >
+</label>
+<label class="field" for="type">Type<select class="form-select" id="type" name="type" >
+<option value="">Select type</option>
+<option value="News" selected>News</option>
+<option value="Event">Event</option>
+</select>
+</label>
+<label class="field" for="status">Status<select class="form-select" id="status" name="status" >
+<option value="">Select status</option>
+<option value="Draft" selected>Draft</option>
+<option value="Published">Published</option>
+</select>
+</label>
+<label class="field" for="publish-date">Publish Date<input class="form-control" id="publish-date" name="publish-date" type="date" value="2026-10-08" >
+</label>
+<label class="field" for="event-location">Event Location<input class="form-control" id="event-location" name="event-location" type="text" value="" >
+</label>
+</div>
+</section>
+<section class="card-panel form-section">
+<h2>Content</h2>
+<div class="fields">
+<label class="field full" for="excerpt">Excerpt<textarea class="form-control" id="excerpt" name="excerpt" >
+</textarea>
+</label>
+<label class="field full" for="article-content">Article Content<textarea class="form-control" id="article-content" name="article-content" >
+</textarea>
+</label>
+</div>
+</section>
+</div>
+<div>
+<section class="card-panel form-section">
+<h2>Featured Image</h2>
+<img class="image-preview" data-image-preview src="assets/images/news/engineering.jpg" alt="Current image preview" hidden>
+<div class="upload-zone">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<rect x="3" y="3" width="18" height="18" rx="2"/>
+<path d="m4 17 5-6 4 4 3-3 5 6"/>
+<circle cx="16" cy="7" r="1"/>
+</svg>
+<p class="mt-2 mb-1">Choose an image for this record</p>
+<small>PNG, JPG, WebP or SVG · Local preview only</small>
+<input type="file" accept="image/*" data-image-input aria-label="Upload featured image">
+</div>
+</section>
+<section class="card-panel form-section">
+<h2>SEO</h2>
+<div class="fields">
+<label class="field full" for="meta-title">Meta Title<input class="form-control" id="meta-title" name="meta-title" type="text" value="" >
+</label>
+<label class="field full" for="meta-description">Meta Description<textarea class="form-control" id="meta-description" name="meta-description" >
+</textarea>
+</label>
+</div>
+</section>
+</div>
+</div>
+<div class="form-actions">
+<button class="btn btn-primary" type="submit">Save Article</button>
+<button class="btn btn-light" data-save-draft type="button">Save Draft</button>
+<a class="btn btn-light" href="news-events.html">Cancel</a>
+</div>
+<p class="static-note">This is a static form preview. Changes are not persisted.</p>
+</form>
+</main>
+</div>
+<div class="toast-message" role="status" hidden>
+</div>
+</body>
+</html>

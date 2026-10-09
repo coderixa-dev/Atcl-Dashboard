@@ -1,0 +1,1022 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact Messages · ATCL Admin</title>
+<link rel="icon" href="assets/images/ui/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/admin.css">
+<script src="assets/js/admin.js" defer>
+</script>
+</head>
+<body>
+<aside class="sidebar" aria-label="Main navigation">
+<div class="brand">
+<b>ATCL</b>
+<span>Admin</span>
+<button class="icon-btn" data-sidebar aria-label="Collapse sidebar">«</button>
+</div>
+<nav>
+<div class="nav-group">
+<div class="nav-label">OVERVIEW</div>
+<a class="nav-link " href="index.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="m3 10 9-7 9 7v11h-6v-7H9v7H3z"/>
+</svg>
+<span>Dashboard</span>
+</a>
+</div>
+<div class="nav-group">
+<div class="nav-label">CATALOG</div>
+<a class="nav-link " href="products.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="m12 2 9 5v10l-9 5-9-5V7zM3 7l9 5 9-5M12 12v10"/>
+</svg>
+<span>Products</span>
+</a>
+<a class="nav-link " href="categories.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<rect x="3" y="3" width="6" height="6" rx="1"/>
+<rect x="15" y="3" width="6" height="6" rx="1"/>
+<rect x="3" y="15" width="6" height="6" rx="1"/>
+<rect x="15" y="15" width="6" height="6" rx="1"/>
+</svg>
+<span>Categories</span>
+</a>
+<a class="nav-link " href="subcategories.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="m3 7 9-5 9 5-9 5zM3 12l9 5 9-5M3 17l9 5 9-5"/>
+</svg>
+<span>Subcategories</span>
+</a>
+<a class="nav-link " href="child-categories.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<circle cx="12" cy="4" r="2"/>
+<circle cx="4" cy="20" r="2"/>
+<circle cx="20" cy="20" r="2"/>
+<path d="M12 6v5M4 18v-5h16v5"/>
+</svg>
+<span>Child Categories</span>
+</a>
+<a class="nav-link " href="brands.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M3 3h9l9 9-9 9-9-9z"/>
+<circle cx="8" cy="8" r="1"/>
+</svg>
+<span>Brands</span>
+</a>
+</div>
+<div class="nav-group">
+<div class="nav-label">CUSTOMER ENGAGEMENT</div>
+<a class="nav-link " href="inquiries.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<rect x="3" y="5" width="18" height="14" rx="2"/>
+<path d="m3 6 9 7 9-7"/>
+</svg>
+<span>Inquiries / RFQ</span>
+</a>
+<a class="nav-link active" href="contact-messages.html" aria-current="page">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M21 11a8 8 0 0 1-8 8H7l-5 3 2-7a8 8 0 1 1 17-4z"/>
+</svg>
+<span>Contact Messages</span>
+</a>
+</div>
+<div class="nav-group">
+<div class="nav-label">CONTENT</div>
+<a class="nav-link " href="news-events.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M5 2h10l4 4v16H5zM14 2v6h5M8 12h8M8 16h8M8 8h2"/>
+</svg>
+<span>News & Events</span>
+</a>
+<a class="nav-link " href="career-posts.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<rect x="3" y="7" width="18" height="14" rx="2"/>
+<path d="M8 7V3h8v4M3 12l9 3 9-3M10 14h4"/>
+</svg>
+<span>Career Posts</span>
+</a>
+</div>
+<div class="nav-group">
+<div class="nav-label">SYSTEM</div>
+<a class="nav-link " href="website-settings.html">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="m9 3 1-2h4l1 2 3 2 3 1v4l-2 2 1 4-3 3-4-1-3 2-4-2v-4l-3-2V8l3-1z"/>
+<circle cx="12" cy="11" r="3"/>
+</svg>
+<span>Website Settings</span>
+</a>
+</div>
+</nav>
+</aside>
+<button class="mobile-backdrop" data-sidebar aria-label="Close navigation">
+</button>
+<div class="main-shell">
+<header class="topbar">
+<button class="icon-btn" data-sidebar aria-label="Toggle navigation" aria-expanded="false">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M5 6h14M5 12h14M5 18h14"/>
+</svg>
+</button>
+<span class="context">Contact Messages</span>
+<div class="global-search" aria-label="Global search preview">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<circle cx="10" cy="10" r="6"/>
+<path d="m15 15 6 6"/>
+</svg>
+<span>Search products, inquiries, customers…</span>
+</div>
+<button class="icon-btn notification" aria-label="Notifications" aria-expanded="false" data-notifications>
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M5 17V9a7 7 0 0 1 14 0v8l2 2H3zM9 22h6"/>
+</svg>
+</button>
+<div class="profile">
+<img class="avatar" src="assets/images/avatars/admin.svg" alt="Admin initials">
+<div>Admin User<small>Administrator</small>
+</div>
+</div>
+</header>
+<aside class="notification-panel card-panel" hidden>
+<h3>Notifications</h3>
+<p>4 unread contact messages</p>
+<p>18 new inquiries this week</p>
+<p>
+<a href="inquiries.html">Open inquiry inbox →</a>
+</p>
+</aside>
+<main>
+<noscript>
+<p class="noscript-note">Static preview: all records are visible. Enable JavaScript to use filters and preview interactions.</p>
+</noscript>
+<div class="page-heading">
+<div>
+<div class="title-line">
+<h1>Contact Messages</h1>
+</div>
+<p class="subtitle">Conversations and enquiries from your website.</p>
+</div>
+</div>
+<div class="module-stats">
+<div class="mini-stat">Total Messages<strong>36</strong>
+</div>
+<div class="mini-stat">Unread<strong>12</strong>
+</div>
+<div class="mini-stat">Read<strong>24</strong>
+</div>
+</div>
+<section class="card-panel" data-table-module data-noun="messages">
+<div class="toolbar">
+<label class="search-field">Search<input class="form-control" type="search" data-search placeholder="Search sender, company or subject" aria-label="Search sender, company or subject">
+</label>
+<label>Status<select class="form-select" data-filter="status" aria-label="Filter by status">
+<option value="">All status</option>
+<option value="Read">Read</option>
+<option value="Unread">Unread</option>
+</select>
+</label>
+<label>Date<select class="form-select" data-filter="date" aria-label="Filter by date">
+<option value="">All date</option>
+<option value="2026-10-09">2026-10-09</option>
+<option value="2026-10-08">2026-10-08</option>
+<option value="2026-10-07">2026-10-07</option>
+<option value="2026-10-06">2026-10-06</option>
+<option value="2026-10-05">2026-10-05</option>
+<option value="2026-10-04">2026-10-04</option>
+<option value="2026-10-03">2026-10-03</option>
+<option value="2026-10-02">2026-10-02</option>
+<option value="2026-10-01">2026-10-01</option>
+</select>
+</label>
+<button class="btn btn-light" type="button" data-reset>Reset Filters</button>
+</div>
+<div class="filter-chips" aria-label="Active filters">
+</div>
+<div class="bulk-bar">
+<span data-selected>0 selected</span>
+<select data-bulk aria-label="Bulk action">
+<option value="">Bulk action</option>
+<option>Mark active / read</option>
+<option>Archive selection</option>
+</select>
+<button type="button" class="btn btn-light" data-apply-bulk>Apply</button>
+<span class="muted">Preview only</span>
+</div>
+<div class="table-wrap">
+<table class="data-table">
+<thead>
+<tr>
+<th>
+<input type="checkbox" data-select-all aria-label="Select all visible records">
+</th>
+<th scope="col" aria-sort="none">
+<button type="button" data-sort="1">Sender</button>
+</th>
+<th scope="col" aria-sort="none">
+<button type="button" data-sort="2">Company</button>
+</th>
+<th scope="col" aria-sort="none">
+<button type="button" data-sort="3">Subject</button>
+</th>
+<th scope="col" aria-sort="none">
+<button type="button" data-sort="4">Preview</button>
+</th>
+<th scope="col" aria-sort="none">
+<button type="button" data-sort="5">Contact</button>
+</th>
+<th scope="col" aria-sort="none">
+<button type="button" data-sort="6">Received</button>
+</th>
+<th scope="col" aria-sort="none">
+<button type="button" data-sort="7">Status</button>
+</th>
+<th scope="col">Action</th>
+</tr>
+</thead>
+<tbody>
+<tr data-name="Rahim Ahmed" data-status="Unread" data-date="2026-10-09">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Rahim Ahmed">
+</td>
+<td>
+<a href="contact-details.html" class="cell-title">Rahim Ahmed</a>
+</td>
+<td>ABC Enterprise</td>
+<td>Request for technical consultation</td>
+<td>
+<span class="muted">We would like to discuss requirements for our upcoming facility…</span>
+</td>
+<td>rahim@abcenterprise.example</td>
+<td>2026-10-09</td>
+<td>
+<span class="badge-status status-unread">Unread</span>
+</td>
+<td>
+<a href="contact-details.html" class="btn-view">Read</a>
+</td>
+</tr>
+<tr data-name="Nadia Islam" data-status="Read" data-date="2026-10-08">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Nadia Islam">
+</td>
+<td>
+<a href="contact-details.html" class="cell-title">Nadia Islam</a>
+</td>
+<td>Global Tech Solutions</td>
+<td>Partnership opportunity for industrial projects</td>
+<td>
+<span class="muted">We would like to discuss requirements for our upcoming facility…</span>
+</td>
+<td>nadia@globaltechsolutions.example</td>
+<td>2026-10-08</td>
+<td>
+<span class="badge-status status-read">Read</span>
+</td>
+<td>
+<a href="contact-details.html" class="btn-view">Read</a>
+</td>
+</tr>
+<tr data-name="Tanvir Hasan" data-status="Read" data-date="2026-10-07">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Tanvir Hasan">
+</td>
+<td>
+<a href="contact-details.html" class="cell-title">Tanvir Hasan</a>
+</td>
+<td>Summit Industries</td>
+<td>Product brochure and specifications</td>
+<td>
+<span class="muted">We would like to discuss requirements for our upcoming facility…</span>
+</td>
+<td>tanvir@summitindustries.example</td>
+<td>2026-10-07</td>
+<td>
+<span class="badge-status status-read">Read</span>
+</td>
+<td>
+<a href="contact-details.html" class="btn-view">Read</a>
+</td>
+</tr>
+<tr data-name="Farhana Chowdhury" data-status="Unread" data-date="2026-10-06">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Farhana Chowdhury">
+</td>
+<td>
+<a href="contact-details.html" class="cell-title">Farhana Chowdhury</a>
+</td>
+<td>Oriental Holdings</td>
+<td>Service coverage in Chattogram</td>
+<td>
+<span class="muted">We would like to discuss requirements for our upcoming facility…</span>
+</td>
+<td>farhana@orientalholdings.example</td>
+<td>2026-10-06</td>
+<td>
+<span class="badge-status status-unread">Unread</span>
+</td>
+<td>
+<a href="contact-details.html" class="btn-view">Read</a>
+</td>
+</tr>
+<tr data-name="Imran Hossain" data-status="Read" data-date="2026-10-05">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Imran Hossain">
+</td>
+<td>
+<a href="contact-details.html" class="cell-title">Imran Hossain</a>
+</td>
+<td>Metro Construction</td>
+<td>Valve selection support</td>
+<td>
+<span class="muted">We would like to discuss requirements for our upcoming facility…</span>
+</td>
+<td>imran@metroconstruction.example</td>
+<td>2026-10-05</td>
+<td>
+<span class="badge-status status-read">Read</span>
+</td>
+<td>
+<a href="contact-details.html" class="btn-view">Read</a>
+</td>
+</tr>
+<tr data-name="Sadia Rahman" data-status="Read" data-date="2026-10-04">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Sadia Rahman">
+</td>
+<td>
+<a href="contact-details.html" class="cell-title">Sadia Rahman</a>
+</td>
+<td>Bengal Engineering</td>
+<td>Project supply timeline</td>
+<td>
+<span class="muted">We would like to discuss requirements for our upcoming facility…</span>
+</td>
+<td>sadia@bengalengineering.example</td>
+<td>2026-10-04</td>
+<td>
+<span class="badge-status status-read">Read</span>
+</td>
+<td>
+<a href="contact-details.html" class="btn-view">Read</a>
+</td>
+</tr>
+<tr data-name="Arif Karim" data-status="Unread" data-date="2026-10-03">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Arif Karim">
+</td>
+<td>
+<a href="contact-details.html" class="cell-title">Arif Karim</a>
+</td>
+<td>Delta Power Systems</td>
+<td>Automation training enquiry</td>
+<td>
+<span class="muted">We would like to discuss requirements for our upcoming facility…</span>
+</td>
+<td>arif@deltapowersystems.example</td>
+<td>2026-10-03</td>
+<td>
+<span class="badge-status status-unread">Unread</span>
+</td>
+<td>
+<a href="contact-details.html" class="btn-view">Read</a>
+</td>
+</tr>
+<tr data-name="Nusrat Jahan" data-status="Read" data-date="2026-10-02">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Nusrat Jahan">
+</td>
+<td>
+<a href="contact-details.html" class="cell-title">Nusrat Jahan</a>
+</td>
+<td>Eastern Refinery</td>
+<td>After-sales technical assistance</td>
+<td>
+<span class="muted">We would like to discuss requirements for our upcoming facility…</span>
+</td>
+<td>nusrat@easternrefinery.example</td>
+<td>2026-10-02</td>
+<td>
+<span class="badge-status status-read">Read</span>
+</td>
+<td>
+<a href="contact-details.html" class="btn-view">Read</a>
+</td>
+</tr>
+<tr data-name="Mahmud Alam" data-status="Read" data-date="2026-10-01">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Mahmud Alam">
+</td>
+<td>
+<a href="contact-details.html" class="cell-title">Mahmud Alam</a>
+</td>
+<td>Meghna Industries</td>
+<td>Pumping solution for new facility</td>
+<td>
+<span class="muted">We would like to discuss requirements for our upcoming facility…</span>
+</td>
+<td>mahmud@meghnaindustries.example</td>
+<td>2026-10-01</td>
+<td>
+<span class="badge-status status-read">Read</span>
+</td>
+<td>
+<a href="contact-details.html" class="btn-view">Read</a>
+</td>
+</tr>
+<tr data-name="Tasnim Akter" data-status="Unread" data-date="2026-10-09">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Tasnim Akter">
+</td>
+<td>
+<a href="contact-details.html" class="cell-title">Tasnim Akter</a>
+</td>
+<td>Apex Textiles</td>
+<td>Company profile request</td>
+<td>
+<span class="muted">We would like to discuss requirements for our upcoming facility…</span>
+</td>
+<td>tasnim@apextextiles.example</td>
+<td>2026-10-09</td>
+<td>
+<span class="badge-status status-unread">Unread</span>
+</td>
+<td>
+<a href="contact-details.html" class="btn-view">Read</a>
+</td>
+</tr>
+<tr data-name="Shafiq Rahman" data-status="Read" data-date="2026-10-08">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Shafiq Rahman">
+</td>
+<td>
+<a href="contact-details.html" class="cell-title">Shafiq Rahman</a>
+</td>
+<td>United Manufacturing</td>
+<td>HVAC system consultation</td>
+<td>
+<span class="muted">We would like to discuss requirements for our upcoming facility…</span>
+</td>
+<td>shafiq@unitedmanufacturing.example</td>
+<td>2026-10-08</td>
+<td>
+<span class="badge-status status-read">Read</span>
+</td>
+<td>
+<a href="contact-details.html" class="btn-view">Read</a>
+</td>
+</tr>
+<tr data-name="Maliha Khan" data-status="Read" data-date="2026-10-07">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Maliha Khan">
+</td>
+<td>
+<a href="contact-details.html" class="cell-title">Maliha Khan</a>
+</td>
+<td>Prime Automation</td>
+<td>Vendor registration enquiry</td>
+<td>
+<span class="muted">We would like to discuss requirements for our upcoming facility…</span>
+</td>
+<td>maliha@primeautomation.example</td>
+<td>2026-10-07</td>
+<td>
+<span class="badge-status status-read">Read</span>
+</td>
+<td>
+<a href="contact-details.html" class="btn-view">Read</a>
+</td>
+</tr>
+<tr data-name="Faisal Kabir" data-status="Unread" data-date="2026-10-06">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Faisal Kabir">
+</td>
+<td>
+<a href="contact-details.html" class="cell-title">Faisal Kabir</a>
+</td>
+<td>Navana Engineering</td>
+<td>Request for technical consultation</td>
+<td>
+<span class="muted">We would like to discuss requirements for our upcoming facility…</span>
+</td>
+<td>faisal@navanaengineering.example</td>
+<td>2026-10-06</td>
+<td>
+<span class="badge-status status-unread">Unread</span>
+</td>
+<td>
+<a href="contact-details.html" class="btn-view">Read</a>
+</td>
+</tr>
+<tr data-name="Rehana Sultana" data-status="Read" data-date="2026-10-05">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Rehana Sultana">
+</td>
+<td>
+<a href="contact-details.html" class="cell-title">Rehana Sultana</a>
+</td>
+<td>Pacific Cement</td>
+<td>Partnership opportunity for industrial projects</td>
+<td>
+<span class="muted">We would like to discuss requirements for our upcoming facility…</span>
+</td>
+<td>rehana@pacificcement.example</td>
+<td>2026-10-05</td>
+<td>
+<span class="badge-status status-read">Read</span>
+</td>
+<td>
+<a href="contact-details.html" class="btn-view">Read</a>
+</td>
+</tr>
+<tr data-name="Ashraf Uddin" data-status="Read" data-date="2026-10-04">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Ashraf Uddin">
+</td>
+<td>
+<a href="contact-details.html" class="cell-title">Ashraf Uddin</a>
+</td>
+<td>Rupali Foods</td>
+<td>Product brochure and specifications</td>
+<td>
+<span class="muted">We would like to discuss requirements for our upcoming facility…</span>
+</td>
+<td>ashraf@rupalifoods.example</td>
+<td>2026-10-04</td>
+<td>
+<span class="badge-status status-read">Read</span>
+</td>
+<td>
+<a href="contact-details.html" class="btn-view">Read</a>
+</td>
+</tr>
+<tr data-name="Zara Ahmed" data-status="Unread" data-date="2026-10-03">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Zara Ahmed">
+</td>
+<td>
+<a href="contact-details.html" class="cell-title">Zara Ahmed</a>
+</td>
+<td>Concord Infrastructure</td>
+<td>Service coverage in Chattogram</td>
+<td>
+<span class="muted">We would like to discuss requirements for our upcoming facility…</span>
+</td>
+<td>zara@concordinfrastructure.example</td>
+<td>2026-10-03</td>
+<td>
+<span class="badge-status status-unread">Unread</span>
+</td>
+<td>
+<a href="contact-details.html" class="btn-view">Read</a>
+</td>
+</tr>
+<tr data-name="Rahim Ahmed" data-status="Read" data-date="2026-10-02">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Rahim Ahmed">
+</td>
+<td>
+<a href="contact-details.html" class="cell-title">Rahim Ahmed</a>
+</td>
+<td>ABC Enterprise</td>
+<td>Valve selection support</td>
+<td>
+<span class="muted">We would like to discuss requirements for our upcoming facility…</span>
+</td>
+<td>rahim@abcenterprise.example</td>
+<td>2026-10-02</td>
+<td>
+<span class="badge-status status-read">Read</span>
+</td>
+<td>
+<a href="contact-details.html" class="btn-view">Read</a>
+</td>
+</tr>
+<tr data-name="Nadia Islam" data-status="Read" data-date="2026-10-01">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Nadia Islam">
+</td>
+<td>
+<a href="contact-details.html" class="cell-title">Nadia Islam</a>
+</td>
+<td>Global Tech Solutions</td>
+<td>Project supply timeline</td>
+<td>
+<span class="muted">We would like to discuss requirements for our upcoming facility…</span>
+</td>
+<td>nadia@globaltechsolutions.example</td>
+<td>2026-10-01</td>
+<td>
+<span class="badge-status status-read">Read</span>
+</td>
+<td>
+<a href="contact-details.html" class="btn-view">Read</a>
+</td>
+</tr>
+<tr data-name="Tanvir Hasan" data-status="Unread" data-date="2026-10-09">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Tanvir Hasan">
+</td>
+<td>
+<a href="contact-details.html" class="cell-title">Tanvir Hasan</a>
+</td>
+<td>Summit Industries</td>
+<td>Automation training enquiry</td>
+<td>
+<span class="muted">We would like to discuss requirements for our upcoming facility…</span>
+</td>
+<td>tanvir@summitindustries.example</td>
+<td>2026-10-09</td>
+<td>
+<span class="badge-status status-unread">Unread</span>
+</td>
+<td>
+<a href="contact-details.html" class="btn-view">Read</a>
+</td>
+</tr>
+<tr data-name="Farhana Chowdhury" data-status="Read" data-date="2026-10-08">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Farhana Chowdhury">
+</td>
+<td>
+<a href="contact-details.html" class="cell-title">Farhana Chowdhury</a>
+</td>
+<td>Oriental Holdings</td>
+<td>After-sales technical assistance</td>
+<td>
+<span class="muted">We would like to discuss requirements for our upcoming facility…</span>
+</td>
+<td>farhana@orientalholdings.example</td>
+<td>2026-10-08</td>
+<td>
+<span class="badge-status status-read">Read</span>
+</td>
+<td>
+<a href="contact-details.html" class="btn-view">Read</a>
+</td>
+</tr>
+<tr data-name="Imran Hossain" data-status="Read" data-date="2026-10-07">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Imran Hossain">
+</td>
+<td>
+<a href="contact-details.html" class="cell-title">Imran Hossain</a>
+</td>
+<td>Metro Construction</td>
+<td>Pumping solution for new facility</td>
+<td>
+<span class="muted">We would like to discuss requirements for our upcoming facility…</span>
+</td>
+<td>imran@metroconstruction.example</td>
+<td>2026-10-07</td>
+<td>
+<span class="badge-status status-read">Read</span>
+</td>
+<td>
+<a href="contact-details.html" class="btn-view">Read</a>
+</td>
+</tr>
+<tr data-name="Sadia Rahman" data-status="Unread" data-date="2026-10-06">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Sadia Rahman">
+</td>
+<td>
+<a href="contact-details.html" class="cell-title">Sadia Rahman</a>
+</td>
+<td>Bengal Engineering</td>
+<td>Company profile request</td>
+<td>
+<span class="muted">We would like to discuss requirements for our upcoming facility…</span>
+</td>
+<td>sadia@bengalengineering.example</td>
+<td>2026-10-06</td>
+<td>
+<span class="badge-status status-unread">Unread</span>
+</td>
+<td>
+<a href="contact-details.html" class="btn-view">Read</a>
+</td>
+</tr>
+<tr data-name="Arif Karim" data-status="Read" data-date="2026-10-05">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Arif Karim">
+</td>
+<td>
+<a href="contact-details.html" class="cell-title">Arif Karim</a>
+</td>
+<td>Delta Power Systems</td>
+<td>HVAC system consultation</td>
+<td>
+<span class="muted">We would like to discuss requirements for our upcoming facility…</span>
+</td>
+<td>arif@deltapowersystems.example</td>
+<td>2026-10-05</td>
+<td>
+<span class="badge-status status-read">Read</span>
+</td>
+<td>
+<a href="contact-details.html" class="btn-view">Read</a>
+</td>
+</tr>
+<tr data-name="Nusrat Jahan" data-status="Read" data-date="2026-10-04">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Nusrat Jahan">
+</td>
+<td>
+<a href="contact-details.html" class="cell-title">Nusrat Jahan</a>
+</td>
+<td>Eastern Refinery</td>
+<td>Vendor registration enquiry</td>
+<td>
+<span class="muted">We would like to discuss requirements for our upcoming facility…</span>
+</td>
+<td>nusrat@easternrefinery.example</td>
+<td>2026-10-04</td>
+<td>
+<span class="badge-status status-read">Read</span>
+</td>
+<td>
+<a href="contact-details.html" class="btn-view">Read</a>
+</td>
+</tr>
+<tr data-name="Mahmud Alam" data-status="Unread" data-date="2026-10-03">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Mahmud Alam">
+</td>
+<td>
+<a href="contact-details.html" class="cell-title">Mahmud Alam</a>
+</td>
+<td>Meghna Industries</td>
+<td>Request for technical consultation</td>
+<td>
+<span class="muted">We would like to discuss requirements for our upcoming facility…</span>
+</td>
+<td>mahmud@meghnaindustries.example</td>
+<td>2026-10-03</td>
+<td>
+<span class="badge-status status-unread">Unread</span>
+</td>
+<td>
+<a href="contact-details.html" class="btn-view">Read</a>
+</td>
+</tr>
+<tr data-name="Tasnim Akter" data-status="Read" data-date="2026-10-02">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Tasnim Akter">
+</td>
+<td>
+<a href="contact-details.html" class="cell-title">Tasnim Akter</a>
+</td>
+<td>Apex Textiles</td>
+<td>Partnership opportunity for industrial projects</td>
+<td>
+<span class="muted">We would like to discuss requirements for our upcoming facility…</span>
+</td>
+<td>tasnim@apextextiles.example</td>
+<td>2026-10-02</td>
+<td>
+<span class="badge-status status-read">Read</span>
+</td>
+<td>
+<a href="contact-details.html" class="btn-view">Read</a>
+</td>
+</tr>
+<tr data-name="Shafiq Rahman" data-status="Read" data-date="2026-10-01">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Shafiq Rahman">
+</td>
+<td>
+<a href="contact-details.html" class="cell-title">Shafiq Rahman</a>
+</td>
+<td>United Manufacturing</td>
+<td>Product brochure and specifications</td>
+<td>
+<span class="muted">We would like to discuss requirements for our upcoming facility…</span>
+</td>
+<td>shafiq@unitedmanufacturing.example</td>
+<td>2026-10-01</td>
+<td>
+<span class="badge-status status-read">Read</span>
+</td>
+<td>
+<a href="contact-details.html" class="btn-view">Read</a>
+</td>
+</tr>
+<tr data-name="Maliha Khan" data-status="Unread" data-date="2026-10-09">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Maliha Khan">
+</td>
+<td>
+<a href="contact-details.html" class="cell-title">Maliha Khan</a>
+</td>
+<td>Prime Automation</td>
+<td>Service coverage in Chattogram</td>
+<td>
+<span class="muted">We would like to discuss requirements for our upcoming facility…</span>
+</td>
+<td>maliha@primeautomation.example</td>
+<td>2026-10-09</td>
+<td>
+<span class="badge-status status-unread">Unread</span>
+</td>
+<td>
+<a href="contact-details.html" class="btn-view">Read</a>
+</td>
+</tr>
+<tr data-name="Faisal Kabir" data-status="Read" data-date="2026-10-08">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Faisal Kabir">
+</td>
+<td>
+<a href="contact-details.html" class="cell-title">Faisal Kabir</a>
+</td>
+<td>Navana Engineering</td>
+<td>Valve selection support</td>
+<td>
+<span class="muted">We would like to discuss requirements for our upcoming facility…</span>
+</td>
+<td>faisal@navanaengineering.example</td>
+<td>2026-10-08</td>
+<td>
+<span class="badge-status status-read">Read</span>
+</td>
+<td>
+<a href="contact-details.html" class="btn-view">Read</a>
+</td>
+</tr>
+<tr data-name="Rehana Sultana" data-status="Read" data-date="2026-10-07">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Rehana Sultana">
+</td>
+<td>
+<a href="contact-details.html" class="cell-title">Rehana Sultana</a>
+</td>
+<td>Pacific Cement</td>
+<td>Project supply timeline</td>
+<td>
+<span class="muted">We would like to discuss requirements for our upcoming facility…</span>
+</td>
+<td>rehana@pacificcement.example</td>
+<td>2026-10-07</td>
+<td>
+<span class="badge-status status-read">Read</span>
+</td>
+<td>
+<a href="contact-details.html" class="btn-view">Read</a>
+</td>
+</tr>
+<tr data-name="Ashraf Uddin" data-status="Unread" data-date="2026-10-06">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Ashraf Uddin">
+</td>
+<td>
+<a href="contact-details.html" class="cell-title">Ashraf Uddin</a>
+</td>
+<td>Rupali Foods</td>
+<td>Automation training enquiry</td>
+<td>
+<span class="muted">We would like to discuss requirements for our upcoming facility…</span>
+</td>
+<td>ashraf@rupalifoods.example</td>
+<td>2026-10-06</td>
+<td>
+<span class="badge-status status-unread">Unread</span>
+</td>
+<td>
+<a href="contact-details.html" class="btn-view">Read</a>
+</td>
+</tr>
+<tr data-name="Zara Ahmed" data-status="Read" data-date="2026-10-05">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Zara Ahmed">
+</td>
+<td>
+<a href="contact-details.html" class="cell-title">Zara Ahmed</a>
+</td>
+<td>Concord Infrastructure</td>
+<td>After-sales technical assistance</td>
+<td>
+<span class="muted">We would like to discuss requirements for our upcoming facility…</span>
+</td>
+<td>zara@concordinfrastructure.example</td>
+<td>2026-10-05</td>
+<td>
+<span class="badge-status status-read">Read</span>
+</td>
+<td>
+<a href="contact-details.html" class="btn-view">Read</a>
+</td>
+</tr>
+<tr data-name="Rahim Ahmed" data-status="Read" data-date="2026-10-04">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Rahim Ahmed">
+</td>
+<td>
+<a href="contact-details.html" class="cell-title">Rahim Ahmed</a>
+</td>
+<td>ABC Enterprise</td>
+<td>Pumping solution for new facility</td>
+<td>
+<span class="muted">We would like to discuss requirements for our upcoming facility…</span>
+</td>
+<td>rahim@abcenterprise.example</td>
+<td>2026-10-04</td>
+<td>
+<span class="badge-status status-read">Read</span>
+</td>
+<td>
+<a href="contact-details.html" class="btn-view">Read</a>
+</td>
+</tr>
+<tr data-name="Nadia Islam" data-status="Unread" data-date="2026-10-03">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Nadia Islam">
+</td>
+<td>
+<a href="contact-details.html" class="cell-title">Nadia Islam</a>
+</td>
+<td>Global Tech Solutions</td>
+<td>Company profile request</td>
+<td>
+<span class="muted">We would like to discuss requirements for our upcoming facility…</span>
+</td>
+<td>nadia@globaltechsolutions.example</td>
+<td>2026-10-03</td>
+<td>
+<span class="badge-status status-unread">Unread</span>
+</td>
+<td>
+<a href="contact-details.html" class="btn-view">Read</a>
+</td>
+</tr>
+<tr data-name="Tanvir Hasan" data-status="Read" data-date="2026-10-02">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Tanvir Hasan">
+</td>
+<td>
+<a href="contact-details.html" class="cell-title">Tanvir Hasan</a>
+</td>
+<td>Summit Industries</td>
+<td>HVAC system consultation</td>
+<td>
+<span class="muted">We would like to discuss requirements for our upcoming facility…</span>
+</td>
+<td>tanvir@summitindustries.example</td>
+<td>2026-10-02</td>
+<td>
+<span class="badge-status status-read">Read</span>
+</td>
+<td>
+<a href="contact-details.html" class="btn-view">Read</a>
+</td>
+</tr>
+<tr data-name="Farhana Chowdhury" data-status="Read" data-date="2026-10-01">
+<td>
+<input type="checkbox" data-select-row aria-label="Select Farhana Chowdhury">
+</td>
+<td>
+<a href="contact-details.html" class="cell-title">Farhana Chowdhury</a>
+</td>
+<td>Oriental Holdings</td>
+<td>Vendor registration enquiry</td>
+<td>
+<span class="muted">We would like to discuss requirements for our upcoming facility…</span>
+</td>
+<td>farhana@orientalholdings.example</td>
+<td>2026-10-01</td>
+<td>
+<span class="badge-status status-read">Read</span>
+</td>
+<td>
+<a href="contact-details.html" class="btn-view">Read</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="empty-state" hidden>
+<strong>No messages found.</strong>Try changing your search or filters.</div>
+<div class="table-footer">
+<span data-result-count>36 static records</span>
+<label>Rows per page <select data-page-size aria-label="Rows per page">
+<option>10</option>
+<option>25</option>
+<option>50</option>
+</select>
+</label>
+<nav class="page-controls" aria-label="Table pagination">
+<button type="button" data-prev>Previous</button>
+<span data-pages>
+</span>
+<button type="button" data-next>Next</button>
+</nav>
+</div>
+</section>
+<p class="static-note">Static prototype · Filters and selections apply to this preview only. No data is sent or saved.</p>
+</main>
+</div>
+<div class="toast-message" role="status" hidden>
+</div>
+</body>
+</html>

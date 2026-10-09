@@ -1,0 +1,32 @@
+LOCAL IMAGE ASSETS
+
+products/stainless-ball-valves.jpg
+Title: Stainless steel smal ball valves.JPG
+Author: S.J. de Waard
+Source: https://commons.wikimedia.org/wiki/File:Stainless_steel_smal_ball_valves.JPG
+Original: https://upload.wikimedia.org/wikipedia/commons/8/85/Stainless_steel_smal_ball_valves.JPG
+License: Creative Commons Attribution 2.5 Generic
+License link: https://creativecommons.org/licenses/by/2.5/
+Downloaded unchanged. Displayed at reduced size with CSS; representative photo.
+Attribution is also visible alongside the product gallery.
+
+news/engineering.jpg
+https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=800&q=85&fit=crop
+news/factory.jpg
+https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=800&q=85&fit=crop
+news/team.jpg
+https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&q=85&fit=crop
+Source: Unsplash. License: https://unsplash.com/license
+Locally downloaded 800px derivatives. Representative editorial imagery.
+These photos do not depict actual ATCL personnel, events or facilities.
+
+products/equipment-01.svg through equipment-15.svg
+Original technical vector illustrations created for this prototype.
+No third-party manufacturer product photography was copied into these assets.
+
+brands/brand-01.svg through brand-24.svg
+Original typeset nameplates identifying the catalog's brand names.
+These are not official brand logos and do not imply brand endorsement.
+
+avatars/admin.svg and ui/favicon.svg
+Original geometric/text artwork created for this prototype.
